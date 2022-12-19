@@ -2,10 +2,28 @@
 title: "Damien Dupré - Teaching Repository"
 ---
 
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
-
-```{r}
-1 + 1
+```{r setup, message=FALSE, warning=FALSE, include=FALSE}
+# library(metathis)
+# meta() %>%
+#   meta_description(
+#     'Course website for the course "EMSE 6035: Marketing Analytics for Design Decisions" at GWU'
+#   ) %>%
+#   meta_name("github-repo" = "damien-dupre/damien-dupre.github.io") %>%
+#   meta_viewport() %>%
+#   meta_social(
+#     title = "damien-dupre.github.io",
+#     url = "https://damien-dupre.github.io/",
+#     image = "https://damien-dupre.github.io/images/logo.png",
+#     image_alt = "Hex sticker for class logo",
+#     og_type = "website",
+#     og_author = c("Damien Dupre"),
+#     twitter_card_type = "summary",
+#     twitter_creator = "@damien-dupre"
+#   )
 ```
+
+Here is the list of the current modules that you can access:
+
+- [MT611: Quantitative Research Methods](https://damien-dupre.github.io/mt611)
+- [MT612: Advanced Quantitative Research Methods](https://damien-dupre.github.io/mt612)
+- [MT5000: Data Analytics and Visualisations](https://damien-dupre.github.io/mt5000)
