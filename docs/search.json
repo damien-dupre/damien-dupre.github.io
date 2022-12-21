@@ -7,11 +7,11 @@
     "text": "Here is the list of the current modules that you can access:\n\nMT611: Quantitative Research Methods\nMT612: Advanced Quantitative Research Methods\nMT5000: Data Analytics and Visualisations"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "mt5000.html",
+    "href": "mt5000.html",
+    "title": "MT5000 - Data Analytics and Visualisation",
     "section": "",
-    "text": "Ph.D in Social and Experimental Psychology from the University Grenoble-Alpes, France, my researches are focusing on understanding psycho-physiological responses ‘in the wild’. With Anna Tcherkassof in Grenoble, I have contributed to develop the DynEmo database by recording and assessing dynamic and spontaneous facial expressions of emotions.\nWhereas my thesis aimed to evaluate Emotional User eXperience of innovative technologies and designs for the company Ixiade (www.ixiade.com), I have collaborated with Queen’s University and Sensum Ltd (www.sensum.co) to analyse emotions with physiological sensors and automatic facial expression recognition. I also worked at University College Dublin’s Insight Centre for Data Analytics in order to process and understand physiological measurements from marathon runners.\nNow Assistant Professor of Business Research Methods at Dublin City University, my domain of expertise relies in multivariate time series analysis and trend extraction for supervised or unsupervised machine learning classification."
+    "text": "Data and visual analytics is an emerging field concerned with analysing, modelling, and visualising complex high dimensional data. This course will introduce students to the field by covering state of the art modelling, analysis, and visualisation techniques. It will emphasise practical challenges involving complex real world data and include several case studies and hands on work with programming languages (SQL and R) and visualisation software (Tableau and PowerBI)."
   },
   {
     "objectID": "mt611.html",
@@ -28,10 +28,10 @@
     "text": "This module is designed for students already mastering linear regression models, to give them a deeper knowledge of more advanced models: logistic regressions, multilevel / hierarchical models, and paths analyses (mediation, factor analysis, structural equation model). Each of these advanced models will be taught with JAMOVI (open-source software for advanced statistics and with R (open-source programming language for advanced statistics). The module will focus on how to test hypotheses using these models, how to interpret their results and how to communicate them in academic publications."
   },
   {
-    "objectID": "mt5000.html",
-    "href": "mt5000.html",
-    "title": "MT5000 - Data Analytics and Visualisation",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Data and visual analytics is an emerging field concerned with analysing, modelling, and visualising complex high dimensional data. This course will introduce students to the field by covering state of the art modelling, analysis, and visualisation techniques. It will emphasise practical challenges involving complex real world data and include several case studies and hands on work with programming languages (SQL and R) and visualisation software (Tableau and PowerBI)."
+    "text": "Ph.D in Social and Experimental Psychology from the University Grenoble-Alpes, France, my researches are focusing on understanding psycho-physiological responses ‘in the wild’. With Anna Tcherkassof in Grenoble, I have contributed to develop the DynEmo database by recording and assessing dynamic and spontaneous facial expressions of emotions.\nWhereas my thesis aimed to evaluate Emotional User eXperience of innovative technologies and designs for the company Ixiade (www.ixiade.com), I have collaborated with Queen’s University and Sensum Ltd (www.sensum.co) to analyse emotions with physiological sensors and automatic facial expression recognition. I also worked at University College Dublin’s Insight Centre for Data Analytics in order to process and understand physiological measurements from marathon runners.\nNow Assistant Professor of Business Research Methods at Dublin City University, my domain of expertise relies in multivariate time series analysis and trend extraction for supervised or unsupervised machine learning classification."
   }
 ]
