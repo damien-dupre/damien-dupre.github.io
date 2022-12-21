@@ -4,16 +4,26 @@ project:
 
 website:
   title: "Teaching Repository"
+  site-url: https://damien-dupre.github.io/
+  description: "Statistics Slides"
+  open-graph:
+    locale: en_US
+  twitter-card:
+    creator: "@damien_dupre"
+  comments:
+    utterances:
+      repo: damien-dupre/damien-dupre.github.io
   navbar:
     left:
       - href: index.qmd
         icon: fas fa-home
         text: Home
       - about.qmd
-
+  page-footer:
+    left: "DCU Business School"
 format:
   html:
-    theme: cosmo
+    theme: sandstone
     css: styles.css
     toc: true
 
