@@ -1,0 +1,5 @@
+---
+title: "MT611 - Quantitative Research Methods"
+---
+
+This module has been designed to help you improve your understanding of the key quantitative tools and statistical analyses for social science and business research. To start you will explore the key concepts and issues in measurement, focusing in particular on numeric variables and multi-item scales. The main focus of the course is a study of the main data analysis techniques based on linear regressions and multivariate linear regressions. This will instruct you in statistical test selection using SPSS, JAMOVI (open-source alternative to SPSS) and R (short introduction). Finally the module will present how to interpret and to report the results of these tests. A key element of the course will be a study of several quantitative research study cases using multivariate techniques.
