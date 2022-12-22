@@ -1,5 +1,6 @@
 ---
 title: "Damien Dupré - Teaching Repository"
+include-in-header: meta.txt
 ---
 
 Here is the list of the current modules that you can access:

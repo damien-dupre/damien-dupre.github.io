@@ -1,5 +1,6 @@
 ---
 title: "About"
+include-in-header: meta.txt
 ---
 
 <div class = "row">

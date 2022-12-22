@@ -2,18 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://damien-dupre.github.io/about.html</loc>
-    <lastmod>2022-12-22T06:19:39.871Z</lastmod>
+    <lastmod>2022-12-22T06:23:59.371Z</lastmod>
   </url>
   <url>
     <loc>https://damien-dupre.github.io/mt611.html</loc>
-    <lastmod>2022-12-22T06:19:42.257Z</lastmod>
+    <lastmod>2022-12-22T06:24:04.941Z</lastmod>
   </url>
   <url>
     <loc>https://damien-dupre.github.io/mt612.html</loc>
-    <lastmod>2022-12-22T06:19:44.659Z</lastmod>
+    <lastmod>2022-12-22T06:24:11.945Z</lastmod>
   </url>
   <url>
     <loc>https://damien-dupre.github.io/index.html</loc>
-    <lastmod>2022-12-22T06:19:35.986Z</lastmod>
+    <lastmod>2022-12-22T06:22:59.652Z</lastmod>
+  </url>
+  <url>
+    <loc>https://damien-dupre.github.io/index.knit.html</loc>
+    <lastmod>2022-12-22T06:22:58.779Z</lastmod>
+  </url>
+  <url>
+    <loc>https://damien-dupre.github.io/mt5000.html</loc>
+    <lastmod>2022-12-22T06:24:16.752Z</lastmod>
   </url>
 </urlset>
