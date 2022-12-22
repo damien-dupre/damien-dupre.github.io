@@ -1,9 +1,9 @@
 writeLines(
   text = as.character(metathis::meta_social(
-    metathis::meta_name(metathis::meta(), "github-repo" = "damien-dupre/damien-dupre.github.io"),
-    title = "Teaching repository",
-    description = glue::glue("Teaching repository"),
-    url = "https://damien-dupre.github.io/",
+    # metathis::meta_name(metathis::meta(), "github-repo" = "damien-dupre/damien-dupre.github.io"),
+    # title = "Teaching repository",
+    # description = glue::glue("Teaching repository"),
+    # url = "https://damien-dupre.github.io/",
     # image = "https://damien-dupre.github.io/images/logo.png",
     # image_alt = glue::glue("text"),
     og_type = "website",

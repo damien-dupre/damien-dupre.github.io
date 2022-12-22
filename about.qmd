@@ -1,17 +1,12 @@
 ---
 title: "About"
 include-in-header: meta.txt
+image: https://github.com/damien-dupre.png
 ---
 
-<div class = "row">
-<div class = "col-md-3">
-<br>
+::: {.column-margin}
 <img src="https://github.com/damien-dupre.png" class="circle" width="250px"/>
-</div>
-
-<div class = "col-md-7">
-<br>
-<br>
+:::
 
 Ph.D in Social and Experimental Psychology from the University Grenoble-Alpes, France, my researches are focusing on understanding psycho-physiological responses 'in the wild'. With Anna Tcherkassof in Grenoble, I have contributed to develop the DynEmo database by recording and assessing dynamic and spontaneous facial expressions of emotions.
 
