@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  pre-render: meta.R
+  post-render: clean_meta.R
 
 website:
   title: "Teaching Repository"
