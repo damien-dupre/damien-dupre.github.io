@@ -5,7 +5,8 @@ project:
   post-render: clean_meta.R
 
 website:
-  title: "Teaching Repository"
+  title: "TR"
+  favicon: https://www.dcu.ie/sites/default/files/marketing/images/dcu_logo_stacked_red.eps
   site-url: https://damien-dupre.github.io/
   description: "Statistics Slides"
   open-graph:
