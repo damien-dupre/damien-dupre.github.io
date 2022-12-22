@@ -12,9 +12,6 @@ website:
     locale: en_US
   twitter-card:
     creator: "@damien_dupre"
-  comments:
-    utterances:
-      repo: damien-dupre/damien-dupre.github.io
   navbar:
     left:
       - href: index.qmd
