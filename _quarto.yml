@@ -6,7 +6,7 @@ project:
 
 website:
   title: "TR"
-  favicon: https://www.dcu.ie/sites/default/files/marketing/images/dcu_logo_stacked_red.eps
+  favicon: https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/i1rzctchpbjbcmdo60ar
   site-url: https://damien-dupre.github.io/
   description: "Statistics Slides"
   open-graph:
