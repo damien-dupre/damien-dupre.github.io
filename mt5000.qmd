@@ -6,6 +6,7 @@ include-in-header: meta.txt
 Data and visual analytics is an emerging field concerned with analysing, modelling, and visualising complex high dimensional data. This course will introduce students to the field by covering state of the art modelling, analysis, and visualisation techniques. It will emphasise practical challenges involving complex real world data and include several case studies and hands on work with programming languages (SQL and R) and visualisation software (Tableau and PowerBI).
 
 Link to the lecture slides:
+
 - [Lecture 1](https://damien-dupre.github.io/mt5000/lectures/lecture_1)
 - [Lecture 2](https://damien-dupre.github.io/mt5000/lectures/lecture_2)
 - [Lecture 3](https://damien-dupre.github.io/mt5000/lectures/lecture_3)
@@ -17,3 +18,4 @@ Link to the lecture slides:
 - [Lecture 9](https://damien-dupre.github.io/mt5000/lectures/lecture_9)
 - [Lecture 10](https://damien-dupre.github.io/mt5000/lectures/lecture_10)
 - [Lecture 11](https://damien-dupre.github.io/mt5000/lectures/lecture_11)
+- [Lecture 12](https://damien-dupre.github.io/mt5000/lectures/lecture_12)
