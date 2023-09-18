@@ -8,4 +8,5 @@ Here is the list of the current modules that you can access:
 - [MT611: Quantitative Research Methods](https://damien-dupre.github.io/mt611.html)
 - [MT612: Advanced Quantitative Research Methods](https://damien-dupre.github.io/mt612.html)
 - [MT5000: Data Analytics and Visualisations](https://damien-dupre.github.io/mt5000.html)
-- [MWOP Analysis workshop](https://damien-dupre.github.io/hypothesis_testing/mwop_workshop/slides)
+- [AC584/AC579: Data Analytics for Accounting and Business](https://damien-dupre.github.io/ac584_ac579.html)
+- [MWOP Data Analytics Workshop](https://damien-dupre.github.io/hypothesis_testing/mwop_workshop/slides)

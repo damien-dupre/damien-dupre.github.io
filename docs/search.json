@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Damien Dupré - Teaching Repository",
     "section": "",
-    "text": "Here is the list of the current modules that you can access:\n\nMT611: Quantitative Research Methods\nMT612: Advanced Quantitative Research Methods\nMT5000: Data Analytics and Visualisations\nMWOP Analysis workshop"
+    "text": "Here is the list of the current modules that you can access:\n\nMT611: Quantitative Research Methods\nMT612: Advanced Quantitative Research Methods\nMT5000: Data Analytics and Visualisations\nAC584/AC579: Data Analytics for Accounting and Business\nMWOP Data Analytics Workshop"
   },
   {
     "objectID": "mt5000.html",
@@ -39,6 +39,13 @@
     "href": "index.knit.html",
     "title": "Damien Dupré - Teaching Repository",
     "section": "",
-    "text": "Here is the list of the current modules that you can access:\n\nMT611: Quantitative Research Methods\nMT612: Advanced Quantitative Research Methods\nMT5000: Data Analytics and Visualisations"
+    "text": "Here is the list of the current modules that you can access:\n\nMT611: Quantitative Research Methods\nMT612: Advanced Quantitative Research Methods\nMT5000: Data Analytics and Visualisations\nAC584/AC579: Data Analytics for Accounting and Business\nMWOP Data Analytics Workshop"
+  },
+  {
+    "objectID": "ac584_ac579.html",
+    "href": "ac584_ac579.html",
+    "title": "AC584/AC579 - Data Analytics for Accounting and Business",
+    "section": "",
+    "text": "The rise of big data and data analytics is having a significant impact on business decision making and the accounting function. The main objective of this module is to introduce the student to the fundamental tools and techniques of using data analytics to support business decisions. The student will develop practical skills in preparing, visualising and analysing structured and unstructured data. Students will be exposed to the principles of data science and analytics and develop an ability to make better evidence-based decisions through leveraging insights gained from data analysis. Case studies on how data analytics is used and impacts across various areas of business and accounting will complement core lectures.\nLink to the lecture slides:\n\nLecture 1\nLecture 2\nLecture 3\nLecture 4\nLecture 5\nLecture 6\nLecture 7\nLecture 8\nLecture 9\nLecture 10\nLecture 11\nLecture 12"
   }
 ]
