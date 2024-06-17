@@ -1,1 +1,0 @@
-unlink("meta.txt")

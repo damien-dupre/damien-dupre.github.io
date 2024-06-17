@@ -1,13 +1,33 @@
 ---
-title: "Damien Dupré - Teaching Repository"
-include-in-header: meta.txt
+title: "Damien Dupré, PhD"
+subtitle: "Research, Statistics, and Data Analytics"
+image: assets/home-page.png
+
+about:
+  template: solana
+  image-width: 28em
+  id: hero-heading
+  links:
+    - icon: github
+      href: https://github.com/damien-dupre
+    - icon: linkedin
+      href: https://www.linkedin.com/in/damien-dupre
+    - icon: mastodon
+      href: https://datasci.social/@damien_dupre
+    - text: "{{< ai orcid >}}"
+      href: https://orcid.org/0000-0001-8610-1045
+    - text: "{{< ai google-scholar >}}"
+      href: https://scholar.google.com/citations?user=FR2TRIEAAAAJ
+    - icon: envelope
+      href: mailto:damien.dupre@dcu.ie
+      
+page-layout: full
 ---
 
-Here is the list of the current modules that you can access:
+::: {#hero-heading}
 
-- [MT611: Quantitative Research Methods](https://damien-dupre.github.io/mt611.html)
-- [MT612: Advanced Quantitative Research Methods](https://damien-dupre.github.io/mt612.html)
-- [MT5000: Data Analytics and Visualisations](https://damien-dupre.github.io/mt5000.html)
-- [AC584/AC579: Data Analytics for Accounting and Business](https://damien-dupre.github.io/ac584_ac579.html)
-- [MWOP Data Analytics Workshop](https://damien-dupre.github.io/hypothesis_testing/mwop_workshop/slides)
-- [MSLD Data Analytics Workshop](https://damien-dupre.github.io/hypothesis_testing/msld_workshop/slides)
+Welcome to my Data Science blog! <br>You will find links to my **research**, as well as the support of the **courses** that I'm teaching.
+
+[Learn more about me &rarr;](about.qmd)
+
+:::

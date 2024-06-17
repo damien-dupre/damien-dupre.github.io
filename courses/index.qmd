@@ -1,0 +1,19 @@
+---
+title: "Courses"
+description: |
+  Here is the list of the current modules that you can access. <br> These slides are the latest version of the corresponding courses.
+listing: 
+  contents: details
+  type: grid
+  fields: [title, image]
+  grid-columns: 2
+---
+
+<!-- Here is the list of the current modules that you can access: -->
+
+<!-- - [MT611: Quantitative Research Methods](courses/mt611/index.qmd) -->
+<!-- - [MT612: Advanced Quantitative Research Methods](courses/mt612/index.qmd) -->
+<!-- - [MT5000: Data Analytics and Story Telling](courses/mt5000/index.qmd) -->
+<!-- - [AC584/AC579: Data Analytics for Accounting and Business](courses/ac584_ac579/index.qmd) -->
+<!-- - [MWOP Data Analytics Workshop](https://damien-dupre.github.io/hypothesis_testing/mwop_workshop/slides) -->
+<!-- - [MSLD Data Analytics Workshop](https://damien-dupre.github.io/hypothesis_testing/msld_workshop/slides) -->

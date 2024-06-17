@@ -1,29 +1,39 @@
 project:
   type: website
   output-dir: docs
-  pre-render: meta.R
-  post-render: clean_meta.R
 
 website:
-  title: "Damien Dupré - Teaching Repository"
-  favicon: https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/i1rzctchpbjbcmdo60ar
+  title: "Damien Dupré"
   site-url: https://damien-dupre.github.io/
-  description: "Statistics Slides"
-  open-graph:
-    locale: en_US
+  favicon: assets/favicon.svg
+  description: "Research, Statistics, and Data Analytics"
   twitter-card:
     creator: "@damien_dupre"
   navbar:
-    left:
-      - href: index.qmd
-        icon: fas fa-home
-        text: Home
-      - about.qmd
-  page-footer:
-    left: "DCU Business School"
+    logo: assets/icon.jpg
+    right:
+      # - icon: file-post
+      #   href: courses/index.qmd
+      #   text: "POSTS"
+      # - icon: chat-quote
+      #   href: courses/index.qmd      
+      #   text: "TALKS"
+      # - icon: paperclip
+      #   href: courses/index.qmd
+      #   text: "PUBLICATIONS"
+      - icon: journal-bookmark-fill
+        href: courses/index.qmd
+        text: "COURSES"
+      - icon: person-lines-fill
+        href: about.qmd
+        text: "ABOUT ME"
+      
 format:
   html:
-    theme: sandstone
-    css: styles.css
-    toc: true
+    theme: [cosmo, assets/custom.scss] 
+    lightbox: true
+    css: assets/styles.css
+    mainfont: Montserrat
+    smooth-scroll: true
+    toc: false
 
