@@ -4,21 +4,21 @@
     "href": "courses/index.html",
     "title": "Courses",
     "section": "",
-    "text": "AC584/AC579 - Data Analytics for Accounting and Business\n\n\n\n\n\n\n\n\n\n\n\nMT5000 - Data Analytics and Story Telling\n\n\n\n\n\n\n\n\n\n\n\nMT611 - Quantitative Research Methods\n\n\n\n\n\n\n\n\n\n\n\nMT612 - Advanced Quantitative Research Methods\n\n\n\n\n\n\n\nNo matching items"
+    "text": "AC584/AC579 - Data Analytics for Accounting and Business\n\n\n\n\n\n\n\n\n\n\n\n\n\nMT5000 - Data Analytics and Story Telling\n\n\n\n\n\n\n\n\n\n\n\n\n\nMT611 - Quantitative Research Methods\n\n\n\n\n\n\n\n\n\n\n\n\n\nMT612 - Advanced Quantitative Research Methods\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "courses/details/ac584_ac579.html",
     "href": "courses/details/ac584_ac579.html",
     "title": "AC584/AC579 - Data Analytics for Accounting and Business",
     "section": "",
-    "text": "The rise of big data and data analytics is having a significant impact on business decision making and the accounting function. The main objective of this module is to introduce the student to the fundamental tools and techniques of using data analytics to support business decisions. The student will develop practical skills in preparing, visualising and analysing structured and unstructured data. Students will be exposed to the principles of data science and analytics and develop an ability to make better evidence-based decisions through leveraging insights gained from data analysis. Case studies on how data analytics is used and impacts across various areas of business and accounting will complement core lectures.\n\n\nLink to the lecture slides:\n\nLecture 1\nLecture 2\nLecture 3\nLecture 4\nLecture 5\nLecture 6\nLecture 7\nLecture 8\nLecture 9\nLecture 10\nLecture 11\nLecture 12"
+    "text": "The rise of big data and data analytics is having a significant impact on business decision making and the accounting function. The main objective of this module is to introduce the student to the fundamental tools and techniques of using data analytics to support business decisions. The student will develop practical skills in preparing, visualising and analysing structured and unstructured data. Students will be exposed to the principles of data science and analytics and develop an ability to make better evidence-based decisions through leveraging insights gained from data analysis. Case studies on how data analytics is used and impacts across various areas of business and accounting will complement core lectures.\nLink to the lecture slides:\n\nLecture 1\nLecture 2\nLecture 3\nLecture 4\nLecture 5\nLecture 6\nLecture 7\nLecture 8\nLecture 9\nLecture 10\nLecture 11\nLecture 12"
   },
   {
     "objectID": "courses/details/mt611.html",
     "href": "courses/details/mt611.html",
     "title": "MT611 - Quantitative Research Methods",
     "section": "",
-    "text": "This module has been designed to help you improve your understanding of the key quantitative tools and statistical analyses for social science and business research. To start you will explore the key concepts and issues in measurement, focusing in particular on numeric variables and multi-item scales. The main focus of the course is a study of the main data analysis techniques based on linear regressions and multivariate linear regressions. This will instruct you in statistical test selection using SPSS, JAMOVI (open-source alternative to SPSS) and R (short introduction). Finally the module will present how to interpret and to report the results of these tests. A key element of the course will be a study of several quantitative research study cases using multivariate techniques.\n\n\nLink to the lecture slides:\n\nLecture 1\nLecture 2\nLecture 3\nLecture 4\nLecture 5\nLecture 6\nLecture 7\nLecture 8"
+    "text": "This module has been designed to help you improve your understanding of the key quantitative tools and statistical analyses for social science and business research. To start you will explore the key concepts and issues in measurement, focusing in particular on numeric variables and multi-item scales. The main focus of the course is a study of the main data analysis techniques based on linear regressions and multivariate linear regressions. This will instruct you in statistical test selection using SPSS, JAMOVI (open-source alternative to SPSS) and R (short introduction). Finally the module will present how to interpret and to report the results of these tests. A key element of the course will be a study of several quantitative research study cases using multivariate techniques.\nLink to the lecture slides:\n\nLecture 1\nLecture 2\nLecture 3\nLecture 4\nLecture 5\nLecture 6\nLecture 7\nLecture 8"
   },
   {
     "objectID": "index.html",
@@ -39,13 +39,13 @@
     "href": "courses/details/mt612.html",
     "title": "MT612 - Advanced Quantitative Research Methods",
     "section": "",
-    "text": "This module is designed for students already mastering linear regression models, to give them a deeper knowledge of more advanced models: logistic regressions, multilevel / hierarchical models, and paths analyses (mediation, factor analysis, structural equation model). Each of these advanced models will be taught with JAMOVI (open-source software for advanced statistics and with R (open-source programming language for advanced statistics). The module will focus on how to test hypotheses using these models, how to interpret their results and how to communicate them in academic publications.\n\n\nLink to the lecture slides:\n\nLecture 1\nLecture 2\nLecture 3\nLecture 4\nLecture 5\nLecture 6\nLecture 7\nLecture 8"
+    "text": "This module is designed for students already mastering linear regression models, to give them a deeper knowledge of more advanced models: logistic regressions, multilevel / hierarchical models, and paths analyses (mediation, factor analysis, structural equation model). Each of these advanced models will be taught with JAMOVI (open-source software for advanced statistics and with R (open-source programming language for advanced statistics). The module will focus on how to test hypotheses using these models, how to interpret their results and how to communicate them in academic publications.\nLink to the lecture slides:\n\nLecture 1\nLecture 2\nLecture 3\nLecture 4\nLecture 5\nLecture 6\nLecture 7\nLecture 8"
   },
   {
     "objectID": "courses/details/mt5000.html",
     "href": "courses/details/mt5000.html",
     "title": "MT5000 - Data Analytics and Story Telling",
     "section": "",
-    "text": "Data and visual analytics is an emerging field concerned with analysing, modelling, and visualising complex high dimensional data. This course will introduce students to the field by covering state of the art modelling, analysis, and visualisation techniques. It will emphasise practical challenges involving complex real world data and include several case studies and hands on work with programming languages (SQL and R) and visualisation software (Tableau and PowerBI).\n\n\nLink to the lecture slides:\n\nLecture 1\nLecture 2\nLecture 3\nLecture 4\nLecture 5\nLecture 6\nLecture 7\nLecture 8\nLecture 9\nLecture 10\nLecture 11\nLecture 12"
+    "text": "Data and visual analytics is an emerging field concerned with analysing, modelling, and visualising complex high dimensional data. This course will introduce students to the field by covering state of the art modelling, analysis, and visualisation techniques. It will emphasise practical challenges involving complex real world data and include several case studies and hands on work with programming languages (SQL and R) and visualisation software (Tableau and PowerBI).\nLink to the lecture slides:\n\nLecture 1\nLecture 2\nLecture 3\nLecture 4\nLecture 5\nLecture 6\nLecture 7\nLecture 8\nLecture 9\nLecture 10\nLecture 11\nLecture 12"
   }
 ]

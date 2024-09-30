@@ -1,16 +1,12 @@
 ---
 title: "AC584/AC579 - Data Analytics for Accounting and Business"
 title-block-banner: true
+image: ac584_ac579.png
+about:
+  template: trestles
 ---
 
-::: columns
-::: {.column width="40%"}
-![](ac584_ac579.png){width=80%}
-:::
-::: {.column width="60%"}
 The rise of big data and data analytics is having a significant impact on business decision making and the accounting function. The main objective of this module is to introduce the student to the fundamental tools and techniques of using data analytics to support business decisions. The student will develop practical skills in preparing, visualising and analysing structured and unstructured data. Students will be exposed to the principles of data science and analytics and develop an ability to make better evidence-based decisions through leveraging insights gained from data analysis. Case studies on how data analytics is used and impacts across various areas of business and accounting will complement core lectures.
-:::
-:::
 
 Link to the lecture slides:
 
