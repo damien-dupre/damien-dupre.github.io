@@ -28,7 +28,7 @@ website:
         href: about.qmd
         text: "ABOUT ME"
       - icon: file-earmark-person
-        href: assets/cv_pro.pdf
+        href: cv_pro.pdf
         text: "CV"
       
 format:
