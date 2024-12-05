@@ -1,6 +1,8 @@
 project:
   type: website
   output-dir: docs
+  resources:
+  - "my-first-web-page.html"
 
 website:
   title: "Damien Dupré"
