@@ -2,30 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://damien-dupre.github.io/courses/index.html</loc>
-    <lastmod>2024-06-15T13:02:22.406Z</lastmod>
+    <lastmod>2025-01-14T11:10:19.946Z</lastmod>
   </url>
   <url>
-    <loc>https://damien-dupre.github.io/courses/details/ac584_ac579.html</loc>
-    <lastmod>2024-09-28T15:32:43.948Z</lastmod>
-  </url>
-  <url>
-    <loc>https://damien-dupre.github.io/courses/details/mt611.html</loc>
-    <lastmod>2024-09-28T15:37:20.137Z</lastmod>
-  </url>
-  <url>
-    <loc>https://damien-dupre.github.io/index.html</loc>
-    <lastmod>2024-06-17T11:46:06.640Z</lastmod>
-  </url>
-  <url>
-    <loc>https://damien-dupre.github.io/about.html</loc>
-    <lastmod>2024-06-14T20:07:01.346Z</lastmod>
+    <loc>https://damien-dupre.github.io/courses/details/mt5000.html</loc>
+    <lastmod>2024-09-28T15:38:18.068Z</lastmod>
   </url>
   <url>
     <loc>https://damien-dupre.github.io/courses/details/mt612.html</loc>
     <lastmod>2024-09-28T15:37:46.268Z</lastmod>
   </url>
   <url>
-    <loc>https://damien-dupre.github.io/courses/details/mt5000.html</loc>
-    <lastmod>2024-09-28T15:38:18.068Z</lastmod>
+    <loc>https://damien-dupre.github.io/about.html</loc>
+    <lastmod>2024-06-14T20:07:01.346Z</lastmod>
+  </url>
+  <url>
+    <loc>https://damien-dupre.github.io/index.html</loc>
+    <lastmod>2024-06-17T11:46:06.640Z</lastmod>
+  </url>
+  <url>
+    <loc>https://damien-dupre.github.io/courses/details/mt611.html</loc>
+    <lastmod>2024-09-28T15:37:20.137Z</lastmod>
+  </url>
+  <url>
+    <loc>https://damien-dupre.github.io/courses/details/ac584_ac579.html</loc>
+    <lastmod>2024-09-28T15:32:43.948Z</lastmod>
+  </url>
+  <url>
+    <loc>https://damien-dupre.github.io/courses/details/BAA1028.html</loc>
+    <lastmod>2025-01-14T11:13:32.261Z</lastmod>
   </url>
 </urlset>

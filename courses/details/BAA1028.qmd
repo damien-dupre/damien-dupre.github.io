@@ -1,0 +1,28 @@
+---
+title: "BAA1028 - Workflow & Data Management"
+title-block-banner: true
+image: BAA1028.jpg
+about:
+  template: trestles
+---
+
+Analytics, combined with innovative technologies like big data, will underpin the creation of new and enhanced businesses. The analytical process begins with data, making it essential for future business leaders to ensure that data flows for business analytics are both efficient and secure. By developing skills and gaining hands-on experience in designing and implementing cloud-based databases and workflows, students will acquire proficiency in some of the most widely used technologies for managing data analytics within organisations.
+
+To support this, students will be introduced to modern tools for data management and web development (e.g., HTML, CSS, Markdown), cloud computing platforms (e.g., the AWS ecosystem), and version control systems (e.g., GitHub). They will also gain a solid understanding of data security, including strategies to safeguard API keys and other sensitive information from breaches.
+
+The ultimate goal of this module is to enable students to create an online portfolio that demonstrates their ability to deliver a secure and well-structured data project.
+
+### Link to the lecture slides:
+
+- [Lecture 1](https://damien-dupre.github.io/BAA1028/lectures/lecture_1)
+- [Lecture 2](https://damien-dupre.github.io/BAA1028/lectures/lecture_2)
+- [Lecture 3](https://damien-dupre.github.io/BAA1028/lectures/lecture_3)
+- [Lecture 4](https://damien-dupre.github.io/BAA1028/lectures/lecture_4)
+- [Lecture 5](https://damien-dupre.github.io/BAA1028/lectures/lecture_5)
+- [Lecture 6](https://damien-dupre.github.io/BAA1028/lectures/lecture_6)
+- [Lecture 7](https://damien-dupre.github.io/BAA1028/lectures/lecture_7)
+- [Lecture 8](https://damien-dupre.github.io/BAA1028/lectures/lecture_8)
+- [Lecture 9](https://damien-dupre.github.io/BAA1028/lectures/lecture_9)
+- [Lecture 10](https://damien-dupre.github.io/BAA1028/lectures/lecture_10)
+- [Lecture 11](https://damien-dupre.github.io/BAA1028/lectures/lecture_11)
+- [Lecture 12](https://damien-dupre.github.io/BAA1028/lectures/lecture_12)

@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Here is the list of the current modules that you can access.   These slides are the latest version of the corresponding courses.">
 
-<title>Courses – Damien Dupré</title>
+<title>BAA1028 - Workflow &amp; Data Management – Damien Dupré</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,25 +23,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../assets/favicon.svg" rel="icon" type="image/svg+xml">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/favicon.svg" rel="icon" type="image/svg+xml">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,85 +66,28 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../assets/styles.css">
-<meta name="twitter:title" content="Courses – Damien Dupré">
-<meta name="twitter:description" content="Here is the list of the current modules that you can access.  These slides are the latest version of the corresponding courses.">
+<link rel="stylesheet" href="../../assets/styles.css">
+<meta name="twitter:title" content="BAA1028 - Workflow &amp; Data Management – Damien Dupré">
+<meta name="twitter:description" content="Research, Statistics, and Data Analytics">
+<meta name="twitter:image" content="https://damien-dupre.github.io/courses/details/BAA1028.jpg">
 <meta name="twitter:creator" content="@damien_dupre">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../assets/icon.jpg" alt="" class="navbar-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../assets/icon.jpg" alt="" class="navbar-logo">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Damien Dupré</span>
     </a>
   </div>
@@ -159,17 +98,17 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../courses/index.html" aria-current="page"> <i class="bi bi-journal-bookmark-fill" role="img">
+    <a class="nav-link" href="../../courses/index.html"> <i class="bi bi-journal-bookmark-fill" role="img">
 </i> 
 <span class="menu-text">COURSES</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> <i class="bi bi-person-lines-fill" role="img">
+    <a class="nav-link" href="../../about.html"> <i class="bi bi-person-lines-fill" role="img">
 </i> 
 <span class="menu-text">ABOUT ME</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../cv_pro.pdf"> <i class="bi bi-file-earmark-person" role="img">
+    <a class="nav-link" href="../../cv_pro.pdf"> <i class="bi bi-file-earmark-person" role="img">
 </i> 
 <span class="menu-text">CV</span></a>
   </li>  
@@ -181,118 +120,51 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">BAA1028 - Workflow &amp; Data Management</h1>
+                      </div>
+  </div>
+  <div class="quarto-title-meta">
+    </div>
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<div class="quarto-about-trestles">
+  <div class="about-entity">
+    <img src="BAA1028.jpg" class="about-image
+  rounded " style="width: 20em;">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Courses</h1>
-</div>
-
-<div>
-  <div class="description">
-    <p>Here is the list of the current modules that you can access. <br> These slides are the latest version of the corresponding courses.</p>
   </div>
-</div>
+  <div class="about-contents"><main class="content quarto-banner-title-block" id="quarto-document-content">
+<p>Analytics, combined with innovative technologies like big data, will underpin the creation of new and enhanced businesses. The analytical process begins with data, making it essential for future business leaders to ensure that data flows for business analytics are both efficient and secure. By developing skills and gaining hands-on experience in designing and implementing cloud-based databases and workflows, students will acquire proficiency in some of the most widely used technologies for managing data analytics within organisations.</p>
+<p>To support this, students will be introduced to modern tools for data management and web development (e.g., HTML, CSS, Markdown), cloud computing platforms (e.g., the AWS ecosystem), and version control systems (e.g., GitHub). They will also gain a solid understanding of data security, including strategies to safeguard API keys and other sensitive information from breaches.</p>
+<p>The ultimate goal of this module is to enable students to create an online portfolio that demonstrates their ability to deliver a secure and well-structured data project.</p>
+<section id="link-to-the-lecture-slides" class="level3">
+<h3 data-anchor-id="link-to-the-lecture-slides">Link to the lecture slides:</h3>
+<ul>
+<li><a href="https://damien-dupre.github.io/BAA1028/lectures/lecture_1">Lecture 1</a></li>
+<li><a href="https://damien-dupre.github.io/BAA1028/lectures/lecture_2">Lecture 2</a></li>
+<li><a href="https://damien-dupre.github.io/BAA1028/lectures/lecture_3">Lecture 3</a></li>
+<li><a href="https://damien-dupre.github.io/BAA1028/lectures/lecture_4">Lecture 4</a></li>
+<li><a href="https://damien-dupre.github.io/BAA1028/lectures/lecture_5">Lecture 5</a></li>
+<li><a href="https://damien-dupre.github.io/BAA1028/lectures/lecture_6">Lecture 6</a></li>
+<li><a href="https://damien-dupre.github.io/BAA1028/lectures/lecture_7">Lecture 7</a></li>
+<li><a href="https://damien-dupre.github.io/BAA1028/lectures/lecture_8">Lecture 8</a></li>
+<li><a href="https://damien-dupre.github.io/BAA1028/lectures/lecture_9">Lecture 9</a></li>
+<li><a href="https://damien-dupre.github.io/BAA1028/lectures/lecture_10">Lecture 10</a></li>
+<li><a href="https://damien-dupre.github.io/BAA1028/lectures/lecture_11">Lecture 11</a></li>
+<li><a href="https://damien-dupre.github.io/BAA1028/lectures/lecture_12">Lecture 12</a></li>
+</ul>
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-
-
-
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-2">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1727537563948" data-listing-reading-time-sort="1" data-listing-word-count-sort="138">
-<a href="../courses/details/ac584_ac579.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../courses/details/ac584_ac579.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-AC584/AC579 - Data Analytics for Accounting and Business
-</h5>
+</section>
+</main></div>
 </div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1736853212261" data-listing-reading-time-sort="1" data-listing-word-count-sort="180">
-<a href="../courses/details/BAA1028.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../courses/details/BAA1028.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-BAA1028 - Workflow &amp; Data Management
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1727537898068" data-listing-reading-time-sort="1" data-listing-word-count-sort="96">
-<a href="../courses/details/mt5000.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../courses/details/mt5000.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-MT5000 - Data Analytics and Story Telling
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1727537840137" data-listing-reading-time-sort="1" data-listing-word-count-sort="143">
-<a href="../courses/details/mt611.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../courses/details/mt611.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-MT611 - Quantitative Research Methods
-</h5>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1727537866268" data-listing-reading-time-sort="1" data-listing-word-count-sort="105">
-<a href="../courses/details/mt612.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../courses/details/mt612.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-MT612 - Advanced Quantitative Research Methods
-</h5>
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -313,13 +185,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -718,5 +583,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

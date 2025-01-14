@@ -4,35 +4,14 @@
     "href": "courses/index.html",
     "title": "Courses",
     "section": "",
-    "text": "AC584/AC579 - Data Analytics for Accounting and Business\n\n\n\n\n\n\n\n\n\n\n\n\n\nMT5000 - Data Analytics and Story Telling\n\n\n\n\n\n\n\n\n\n\n\n\n\nMT611 - Quantitative Research Methods\n\n\n\n\n\n\n\n\n\n\n\n\n\nMT612 - Advanced Quantitative Research Methods\n\n\n\n\n\n\n\nNo matching items"
+    "text": "AC584/AC579 - Data Analytics for Accounting and Business\n\n\n\n\n\n\n\n\n\n\n\n\n\nBAA1028 - Workflow & Data Management\n\n\n\n\n\n\n\n\n\n\n\n\n\nMT5000 - Data Analytics and Story Telling\n\n\n\n\n\n\n\n\n\n\n\n\n\nMT611 - Quantitative Research Methods\n\n\n\n\n\n\n\n\n\n\n\n\n\nMT612 - Advanced Quantitative Research Methods\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "courses/details/ac584_ac579.html",
-    "href": "courses/details/ac584_ac579.html",
-    "title": "AC584/AC579 - Data Analytics for Accounting and Business",
+    "objectID": "courses/details/mt5000.html",
+    "href": "courses/details/mt5000.html",
+    "title": "MT5000 - Data Analytics and Story Telling",
     "section": "",
-    "text": "The rise of big data and data analytics is having a significant impact on business decision making and the accounting function. The main objective of this module is to introduce the student to the fundamental tools and techniques of using data analytics to support business decisions. The student will develop practical skills in preparing, visualising and analysing structured and unstructured data. Students will be exposed to the principles of data science and analytics and develop an ability to make better evidence-based decisions through leveraging insights gained from data analysis. Case studies on how data analytics is used and impacts across various areas of business and accounting will complement core lectures.\nLink to the lecture slides:\n\nLecture 1\nLecture 2\nLecture 3\nLecture 4\nLecture 5\nLecture 6\nLecture 7\nLecture 8\nLecture 9\nLecture 10\nLecture 11\nLecture 12"
-  },
-  {
-    "objectID": "courses/details/mt611.html",
-    "href": "courses/details/mt611.html",
-    "title": "MT611 - Quantitative Research Methods",
-    "section": "",
-    "text": "This module has been designed to help you improve your understanding of the key quantitative tools and statistical analyses for social science and business research. To start you will explore the key concepts and issues in measurement, focusing in particular on numeric variables and multi-item scales. The main focus of the course is a study of the main data analysis techniques based on linear regressions and multivariate linear regressions. This will instruct you in statistical test selection using SPSS, JAMOVI (open-source alternative to SPSS) and R (short introduction). Finally the module will present how to interpret and to report the results of these tests. A key element of the course will be a study of several quantitative research study cases using multivariate techniques.\nLink to the lecture slides:\n\nLecture 1\nLecture 2\nLecture 3\nLecture 4\nLecture 5\nLecture 6\nLecture 7\nLecture 8"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Damien Dupré, PhD",
-    "section": "",
-    "text": "Welcome to my Data Science blog! You will find links to my research, as well as the support of the courses that I’m teaching.\nLearn more about me →"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "Ph.D in Social and Experimental Psychology from the University Grenoble-Alpes, France, my researches are focusing on understanding psycho-physiological responses ‘in the wild’. With Anna Tcherkassof in Grenoble, I have contributed to develop the DynEmo database by recording and assessing dynamic and spontaneous facial expressions of emotions.\nWhereas my thesis aimed to evaluate Emotional User eXperience of innovative technologies and designs for the company Ixiade (www.ixiade.com), I have collaborated with Queen’s University and Sensum Ltd (www.sensum.co) to analyse emotions with physiological sensors and automatic facial expression recognition. I also worked at University College Dublin’s Insight Centre for Data Analytics in order to process and understand physiological measurements from marathon runners.\nNow Assistant Professor of Business Research Methods at Dublin City University, my domain of expertise relies in multivariate time series analysis and trend extraction for supervised or unsupervised machine learning classification."
+    "text": "Data and visual analytics is an emerging field concerned with analysing, modelling, and visualising complex high dimensional data. This course will introduce students to the field by covering state of the art modelling, analysis, and visualisation techniques. It will emphasise practical challenges involving complex real world data and include several case studies and hands on work with programming languages (SQL and R) and visualisation software (Tableau and PowerBI).\nLink to the lecture slides:\n\nLecture 1\nLecture 2\nLecture 3\nLecture 4\nLecture 5\nLecture 6\nLecture 7\nLecture 8\nLecture 9\nLecture 10\nLecture 11\nLecture 12"
   },
   {
     "objectID": "courses/details/mt612.html",
@@ -42,10 +21,38 @@
     "text": "This module is designed for students already mastering linear regression models, to give them a deeper knowledge of more advanced models: logistic regressions, multilevel / hierarchical models, and paths analyses (mediation, factor analysis, structural equation model). Each of these advanced models will be taught with JAMOVI (open-source software for advanced statistics and with R (open-source programming language for advanced statistics). The module will focus on how to test hypotheses using these models, how to interpret their results and how to communicate them in academic publications.\nLink to the lecture slides:\n\nLecture 1\nLecture 2\nLecture 3\nLecture 4\nLecture 5\nLecture 6\nLecture 7\nLecture 8"
   },
   {
-    "objectID": "courses/details/mt5000.html",
-    "href": "courses/details/mt5000.html",
-    "title": "MT5000 - Data Analytics and Story Telling",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Data and visual analytics is an emerging field concerned with analysing, modelling, and visualising complex high dimensional data. This course will introduce students to the field by covering state of the art modelling, analysis, and visualisation techniques. It will emphasise practical challenges involving complex real world data and include several case studies and hands on work with programming languages (SQL and R) and visualisation software (Tableau and PowerBI).\nLink to the lecture slides:\n\nLecture 1\nLecture 2\nLecture 3\nLecture 4\nLecture 5\nLecture 6\nLecture 7\nLecture 8\nLecture 9\nLecture 10\nLecture 11\nLecture 12"
+    "text": "Ph.D in Social and Experimental Psychology from the University Grenoble-Alpes, France, my researches are focusing on understanding psycho-physiological responses ‘in the wild’. With Anna Tcherkassof in Grenoble, I have contributed to develop the DynEmo database by recording and assessing dynamic and spontaneous facial expressions of emotions.\nWhereas my thesis aimed to evaluate Emotional User eXperience of innovative technologies and designs for the company Ixiade (www.ixiade.com), I have collaborated with Queen’s University and Sensum Ltd (www.sensum.co) to analyse emotions with physiological sensors and automatic facial expression recognition. I also worked at University College Dublin’s Insight Centre for Data Analytics in order to process and understand physiological measurements from marathon runners.\nNow Assistant Professor of Business Research Methods at Dublin City University, my domain of expertise relies in multivariate time series analysis and trend extraction for supervised or unsupervised machine learning classification."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Damien Dupré, PhD",
+    "section": "",
+    "text": "Welcome to my Data Science blog! You will find links to my research, as well as the support of the courses that I’m teaching.\nLearn more about me →"
+  },
+  {
+    "objectID": "courses/details/mt611.html",
+    "href": "courses/details/mt611.html",
+    "title": "MT611 - Quantitative Research Methods",
+    "section": "",
+    "text": "This module has been designed to help you improve your understanding of the key quantitative tools and statistical analyses for social science and business research. To start you will explore the key concepts and issues in measurement, focusing in particular on numeric variables and multi-item scales. The main focus of the course is a study of the main data analysis techniques based on linear regressions and multivariate linear regressions. This will instruct you in statistical test selection using SPSS, JAMOVI (open-source alternative to SPSS) and R (short introduction). Finally the module will present how to interpret and to report the results of these tests. A key element of the course will be a study of several quantitative research study cases using multivariate techniques.\nLink to the lecture slides:\n\nLecture 1\nLecture 2\nLecture 3\nLecture 4\nLecture 5\nLecture 6\nLecture 7\nLecture 8"
+  },
+  {
+    "objectID": "courses/details/ac584_ac579.html",
+    "href": "courses/details/ac584_ac579.html",
+    "title": "AC584/AC579 - Data Analytics for Accounting and Business",
+    "section": "",
+    "text": "The rise of big data and data analytics is having a significant impact on business decision making and the accounting function. The main objective of this module is to introduce the student to the fundamental tools and techniques of using data analytics to support business decisions. The student will develop practical skills in preparing, visualising and analysing structured and unstructured data. Students will be exposed to the principles of data science and analytics and develop an ability to make better evidence-based decisions through leveraging insights gained from data analysis. Case studies on how data analytics is used and impacts across various areas of business and accounting will complement core lectures.\nLink to the lecture slides:\n\nLecture 1\nLecture 2\nLecture 3\nLecture 4\nLecture 5\nLecture 6\nLecture 7\nLecture 8\nLecture 9\nLecture 10\nLecture 11\nLecture 12"
+  },
+  {
+    "objectID": "courses/details/BAA1028.html",
+    "href": "courses/details/BAA1028.html",
+    "title": "BAA1028 - Workflow & Data Management",
+    "section": "",
+    "text": "Analytics, combined with innovative technologies like big data, will underpin the creation of new and enhanced businesses. The analytical process begins with data, making it essential for future business leaders to ensure that data flows for business analytics are both efficient and secure. By developing skills and gaining hands-on experience in designing and implementing cloud-based databases and workflows, students will acquire proficiency in some of the most widely used technologies for managing data analytics within organisations.\nTo support this, students will be introduced to modern tools for data management and web development (e.g., HTML, CSS, Markdown), cloud computing platforms (e.g., the AWS ecosystem), and version control systems (e.g., GitHub). They will also gain a solid understanding of data security, including strategies to safeguard API keys and other sensitive information from breaches.\nThe ultimate goal of this module is to enable students to create an online portfolio that demonstrates their ability to deliver a secure and well-structured data project.\n\nLink to the lecture slides:\n\nLecture 1\nLecture 2\nLecture 3\nLecture 4\nLecture 5\nLecture 6\nLecture 7\nLecture 8\nLecture 9\nLecture 10\nLecture 11\nLecture 12"
   }
 ]
