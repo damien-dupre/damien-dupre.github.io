@@ -4,14 +4,14 @@
     "href": "courses/index.html",
     "title": "Courses",
     "section": "",
-    "text": "AC584/AC579 - Data Analytics for Accounting and Business\n\n\n\n\n\n\n\n\n\n\n\n\n\nBAA1028 - Workflow & Data Management\n\n\n\n\n\n\n\n\n\n\n\n\n\nMT5000 - Data Analytics and Story Telling\n\n\n\n\n\n\n\n\n\n\n\n\n\nMT611 - Quantitative Research Methods\n\n\n\n\n\n\n\n\n\n\n\n\n\nMT612 - Advanced Quantitative Research Methods\n\n\n\n\n\n\n\nNo matching items"
+    "text": "AC584/AC579 - Data Analytics for Accounting and Business\n\n\n\n\n\n\n\n\n\n\n\n\n\nBAA1028 - Workflow & Data Management\n\n\n\n\n\n\n\n\n\n\n\n\n\nBAA1030 - Data Analytics and Story Telling\n\n\n\n\n\n\n\n\n\n\n\n\n\nMT612 - Advanced Quantitative Research Methods\n\n\n\n\n\n\n\n\n\n\n\n\n\nSTA1005 - Quantitative Research Methods\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "courses/details/mt5000.html",
-    "href": "courses/details/mt5000.html",
-    "title": "MT5000 - Data Analytics and Story Telling",
+    "objectID": "courses/details/STA1005.html",
+    "href": "courses/details/STA1005.html",
+    "title": "STA1005 - Quantitative Research Methods",
     "section": "",
-    "text": "Data and visual analytics is an emerging field concerned with analysing, modelling, and visualising complex high dimensional data. This course will introduce students to the field by covering state of the art modelling, analysis, and visualisation techniques. It will emphasise practical challenges involving complex real world data and include several case studies and hands on work with programming languages (SQL and R) and visualisation software (Tableau and PowerBI).\nLink to the lecture slides:\n\nLecture 1\nLecture 2\nLecture 3\nLecture 4\nLecture 5\nLecture 6\nLecture 7\nLecture 8\nLecture 9\nLecture 10\nLecture 11\nLecture 12"
+    "text": "This module has been designed to help you improve your understanding of the key quantitative tools and statistical analyses for social science and business research. To start you will explore the key concepts and issues in measurement, focusing in particular on numeric variables and multi-item scales. The main focus of the course is a study of the main data analysis techniques based on linear regressions and multivariate linear regressions. This will instruct you in statistical test selection using SPSS, JAMOVI (open-source alternative to SPSS) and R (short introduction). Finally the module will present how to interpret and to report the results of these tests. A key element of the course will be a study of several quantitative research study cases using multivariate techniques.\nLink to the lecture slides:\n\nLecture 1\nLecture 2\nLecture 3\nLecture 4\nLecture 5\nLecture 6\nLecture 7\nLecture 8"
   },
   {
     "objectID": "courses/details/mt612.html",
@@ -35,11 +35,11 @@
     "text": "Welcome to my Data Science blog! You will find links to my research, as well as the support of the courses that I’m teaching.\nLearn more about me →"
   },
   {
-    "objectID": "courses/details/mt611.html",
-    "href": "courses/details/mt611.html",
-    "title": "MT611 - Quantitative Research Methods",
+    "objectID": "courses/details/BAA1030.html",
+    "href": "courses/details/BAA1030.html",
+    "title": "BAA1030 - Data Analytics and Story Telling",
     "section": "",
-    "text": "This module has been designed to help you improve your understanding of the key quantitative tools and statistical analyses for social science and business research. To start you will explore the key concepts and issues in measurement, focusing in particular on numeric variables and multi-item scales. The main focus of the course is a study of the main data analysis techniques based on linear regressions and multivariate linear regressions. This will instruct you in statistical test selection using SPSS, JAMOVI (open-source alternative to SPSS) and R (short introduction). Finally the module will present how to interpret and to report the results of these tests. A key element of the course will be a study of several quantitative research study cases using multivariate techniques.\nLink to the lecture slides:\n\nLecture 1\nLecture 2\nLecture 3\nLecture 4\nLecture 5\nLecture 6\nLecture 7\nLecture 8"
+    "text": "Data and visual analytics is an emerging field concerned with analysing, modelling, and visualising complex high dimensional data. This course will introduce students to the field by covering state of the art modelling, analysis, and visualisation techniques. It will emphasise practical challenges involving complex real world data and include several case studies and hands on work with programming languages (SQL and R) and visualisation software (Tableau and PowerBI).\nLink to the lecture slides:\n\nLecture 1\nLecture 2\nLecture 3\nLecture 4\nLecture 5\nLecture 6\nLecture 7\nLecture 8\nLecture 9\nLecture 10\nLecture 11\nLecture 12"
   },
   {
     "objectID": "courses/details/ac584_ac579.html",
