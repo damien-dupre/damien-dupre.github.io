@@ -21,4 +21,3 @@ Link to the lecture slides:
 - [Lecture 9](https://damien-dupre.github.io/BAA1030/lectures/lecture_9)
 - [Lecture 10](https://damien-dupre.github.io/BAA1030/lectures/lecture_10)
 - [Lecture 11](https://damien-dupre.github.io/BAA1030/lectures/lecture_11)
-- [Lecture 12](https://damien-dupre.github.io/BAA1030/lectures/lecture_12)
