@@ -10,11 +10,11 @@ This module has been designed to help you improve your understanding of the key 
 
 Link to the lecture slides:
 
-- [Lecture 1](https://damien-dupre.github.io/mt611/lectures/lecture_1)
-- [Lecture 2](https://damien-dupre.github.io/mt611/lectures/lecture_2)
-- [Lecture 3](https://damien-dupre.github.io/mt611/lectures/lecture_3)
-- [Lecture 4](https://damien-dupre.github.io/mt611/lectures/lecture_4)
-- [Lecture 5](https://damien-dupre.github.io/mt611/lectures/lecture_5)
-- [Lecture 6](https://damien-dupre.github.io/mt611/lectures/lecture_6)
-- [Lecture 7](https://damien-dupre.github.io/mt611/lectures/lecture_7)
-- [Lecture 8](https://damien-dupre.github.io/mt611/lectures/lecture_8)
+- [1: Statistics, Research Papers and Me](https://damien-dupre.github.io/mt611/lectures/lecture_1)
+- [2: Understanding Models and Equations](https://damien-dupre.github.io/mt611/lectures/lecture_2)
+- [3: Collect, Clean, and Transform Data](https://damien-dupre.github.io/mt611/lectures/lecture_3)
+- [4: Understanding the General Linear Model](https://damien-dupre.github.io/mt611/lectures/lecture_4)
+- [5: Categories in the General Linear Model](https://damien-dupre.github.io/mt611/lectures/lecture_5)
+- [6: Assumptions of the General Linear Model](https://damien-dupre.github.io/mt611/lectures/lecture_6)
+- [7: Introduction to R for Hypothesis Testing](https://damien-dupre.github.io/mt611/lectures/lecture_7)
+- [8: Introduction to Quarto for Research](https://damien-dupre.github.io/mt611/lectures/lecture_8)

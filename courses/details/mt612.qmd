@@ -10,11 +10,9 @@ This module is designed for students already mastering linear regression models,
 
 Link to the lecture slides:
 
-- [Lecture 1](https://damien-dupre.github.io/mt612/lectures/lecture_1)
-- [Lecture 2](https://damien-dupre.github.io/mt612/lectures/lecture_2)
-- [Lecture 3](https://damien-dupre.github.io/mt612/lectures/lecture_3)
-- [Lecture 4](https://damien-dupre.github.io/mt612/lectures/lecture_4)
-- [Lecture 5](https://damien-dupre.github.io/mt612/lectures/lecture_5)
-- [Lecture 6](https://damien-dupre.github.io/mt612/lectures/lecture_6)
-- [Lecture 7](https://damien-dupre.github.io/mt612/lectures/lecture_7)
-- [Lecture 8](https://damien-dupre.github.io/mt612/lectures/lecture_8)
+- [1: The General Linear Model](https://damien-dupre.github.io/mt612/lectures/lecture_1)
+- [2: The Generalised Linear Model](https://damien-dupre.github.io/mt612/lectures/lecture_2)
+- [3: Linear Mixed Models](https://damien-dupre.github.io/mt612/lectures/lecture_3)
+- [4: Generalized Additive (Mixed) Models](https://damien-dupre.github.io/mt612/lectures/lecture_4)
+- [5: Path Analysis for Mediation Hypotheses](https://damien-dupre.github.io/mt612/lectures/lecture_5)
+- [6: From Path Analysis to SEM](https://damien-dupre.github.io/mt612/lectures/lecture_6)
