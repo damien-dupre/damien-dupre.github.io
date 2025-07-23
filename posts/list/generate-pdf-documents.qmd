@@ -1,0 +1,64 @@
+---
+title: "Generate PDF documents using R Markdown with a .docx letter template"
+---
+
+::: {.callout-note}
+Originally published on my previous website in 2019, this blog post has been slightly updated.
+:::
+
+I keep discovering new ways to use R Markdown, and this one’s worth sharing: generating PDF documents using RMarkdown from a .docx letter template.
+
+Part of my job involves producing letters that follow the same structure but differ in specific details. R Markdown parameters are perfect for this kind of repetition. If you’ve never used them before, [Xie, Allaire, and Grolemund's *R Markdown: The Definitive Guide*](https://bookdown.org/yihui/rmarkdown/params-knit.html) is a good place to start. The challenge, though, is making the output look right, especially if you want a PDF that matches your own letterhead or house style.
+
+Using `output: pdf_document` gives you a plain page. There are template packages around, like those listed in the [R Markdown Gallery](https://rmarkdown.rstudio.com/gallery.html), but they rarely let you use your own branded background or header-footer setup.
+
+Here’s my workaround. Start with a Word document and use the `output: word_document` format. Include your own template using `reference_docx: "your_template.docx"`. Then convert that to PDF. Just note: only the header and footer elements from the Word file will carry over into the final PDF. Text and images in the main body won’t survive this conversion.
+
+You can manually open the Word file and save it as a PDF, but it’s cleaner to build the conversion into the knitting process. Here’s how that looks in the YAML header:
+
+```{.yml}
+output:
+  word_document:
+    reference_docx: "your_template.docx"
+knit: (
+  function(inputFile, encoding) {
+    rmarkdown::render(
+      input = inputFile,
+      encoding = encoding,
+      output_file = "rmd_output.docx"
+      ); doconv::docx2pdf("rmd_output.docx")
+    }
+  )
+```
+
+The output_file argument names the Word file you’ll generate using your custom template. To run a second step after knitting, you use a semicolon. It’s not the most elegant syntax, but it works here to add more R code inside the YAML.
+
+For the PDF conversion, I used the {doconv} package by [David Gohel](https://github.com/ardata-fr/doconv). It supports two backends: LibreOffice and Python’s docx2pdf. Only the latter preserves headers and footers properly in the final PDF, so you’ll need Python 3 installed. Run `doconv::docx2pdf_install()` to get everything set up.
+
+Once it’s working, the knitted PDF will match your Word template, using the same file name.
+
+That said, I ran into issues with Mac M1 machines. On those, the `docx2pdf()` function couldn’t locate the library. You can work around this by finding the actual path to the tool with which docx2pdf in Terminal, then specifying that full path:
+
+```{.yml}
+output:
+  word_document:
+    reference_docx: "your_template.docx"
+knit: (
+  function(inputFile, encoding) {
+    rmarkdown::render(
+      input = inputFile,
+      encoding = encoding,
+      output_file = "rmd_output.docx"
+      ); system("/path/to/docx2pdf rmd_output.docx")
+    }
+  )
+```
+
+## Edit
+
+You can avoid the `system()` workaround on Mac M1 by making sure the correct Python environment is used.
+
+The issue seems to come from mismatched Python setups. The {doconv} package uses the {locatexec} package to find the right Python executable with `python_exec()`, but this might not be the one that holds your installed docx2pdf library.
+
+To fix this, copy the path returned by which docx2pdf and paste that file into the folder returned by `dirname(locatexec::python_exec())`. That way, everything stays reproducible and you’re not relying on hardcoded paths that only work on your machine.
+

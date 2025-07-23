@@ -28,46 +28,11 @@
     "text": "3. General Observations and Lessons\n\nOne area that proved especially tricky was building the actual conference programme. This should be a collaborative effort, but not everyone uses a shared, editable spreadsheet. That creates confusion. Using something like Google Sheets, with full access for the relevant team members, should be standard practice.\nTo organise the programme, talks need to be grouped by topic, followed by assigning each group a session title. I experimented with GenAI tools like ChatGPT and Gemini to help with this, but since both rely on cosine similarity measures, the results weren’t convincing. The groupings felt off, and the suggested titles lacked quality.\nDespite spending time building a web page for each parallel session, most attendees ended up referring to the overall PDF Gantt-style or long table schedule. Printing and displaying it on the doors of the venue was the best way to communicate it.\nTo finish, a quick note on social media. We ran a Twitter/X account with over 2,500 followers. Engagement was minimal. It may be time to stop treating X as a serious platform for promoting conferences. The audience is no longer there and, instead, LinkedIn might be the most suitable place to communicate.\n\nIf you’re organising a conference, open-source tools can save time and money, but they’re not perfect. Knowing when to automate and when to stick to something simpler is key."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Damien Dupré, PhD",
+    "objectID": "posts/index.html",
+    "href": "posts/index.html",
+    "title": "Posts",
     "section": "",
-    "text": "Welcome to my Data Science blog! You will find links to my research, as well as the support of the courses that I’m teaching.\nLearn more about me →"
-  },
-  {
-    "objectID": "courses/details/mt612.html",
-    "href": "courses/details/mt612.html",
-    "title": "MT612 - Advanced Quantitative Research Methods",
-    "section": "",
-    "text": "This module is designed for students already mastering linear regression models, to give them a deeper knowledge of more advanced models: logistic regressions, multilevel / hierarchical models, and paths analyses (mediation, factor analysis, structural equation model). Each of these advanced models will be taught with JAMOVI (open-source software for advanced statistics and with R (open-source programming language for advanced statistics). The module will focus on how to test hypotheses using these models, how to interpret their results and how to communicate them in academic publications.\n\n\n\n\n\nLink to the lecture slides:\n\n1: The General Linear Model\n2: The Generalised Linear Model\n3: Linear Mixed Models\n4: Generalized Additive (Mixed) Models\n5: Path Analysis for Mediation Hypotheses\n6: From Path Analysis to SEM"
-  },
-  {
-    "objectID": "courses/details/BAA1030.html",
-    "href": "courses/details/BAA1030.html",
-    "title": "BAA1030 - Data Analytics and Story Telling",
-    "section": "",
-    "text": "Data and visual analytics is an emerging field concerned with analysing, modelling, and visualising complex high dimensional data. This course will introduce students to the field by covering state of the art modelling, analysis, and visualisation techniques. It will emphasise practical challenges involving complex real world data and include several case studies and hands on work with programming languages (Python and Markdown) and visualisation software (Tableau and PowerBI).\n\n\n\n\n\nLink to the lecture slides:\n\n1: Introduction\n2: Data Collection, Storage and Access\n3: Principles of Data Visualisation\n4: Introduction to Power BI\n5: Introduction to Tableau\n6: Advanced Features in Tableau\n7: Introduction to Python\n8: Data Wrangling with Polars\n9: Visualisation in python with plotnine\n10: Introduction to Quarto\n11: Publish your Report with GitHub"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "PhD in Social and Experimental Psychology from the University Grenoble-Alpes, France. My research centres on psycho-physiological responses in real-world settings. Working with Anna Tcherkassof in Grenoble, I helped develop the DynEmo database by recording and analysing dynamic, spontaneous facial expressions of emotion.\nMy thesis focused on evaluating Emotional User eXperience of new technologies for the innovation consultancy firm Ixiade (Grenoble, France). Alongside that, I collaborated with Queen’s University Belfast and Sensum Ltd. (Belfast, UK), using physiological sensors and automated facial expression recognition to explore emotional responses. I also worked at the Insight Centre for Data Analytics at University College Dublin, where I processed physiological data from marathon runners to better understand stress and effort in endurance contexts.\nCurrently Assistant Professor of Business Research Methods at Dublin City University, I specialise in multivariate time series analysis and trend extraction, applying these techniques to both supervised and unsupervised machine learning classification tasks."
-  },
-  {
-    "objectID": "courses/details/BAA1028.html",
-    "href": "courses/details/BAA1028.html",
-    "title": "BAA1028 - Workflow & Data Management",
-    "section": "",
-    "text": "By developing skills and gaining hands-on experience in designing and implementing cloud-based databases and workflows, students will acquire proficiency in some of the most widely used technologies for managing data analytics within organisations.\nTo support this, students will be introduced to modern tools for data management and web development (e.g., HTML, CSS, Markdown), cloud computing platforms (e.g., the AWS ecosystem), and version control systems (e.g., Git and GitHub). They will also gain a solid understanding of data security, including strategies to safeguard API keys and other sensitive information from breaches.\n\n\n\n\n\nLink to the lecture slides:\n\n1. Introduction to ePortfolios\n2. HTML and CSS\n3. Publishing with GitHub Pages\n4. Git, GitHub, and Version Control\n5. The Final Workflow of Git, GitHub and Quarto with VS Code\n6. Advanced Quarto for Website Creation\n7. Customizing Quarto Websites\n8. HTML Theming in a Quarto Website\n9. Displaying Projects in a Quarto Website\n10. Quarto Dashboards\n11. Python Apps without Server\n12. Python in your Project Pages"
-  },
-  {
-    "objectID": "courses/details/STA1005.html",
-    "href": "courses/details/STA1005.html",
-    "title": "STA1005 - Quantitative Research Methods",
-    "section": "",
-    "text": "This module has been designed to help you improve your understanding of the key quantitative tools and statistical analyses for social science and business research. To start you will explore the key concepts and issues in measurement, focusing in particular on numeric variables and multi-item scales. The main focus of the course is a study of the main data analysis techniques based on linear regressions and multivariate linear regressions. This will instruct you in statistical test selection using SPSS, JAMOVI (open-source alternative to SPSS) and R (short introduction). Finally the module will present how to interpret and to report the results of these tests.\n\n\n\n\n\nLink to the lecture slides:\n\n1: Statistics, Research Papers and Me\n2: Understanding Models and Equations\n3: Collect, Clean, and Transform Data\n4: Understanding the General Linear Model\n5: Categories in the General Linear Model\n6: Assumptions of the General Linear Model\n7: Introduction to R for Hypothesis Testing\n8: Introduction to Quarto for Research"
+    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nGenerate PDF documents using R Markdown with a .docx letter template\n\n\n\n\n\n\nOrganising Academic Conferences with Open Source Tools: Feedback and Reflections\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "courses/index.html",
@@ -77,10 +42,59 @@
     "text": "BAA1028 - Workflow & Data Management\n\n\n\n\n\n\n\n\n\n\n\n\nBAA1030 - Data Analytics and Story Telling\n\n\n\n\n\n\n\n\n\n\n\n\nMT612 - Advanced Quantitative Research Methods\n\n\n\n\n\n\n\n\n\n\n\n\nSTA1005 - Quantitative Research Methods\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/index.html",
-    "href": "posts/index.html",
-    "title": "Posts",
+    "objectID": "courses/details/STA1005.html",
+    "href": "courses/details/STA1005.html",
+    "title": "STA1005 - Quantitative Research Methods",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nTitle\n\n\n\n\n\n\n\n\nOrganising Academic Conferences with Open Source Tools: Feedback and Reflections\n\n\n\n\n\n\nNo matching items"
+    "text": "This module has been designed to help you improve your understanding of the key quantitative tools and statistical analyses for social science and business research. To start you will explore the key concepts and issues in measurement, focusing in particular on numeric variables and multi-item scales. The main focus of the course is a study of the main data analysis techniques based on linear regressions and multivariate linear regressions. This will instruct you in statistical test selection using SPSS, JAMOVI (open-source alternative to SPSS) and R (short introduction). Finally the module will present how to interpret and to report the results of these tests.\n\n\n\n\n\nLink to the lecture slides:\n\n1: Statistics, Research Papers and Me\n2: Understanding Models and Equations\n3: Collect, Clean, and Transform Data\n4: Understanding the General Linear Model\n5: Categories in the General Linear Model\n6: Assumptions of the General Linear Model\n7: Introduction to R for Hypothesis Testing\n8: Introduction to Quarto for Research"
+  },
+  {
+    "objectID": "courses/details/BAA1028.html",
+    "href": "courses/details/BAA1028.html",
+    "title": "BAA1028 - Workflow & Data Management",
+    "section": "",
+    "text": "By developing skills and gaining hands-on experience in designing and implementing cloud-based databases and workflows, students will acquire proficiency in some of the most widely used technologies for managing data analytics within organisations.\nTo support this, students will be introduced to modern tools for data management and web development (e.g., HTML, CSS, Markdown), cloud computing platforms (e.g., the AWS ecosystem), and version control systems (e.g., Git and GitHub). They will also gain a solid understanding of data security, including strategies to safeguard API keys and other sensitive information from breaches.\n\n\n\n\n\nLink to the lecture slides:\n\n1. Introduction to ePortfolios\n2. HTML and CSS\n3. Publishing with GitHub Pages\n4. Git, GitHub, and Version Control\n5. The Final Workflow of Git, GitHub and Quarto with VS Code\n6. Advanced Quarto for Website Creation\n7. Customizing Quarto Websites\n8. HTML Theming in a Quarto Website\n9. Displaying Projects in a Quarto Website\n10. Quarto Dashboards\n11. Python Apps without Server\n12. Python in your Project Pages"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "PhD in Social and Experimental Psychology from the University Grenoble-Alpes, France. My research centres on psycho-physiological responses in real-world settings. Working with Anna Tcherkassof in Grenoble, I helped develop the DynEmo database by recording and analysing dynamic, spontaneous facial expressions of emotion.\nMy thesis focused on evaluating Emotional User eXperience of new technologies for the innovation consultancy firm Ixiade (Grenoble, France). Alongside that, I collaborated with Queen’s University Belfast and Sensum Ltd. (Belfast, UK), using physiological sensors and automated facial expression recognition to explore emotional responses. I also worked at the Insight Centre for Data Analytics at University College Dublin, where I processed physiological data from marathon runners to better understand stress and effort in endurance contexts.\nCurrently Assistant Professor of Business Research Methods at Dublin City University, I specialise in multivariate time series analysis and trend extraction, applying these techniques to both supervised and unsupervised machine learning classification tasks."
+  },
+  {
+    "objectID": "courses/details/BAA1030.html",
+    "href": "courses/details/BAA1030.html",
+    "title": "BAA1030 - Data Analytics and Story Telling",
+    "section": "",
+    "text": "Data and visual analytics is an emerging field concerned with analysing, modelling, and visualising complex high dimensional data. This course will introduce students to the field by covering state of the art modelling, analysis, and visualisation techniques. It will emphasise practical challenges involving complex real world data and include several case studies and hands on work with programming languages (Python and Markdown) and visualisation software (Tableau and PowerBI).\n\n\n\n\n\nLink to the lecture slides:\n\n1: Introduction\n2: Data Collection, Storage and Access\n3: Principles of Data Visualisation\n4: Introduction to Power BI\n5: Introduction to Tableau\n6: Advanced Features in Tableau\n7: Introduction to Python\n8: Data Wrangling with Polars\n9: Visualisation in python with plotnine\n10: Introduction to Quarto\n11: Publish your Report with GitHub"
+  },
+  {
+    "objectID": "courses/details/mt612.html",
+    "href": "courses/details/mt612.html",
+    "title": "MT612 - Advanced Quantitative Research Methods",
+    "section": "",
+    "text": "This module is designed for students already mastering linear regression models, to give them a deeper knowledge of more advanced models: logistic regressions, multilevel / hierarchical models, and paths analyses (mediation, factor analysis, structural equation model). Each of these advanced models will be taught with JAMOVI (open-source software for advanced statistics and with R (open-source programming language for advanced statistics). The module will focus on how to test hypotheses using these models, how to interpret their results and how to communicate them in academic publications.\n\n\n\n\n\nLink to the lecture slides:\n\n1: The General Linear Model\n2: The Generalised Linear Model\n3: Linear Mixed Models\n4: Generalized Additive (Mixed) Models\n5: Path Analysis for Mediation Hypotheses\n6: From Path Analysis to SEM"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Damien Dupré, PhD",
+    "section": "",
+    "text": "Welcome to my Data Science blog! You will find links to my research, as well as the support of the courses that I’m teaching.\nLearn more about me →"
+  },
+  {
+    "objectID": "posts/list/generate-pdf-documents.html",
+    "href": "posts/list/generate-pdf-documents.html",
+    "title": "Generate PDF documents using R Markdown with a .docx letter template",
+    "section": "",
+    "text": "Note\n\n\n\nOriginally published on my previous website in 2019, this blog post has been slightly updated.\nI keep discovering new ways to use R Markdown, and this one’s worth sharing: generating PDF documents using RMarkdown from a .docx letter template.\nPart of my job involves producing letters that follow the same structure but differ in specific details. R Markdown parameters are perfect for this kind of repetition. If you’ve never used them before, Xie, Allaire, and Grolemund’s R Markdown: The Definitive Guide is a good place to start. The challenge, though, is making the output look right, especially if you want a PDF that matches your own letterhead or house style.\nUsing output: pdf_document gives you a plain page. There are template packages around, like those listed in the R Markdown Gallery, but they rarely let you use your own branded background or header-footer setup.\nHere’s my workaround. Start with a Word document and use the output: word_document format. Include your own template using reference_docx: \"your_template.docx\". Then convert that to PDF. Just note: only the header and footer elements from the Word file will carry over into the final PDF. Text and images in the main body won’t survive this conversion.\nYou can manually open the Word file and save it as a PDF, but it’s cleaner to build the conversion into the knitting process. Here’s how that looks in the YAML header:\nThe output_file argument names the Word file you’ll generate using your custom template. To run a second step after knitting, you use a semicolon. It’s not the most elegant syntax, but it works here to add more R code inside the YAML.\nFor the PDF conversion, I used the {doconv} package by David Gohel. It supports two backends: LibreOffice and Python’s docx2pdf. Only the latter preserves headers and footers properly in the final PDF, so you’ll need Python 3 installed. Run doconv::docx2pdf_install() to get everything set up.\nOnce it’s working, the knitted PDF will match your Word template, using the same file name.\nThat said, I ran into issues with Mac M1 machines. On those, the docx2pdf() function couldn’t locate the library. You can work around this by finding the actual path to the tool with which docx2pdf in Terminal, then specifying that full path:"
+  },
+  {
+    "objectID": "posts/list/generate-pdf-documents.html#edit",
+    "href": "posts/list/generate-pdf-documents.html#edit",
+    "title": "Generate PDF documents using R Markdown with a .docx letter template",
+    "section": "Edit",
+    "text": "Edit\nYou can avoid the system() workaround on Mac M1 by making sure the correct Python environment is used.\nThe issue seems to come from mismatched Python setups. The {doconv} package uses the {locatexec} package to find the right Python executable with python_exec(), but this might not be the one that holds your installed docx2pdf library.\nTo fix this, copy the path returned by which docx2pdf and paste that file into the folder returned by dirname(locatexec::python_exec()). That way, everything stays reproducible and you’re not relying on hardcoded paths that only work on your machine."
   }
 ]
