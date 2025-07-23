@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>BAA1030 - Data Analytics and Story Telling – Damien Dupré</title>
+<title>Organising Academic Conferences with Open Source Tools: Feedback and Reflections – Damien Dupré</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -35,6 +70,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
@@ -71,16 +107,16 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../assets/styles.css">
-<meta name="twitter:title" content="BAA1030 - Data Analytics and Story Telling – Damien Dupré">
-<meta name="twitter:image" content="https://damien-dupre.github.io/courses/details/BAA1030.jpg">
+<meta name="twitter:title" content="Organising Academic Conferences with Open Source Tools: Feedback and Reflections – Damien Dupré">
+<meta name="twitter:description" content="Research, Statistics, and Data Analytics">
 <meta name="twitter:creator" content="@damien_dupre">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -125,53 +161,132 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">BAA1030 - Data Analytics and Story Telling</h1>
-                      </div>
-  </div>
-  <div class="quarto-title-meta">
-    </div>
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
-
-
-
-
-<div class="quarto-about-trestles">
-  <div class="about-entity">
-    <img src="BAA1030.jpg" class="about-image
-  rounded " style="width: 20em;">
-
-  </div>
-  <div class="about-contents"><div id="hero-heading">
-<p>Data and visual analytics is an emerging field concerned with analysing, modelling, and visualising complex high dimensional data. This course will introduce students to the field by covering <strong>state of the art modelling, analysis, and visualisation techniques</strong>. It will emphasise practical challenges involving <strong>complex real world data</strong> and include several case studies and hands on work with <strong>programming languages</strong> (Python and Markdown) and <strong>visualisation software</strong> (Tableau and PowerBI).</p>
-</div></div>
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Organising Academic Conferences with Open Source Tools: Feedback and Reflections</h1>
 </div>
 
-<hr>
-<section id="link-to-the-lecture-slides" class="level3">
-<h3 data-anchor-id="link-to-the-lecture-slides">Link to the lecture slides:</h3>
-<ul>
-<li><a href="https://damien-dupre.github.io/BAA1030/lectures/lecture_1">1: Introduction</a></li>
-<li><a href="https://damien-dupre.github.io/BAA1030/lectures/lecture_2">2: Data Collection, Storage and Access</a></li>
-<li><a href="https://damien-dupre.github.io/BAA1030/lectures/lecture_3">3: Principles of Data Visualisation</a></li>
-<li><a href="https://damien-dupre.github.io/BAA1030/lectures/lecture_4">4: Introduction to Power BI</a></li>
-<li><a href="https://damien-dupre.github.io/BAA1030/lectures/lecture_5">5: Introduction to Tableau</a></li>
-<li><a href="https://damien-dupre.github.io/BAA1030/lectures/lecture_6">6: Advanced Features in Tableau</a></li>
-<li><a href="https://damien-dupre.github.io/BAA1030/lectures/lecture_7">7: Introduction to Python</a></li>
-<li><a href="https://damien-dupre.github.io/BAA1030/lectures/lecture_8">8: Data Wrangling with Polars</a></li>
-<li><a href="https://damien-dupre.github.io/BAA1030/lectures/lecture_9">9: Visualisation in python with plotnine</a></li>
-<li><a href="https://damien-dupre.github.io/BAA1030/lectures/lecture_10">10: Introduction to Quarto</a></li>
-<li><a href="https://damien-dupre.github.io/BAA1030/lectures/lecture_11">11: Publish your Report with GitHub</a></li>
-</ul>
 
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Last year and again this year, I had the chance to join the organising committees of two separate academic events: the Conference of the International Society for Research on Emotion (<strong>#ISRE2024</strong> <a href="https://www.isre2024.org/" class="uri">https://www.isre2024.org/</a>) and the Conference of the Consortium of European Research on Emotion (<strong>#CERE2025</strong> <a href="https://www.cere2025.com/" class="uri">https://www.cere2025.com/</a>). For both, I was responsible for the websites and communications. As we were committed to using and encouraging open science practices, the committee and I decided to rely on open-source tools wherever possible. This led me to build the websites using Quarto. For CERE 2025, we also used the platform <a href="https://www.sciencesconf.org/" class="uri">https://www.sciencesconf.org/</a> to manage abstract submissions and the review process.</p>
+<p>This post gives a short overview of the Quarto-based websites, their particular features, the experience with sciencesconf.org, and some broader reflections on what worked and what didn’t during the organisation.</p>
+<section id="quarto-websites-for-conference-management" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-websites-for-conference-management">1. Quarto Websites for Conference Management</h2>
+<p>A conference website doesn’t differ that much from a personal one. Quarto turned out to be a solid fit: free, fast to update, and flexible. You can generate tables, automate pages, and embed code wherever needed. I won’t walk through the full site structure (that’s all on GitHub <a href="https://github.com/garymckeown/ISRE24">here for ISRE 2024</a> and <a href="https://github.com/damien-dupre/cere2025">here for CERE 2025</a>), but I’ll highlight two features I found particularly useful.</p>
+<p>First, the automatic generation of pages for parallel sessions. Most conferences run several sessions at once, often grouped thematically or by format, such as symposia or individual talks. These need to be listed clearly, but the problem is that schedules change constantly until the last minute. Manually creating or editing dozens of pages is a waste of time. So, <strong>I built a workflow using a Quarto template with a {purrr} loop that reads a spreadsheet of the programme and write a .qmd page before Quarto build it as .html in the website</strong>. This allowed the site to generate or update pages dynamically, making the process far more efficient and much less error-prone.</p>
+<div class="cell">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>~/cere2025/internal/computation_pages.R</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># List all the parallel sessions</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>sessions <span class="ot">&lt;-</span> parallel_sessions <span class="sc">|&gt;</span> </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>(session, track)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Read the quarto template</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>template <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_file</span>(<span class="st">"internal/parallel_session_template.qmd"</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a .qmd file per session</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>page_creation <span class="ot">&lt;-</span> <span class="cf">function</span>(session, track) {</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  file_conn <span class="ot">&lt;-</span> </span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"program/{paste(snakecase::to_any_case(session), track, sep = '_')}.qmd"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">file</span>(<span class="st">"w"</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">writeLines</span>(glue<span class="sc">::</span><span class="fu">glue</span>(</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    template,</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    <span class="at">.open =</span> <span class="st">"{{"</span>, <span class="at">.close =</span> <span class="st">"}}"</span>), <span class="co"># glue double fenced because of code chunk capsule</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">con =</span> file_conn)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">close</span>(file_conn)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>purrr<span class="sc">::</span><span class="fu">pwalk</span>(sessions, page_creation)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div class="callout callout-style-default callout-caution callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Exclude the folder <code>/internal</code> from <code>_quarto.yml</code> but call the script using the option pre-render:</p>
+<div class="cell">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>~/cere2025/_quarto.yml</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">output-dir</span><span class="kw">:</span><span class="at"> docs</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">render</span><span class="kw">:</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="st">"*.qmd"</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="kw">-</span><span class="at"> </span><span class="st">"!internal/"</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">pre-render</span><span class="kw">:</span><span class="at"> internal/computation_pages.R</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+<p>Second, the abstract book. Like the sessions, the book needed to group all the abstracts per session. Again, it made no sense to hardcode each one. The same kind of loop was used here, this time with <strong><code>knit_child()</code> to plug each abstract into a larger template</strong>. The result was a clean, automatically generated PDF covering all contributions, updated in seconds if anything changed.</p>
+<div class="cell">
+<div class="code-with-filename">
+<div class="code-with-filename-file">
+<pre><strong>~/cere2025/internal/pdf_program.qmd</strong></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>sessions <span class="ot">&lt;-</span> parallel_sessions <span class="sc">|&gt;</span> </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>(session, track)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>res <span class="ot">&lt;-</span> <span class="fu">map2</span>(</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  sessions<span class="sc">$</span>session, sessions<span class="sc">$</span>track,</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="sc">~</span><span class="fu">knit_child</span>(</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="fu">here</span>(<span class="st">"internal/pdf_template.qmd"</span>),</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">envir =</span> <span class="fu">environment</span>(),</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">quiet =</span> <span class="cn">TRUE</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="fu">unlist</span>(res), <span class="at">sep =</span> <span class="st">'</span><span class="sc">\n</span><span class="st">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="using-sciencesconf.org-for-abstract-management" class="level2">
+<h2 class="anchored" data-anchor-id="using-sciencesconf.org-for-abstract-management">2. Using sciencesconf.org for Abstract Management</h2>
+<p>For ISRE 2024, we used Microsoft’s CMT system, similar to EasyChair. For CERE 2025, we switched to sciencesconf.org. While both are free, sciencesconf.org is developed by a French research agency and open to international use. If you’re concerned about private providers like Microsoft or data server locations, it’s a decent alternative.</p>
+<p>Sciencesconf.org can act as your main website, your payment system, or your submission and review platform. We used it just for the latter, as we already had a better website and a payment solution provided by the host university.</p>
+<p><strong>Its main advantage is simple: it costs nothing. It covers all basic needs for submission and review, including abstract uploads, reviewer management, and author communication</strong>. But the interface is bare and, at times, clunky. It also struggles with more complex submission formats. For instance, our conference allowed symposia submissions, which can contain up to five abstracts. There was no clean way to gather and display that structure properly.</p>
+<p>Some features also require extra care. By default, it doesn’t collect co-author emails, only names and affiliations. You have to tick a specific box if you want co-authors to receive decision letters. The email system is another small hurdle: sciencesconf.org generates a new conference-specific email address, so if you already have an official one, you’ll need to redirect replies by setting it up in sciencesconf.org to avoid missing messages.</p>
+<p>I also found the reviewer interface quite awkward. It functions, but the design is poor and doesn’t look especially professional. Still, given its zero cost and openness, I would use it again—albeit with reservations.</p>
+</section>
+<section id="general-observations-and-lessons" class="level2">
+<h2 class="anchored" data-anchor-id="general-observations-and-lessons">3. General Observations and Lessons</h2>
+<ul>
+<li><p>One area that proved especially tricky was building the actual conference programme. This should be a collaborative effort, but not everyone uses a shared, editable spreadsheet. That creates confusion. Using something like Google Sheets, with full access for the relevant team members, should be standard practice.</p></li>
+<li><p>To organise the programme, talks need to be grouped by topic, followed by assigning each group a session title. I experimented with GenAI tools like ChatGPT and Gemini to help with this, but since both rely on cosine similarity measures, the results weren’t convincing. The groupings felt off, and the suggested titles lacked quality.</p></li>
+<li><p>Despite spending time building a web page for each parallel session, most attendees ended up referring to the overall PDF Gantt-style or long table schedule. Printing and displaying it on the doors of the venue was the best way to communicate it.</p></li>
+<li><p>To finish, a quick note on social media. We ran a Twitter/X account with over 2,500 followers. Engagement was minimal. It may be time to stop treating X as a serious platform for promoting conferences. The audience is no longer there and, instead, LinkedIn might be the most suitable place to communicate.</p></li>
+</ul>
+<p>If you’re organising a conference, open-source tools can save time and money, but they’re not perfect. Knowing when to automate and when to stick to something simpler is key.</p>
 
 
 </section>
@@ -179,6 +294,13 @@ ul.task-list li input[type="checkbox"] {
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
     const isCodeAnnotation = (el) => {
       for (const clz of el.classList) {
         if (clz.startsWith('code-annotation-')) {                     

@@ -1,7 +1,7 @@
 ---
 title: "Courses"
 description: |
-  Here is the list of the current modules that you can access. <br> These slides are the latest version of the corresponding courses.
+  Here is the list of the current modules that you can access. These slides are the latest version of the corresponding courses.
 listing: 
   contents: details
   type: grid

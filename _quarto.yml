@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "*.qmd"
+    - "!internal/"
   resources:
   - "my-first-web-page.html"
 
@@ -14,9 +17,9 @@ website:
   navbar:
     logo: assets/icon.jpg
     right:
-      # - icon: file-post
-      #   href: courses/index.qmd
-      #   text: "POSTS"
+      - icon: file-post
+        href: posts/index.qmd
+        text: "POSTS"
       # - icon: chat-quote
       #   href: courses/index.qmd      
       #   text: "TALKS"
@@ -32,6 +35,11 @@ website:
       - icon: file-earmark-person
         href: cv_pro.pdf
         text: "CV"
+  page-footer:
+    background: "#6C757D"
+    center: |
+      Damien Dupré - Research, Statistics, and Data Analytics<br>
+      ![](https://business.dcu.ie/wp-content/uploads/2024/02/Web-Logo-2-340x79-1.webp)
       
 format:
   html:

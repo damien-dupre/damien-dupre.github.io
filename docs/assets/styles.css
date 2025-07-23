@@ -10,9 +10,13 @@ img.circle {
   border-radius:50%;
 }
 
+body {
+  text-align: justify;
+}
+
 /* title */
 .title {
-  font-size: 3rem;
+  text-align: center;
   font-weight: 700;
   line-height: 1.1em !important;
 }
@@ -32,6 +36,10 @@ img.circle {
 }
 
 /* blurb */
+.about-entity .title {
+  font-size: 3rem;
+}
+
 .about-contents {
   padding: 0 0 0 2em !important;
 }
