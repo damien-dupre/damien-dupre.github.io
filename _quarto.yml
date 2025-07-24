@@ -10,12 +10,13 @@ project:
 website:
   title: "Damien Dupré"
   site-url: https://damien-dupre.github.io/
-  favicon: assets/android-chrome-512x512.png
+  favicon: assets/favicon.png
   description: "Research, Statistics, and Data Analytics"
   twitter-card:
     creator: "@damien_dupre"
   navbar:
-    logo: assets/android-chrome-512x512.png
+    title: false
+    logo: assets/logo.png
     right:
       - icon: file-post
         href: posts/index.qmd
@@ -45,7 +46,6 @@ format:
   html:
     theme: [cosmo, assets/custom.scss] 
     lightbox: true
-    css: assets/styles.css
     mainfont: Montserrat
     smooth-scroll: true
     toc: false

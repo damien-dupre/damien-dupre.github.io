@@ -65,7 +65,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../assets/android-chrome-512x512.png" rel="icon" type="image/png">
+<link href="../../assets/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
@@ -75,7 +75,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-beb951377dedf5b883d8e4eef4e48d3b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-52d3079e59aa510ae608b67621d8e81a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -109,7 +109,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<link rel="stylesheet" href="../../assets/styles.css">
 <meta name="twitter:title" content="Time series clustering with Dynamic Time Warping (Part 2) – Damien Dupré">
 <meta name="twitter:description" content="Research, Statistics, and Data Analytics">
 <meta name="twitter:image" content="https://damien-dupre.github.io/posts/list/timeseries-clustering-part2_files/figure-html/unnamed-chunk-5-1.png">
@@ -127,10 +126,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../assets/android-chrome-512x512.png" alt="" class="navbar-logo">
-    </a>
-    <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Damien Dupré</span>
+    <img src="../../assets/logo.png" alt="" class="navbar-logo">
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -276,7 +272,7 @@ Calculating distance matrix...
 Performing hierarchical clustering...
 Extracting centroids...
 
-    Elapsed time is 0.038 seconds.</code></pre>
+    Elapsed time is 0.047 seconds.</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>dtw_data <span class="ot">&lt;-</span> ggdendro<span class="sc">::</span><span class="fu">dendro_data</span>(dtw_model, <span class="at">type =</span> <span class="st">"rectangle"</span>)</span>
@@ -420,7 +416,7 @@ Calculating distance matrix...
 Performing hierarchical clustering...
 Extracting centroids...
 
-    Elapsed time is 0.048 seconds.</code></pre>
+    Elapsed time is 0.049 seconds.</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>dtw_data <span class="ot">&lt;-</span> ggdendro<span class="sc">::</span><span class="fu">dendro_data</span>(dtw_model, <span class="at">type =</span> <span class="st">"rectangle"</span>)</span>
@@ -522,7 +518,7 @@ Extracting centroids...
 <span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
 <span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a>fm <span class="ot">&lt;-</span> depmixS4<span class="sc">::</span><span class="fu">fit</span>(mod, <span class="at">verbose =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>converged at iteration 34 with logLik: -10172.1 </code></pre>
+<pre><code>converged at iteration 17 with logLik: -10362.94 </code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>probs <span class="ot">&lt;-</span> depmixS4<span class="sc">::</span><span class="fu">posterior</span>(fm)</span>
@@ -551,7 +547,7 @@ Calculating distance matrix...
 Performing hierarchical clustering...
 Extracting centroids...
 
-    Elapsed time is 0.023 seconds.</code></pre>
+    Elapsed time is 0.024 seconds.</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>dtw_data <span class="ot">&lt;-</span> ggdendro<span class="sc">::</span><span class="fu">dendro_data</span>(dtw_model, <span class="at">type =</span> <span class="st">"rectangle"</span>)</span>
@@ -651,7 +647,7 @@ Calculating distance matrix...
 Performing hierarchical clustering...
 Extracting centroids...
 
-    Elapsed time is 0.011 seconds.</code></pre>
+    Elapsed time is 0.01 seconds.</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a></span>
