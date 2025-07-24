@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Generate PDF documents using R Markdown with a .docx letter template – Damien Dupré</title>
+<title>Generating Multiple PDF at Once: A use case of Rmarkdown render in a {purrr} loop – Damien Dupré</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -107,7 +107,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <link rel="stylesheet" href="../../assets/styles.css">
-<meta name="twitter:title" content="Generate PDF documents using R Markdown with a .docx letter template – Damien Dupré">
+<meta name="twitter:title" content="Generating Multiple PDF at Once: A use case of Rmarkdown render in a {purrr} loop – Damien Dupré">
 <meta name="twitter:description" content="Research, Statistics, and Data Analytics">
 <meta name="twitter:creator" content="@damien_dupre">
 <meta name="twitter:card" content="summary">
@@ -170,7 +170,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Generate PDF documents using R Markdown with a .docx letter template</h1>
+<h1 class="title">Generating Multiple PDF at Once: A use case of Rmarkdown render in a {purrr} loop</h1>
 </div>
 
 
@@ -200,44 +200,76 @@ Note
 <p>This blog post was first published on my previous website in 2019 and has since been lightly revised.</p>
 </div>
 </div>
-<p>I keep discovering new ways to use R Markdown, and this one’s worth sharing: generating PDF documents using RMarkdown from a .docx letter template.</p>
-<p>Part of my job involves producing letters that follow the same structure but differ in specific details. R Markdown parameters are perfect for this kind of repetition. If you’ve never used them before, <a href="https://bookdown.org/yihui/rmarkdown/params-knit.html">Xie, Allaire, and Grolemund’s <em>R Markdown: The Definitive Guide</em></a> is a good place to start. The challenge, though, is making the output look right, especially if you want a PDF that matches your own letterhead or house style.</p>
-<p>Using <code>output: pdf_document</code> gives you a plain page. There are template packages around, like those listed in the <a href="https://rmarkdown.rstudio.com/gallery.html">R Markdown Gallery</a>, but they rarely let you use your own branded background or header-footer setup.</p>
-<p>Here’s my workaround. Start with a Word document and use the <code>output: word_document</code> format. Include your own template using <code>reference_docx: "your_template.docx"</code>. Then convert that to PDF. Just note: only the header and footer elements from the Word file will carry over into the final PDF. Text and images in the main body won’t survive this conversion.</p>
-<p>You can manually open the Word file and save it as a PDF, but it’s cleaner to build the conversion into the knitting process. Here’s how that looks in the YAML header:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">output</span><span class="kw">:</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">word_document</span><span class="kw">:</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">reference_docx</span><span class="kw">:</span><span class="at"> </span><span class="st">"your_template.docx"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">knit</span><span class="kw">:</span><span class="at"> (</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="at">  function(inputFile, encoding) {</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="at">    rmarkdown::render(</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="at">      input = inputFile,</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="at">      encoding = encoding,</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="at">      output_file = "rmd_output.docx"</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="at">      ); doconv::docx2pdf("rmd_output.docx")</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="at">    }</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="at">  )</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>The output_file argument names the Word file you’ll generate using your custom template. To run a second step after knitting, you use a semicolon. It’s not the most elegant syntax, but it works here to add more R code inside the YAML.</p>
-<p>For the PDF conversion, I used the {doconv} package by <a href="https://github.com/ardata-fr/doconv">David Gohel</a>. It supports two backends: LibreOffice and Python’s docx2pdf. Only the latter preserves headers and footers properly in the final PDF, so you’ll need Python 3 installed. Run <code>doconv::docx2pdf_install()</code> to get everything set up.</p>
-<p>Once it’s working, the knitted PDF will match your Word template, using the same file name.</p>
-<p>That said, I ran into issues with Mac M1 machines. On those, the <code>docx2pdf()</code> function couldn’t locate the library. You can work around this by finding the actual path to the tool with which docx2pdf in Terminal, then specifying that full path:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">output</span><span class="kw">:</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">word_document</span><span class="kw">:</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">reference_docx</span><span class="kw">:</span><span class="at"> </span><span class="st">"your_template.docx"</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="fu">knit</span><span class="kw">:</span><span class="at"> (</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="at">  function(inputFile, encoding) {</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="at">    rmarkdown::render(</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="at">      input = inputFile,</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="at">      encoding = encoding,</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="at">      output_file = "rmd_output.docx"</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="at">      ); system("/path/to/docx2pdf rmd_output.docx")</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="at">    }</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="at">  )</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<section id="edit" class="level2">
-<h2 class="anchored" data-anchor-id="edit">Edit</h2>
-<p>You can avoid the <code>system()</code> workaround on Mac M1 by making sure the correct Python environment is used.</p>
-<p>The issue seems to come from mismatched Python setups. The {doconv} package uses the {locatexec} package to find the right Python executable with <code>python_exec()</code>, but this might not be the one that holds your installed docx2pdf library.</p>
-<p>To fix this, copy the path returned by which docx2pdf and paste that file into the folder returned by <code>dirname(locatexec::python_exec())</code>. That way, everything stays reproducible and you’re not relying on hardcoded paths that only work on your machine.</p>
+<p>Following on from my earlier post about generating PDFs with R Markdown and a .docx template, a few people asked for more details on how I use R Markdown in day-to-day work. I’ve got a few examples worth sharing, and one I use regularly is batch-generating PDF reports. It’s simple, efficient, and solves a real problem.</p>
+<p>Here’s the situation. For some of the modules I teach, I ask students to write short research papers and submit them as PDFs. That’s fine, but annotating PDFs to give feedback is awkward. My workaround is to create a feedback PDF for each student, with comments on their work section by section.</p>
+<p>Now, I could manually write and export one PDF per student, but that quickly becomes tedious. Instead, I write my comments in a spreadsheet and then use that to automatically generate all the PDFs at once.</p>
+<p>The approach is borrowed from Alison Hill’s presentation <a href="https://alison.netlify.app/rmd-valentine">“Made with YAML, strings, and glue. An R Markdown valentine for you</a>, which is excellent. I’m just applying it to a different case, so if you want a deeper guide, I’d recommend reading her slides. Still, seeing it in a teaching context might be useful.</p>
+<p>Let’s get to the code.</p>
+<section id="step-1-prepare-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-prepare-the-data">Step 1: Prepare the data</h2>
+<p>Here are the packages that you need:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>To keep things light, I’m using a table of TV characters and quotes instead of real student data. Here’s the data frame:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>ms_1 <span class="ot">&lt;-</span> <span class="st">"Sometimes I’ll start a sentence and I don’t even know where it’s going. I just hope I find it along the way."</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>ms_2 <span class="ot">&lt;-</span> <span class="st">"I’m not superstitious, but I am a little stitious."</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>ms_3 <span class="ot">&lt;-</span> <span class="st">"Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me."</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>lk_1 <span class="ot">&lt;-</span> <span class="st">"We have to remember what’s important in life: friends, waffles, and work. Or waffles, friends, work. But work has to come third."</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>lk_2 <span class="ot">&lt;-</span> <span class="st">"What I hear when I’m being yelled at is people caring really loudly at me."</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>lk_3 <span class="ot">&lt;-</span> <span class="st">"There’s nothing we can’t do if we work hard, never sleep, and shirk from all other responsibilities in our lives."</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>jp_1 <span class="ot">&lt;-</span> <span class="st">"Fine, but in protest, I’m walking over there extremely slowly!"</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>jp_2 <span class="ot">&lt;-</span> <span class="st">"I wasn't hurt that badly. The doctor said all my bleeding was internal. That's where the blood's supposed to be."</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>jp_3 <span class="ot">&lt;-</span> <span class="st">"I appealed to their sense of teamwork and camaraderie with a rousing speech that would put Shakespeare to shame."</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="fu">tribble</span>(</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="sc">~</span>fullname, <span class="sc">~</span>quote_1, <span class="sc">~</span>quote_2, <span class="sc">~</span>quote_3,</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Michael Scott"</span>, ms_1, ms_2, ms_3,</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Leslie Knope"</span>,  lk_1, lk_2, lk_3,</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Jake Peralta"</span>,  jp_1, jp_2, jp_3</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>) <span class="sc">|&gt;</span> </span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">kable</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Save this as <code>data_batch.csv</code>. It’s the input for the batch process.</p>
+</section>
+<section id="step-2-build-the-rmd-template" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-build-the-rmd-template">Step 2: Build the Rmd template</h2>
+<p>Create a file called <code>index.Rmd</code>. This is the template that will generate one PDF per person. The YAML at the top sets things up:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode yml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Batch PDF processing - `r params$fullname` quotes"</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">output</span><span class="kw">:</span><span class="at"> pdf_document</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">params</span><span class="kw">:</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">fullname</span><span class="kw">:</span><span class="at"> </span><span class="st">"TV Show Character"</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The key bit is <code>params:</code>. It tells RMarkdown to expect a value (in this case, a name) to insert wherever you call <code>params$fullname</code>. It also allows you to filter the input data, so each report is personalised.</p>
+<p>Within the body of the template, read the CSV and filter it down to just the row that matches <code>params$fullname</code>. Then pull in the quotes.</p>
+<p>You can do this using inline R code like this:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="st">`</span><span class="at">r filtered_data$quote_1</span><span class="st">`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Or, if you prefer, use <a href="https://github.com/gadenbuie/epoxy">the package {epoxy}</a> by Garrick Aden-Buie. It’s great for longer texts with lots of variables. In this case, it’s probably overkill, but still a good tool to know.</p>
+</section>
+<section id="step-3-the-batch-script" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-the-batch-script">Step 3: The batch script</h2>
+<p>Now, the script that does the heavy lifting. Save this as <code>_render_batch.R</code>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>data_batch <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data_batch.csv"</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">walk</span>(</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">.x =</span> data_batch<span class="sc">$</span>fullname,</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="sc">~</span> <span class="fu">render</span>(</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">input =</span> <span class="st">"index.Rmd"</span>,</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">output_file =</span> glue<span class="sc">::</span><span class="fu">glue</span>(<span class="st">"PDF output - {.x} quotes.pdf"</span>),</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">params =</span> <span class="fu">list</span>(<span class="at">fullname =</span> {.x})</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><code>walk()</code> takes a list and applies a function to each element. In this case, it runs <code>render()</code> for each character name. The params argument tells it which row to pull from the CSV, and <code>glue::glue()</code> ensures each output file gets a unique name.</p>
+<p>That’s it. No overwriting, no manual labour. One spreadsheet in, a stack of PDFs out.</p>
 
 
 </section>

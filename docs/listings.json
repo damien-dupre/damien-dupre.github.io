@@ -3,6 +3,8 @@
     "listing": "/posts/index.html",
     "items": [
       "/posts/list/generate-pdf-documents.html",
+      "/posts/list/generating-multiple-pdf.html",
+      "/posts/list/how-to-organise.html",
       "/posts/list/organising-research-conferences.html"
     ]
   },

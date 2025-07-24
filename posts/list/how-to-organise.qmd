@@ -1,19 +1,21 @@
 ---
 title: "How to Organise a Wedding Using R: Google Search API, Google Drive, Web Scraping, and Automated Emails"
-date: "Originaly published 2018-11-13"
+
+execute: 
+  eval: false
 ---
 
 ::: {.callout-note}
-This blog post was originally published in my {blogdown} website, now archived. Following a recent request from someone interested in applying the same method, I have decided to bring it back in my current quarto website in its original shape.
+This post first appeared on my {blogdown} site, now archived. After a recent request from someone looking to use the same approach, I decided to bring it back on my current Quarto site, unchanged from the original.
 
-See @sec-updates for updated comments.
+See @sec-updates for my latest notes.
 :::
 
-Organizing a wedding is ... challenging but as Rusers we do have a major asset! One of the most challenging part is to find a venue. Indeed there are a lot of them but some are already booked for your date. So, in order to check if a venue is already booked **I'll show you how I made a list of possible venues with google search API, stored the list on google drive, web scrap for their emails and send them with R.**
+Planning a wedding is a challenge. For R users, we have one advantage: automation. One of the trickiest parts is finding a venue. There are plenty, but many will already be booked for your date. Here is how I created a list of potential venues with the Google Search API, stored it on Google Drive, scraped emails, and sent messages, all with R.
 
 # Setup
 
-```{r setup, message = FALSE,warning = FALSE, error = FALSE, results="hide"}
+```{r}
 # store passwords
 library(config)
 # data wrangling
@@ -33,23 +35,20 @@ library(RCurl)
 # html widgets
 library(DT)
 library(leaflet)
-knitr::opts_chunk$set(cache.extra = knitr::rand_seed, message = FALSE,warning = FALSE, error = FALSE)
 ```
 
-```{r analysis-preferences}
-set.seed(123)# Seed for random number generation
-options(scipen=999)# Disable scientific number format
+```{r}
 gmail_wedding <- config::get("gmail_wedding")
 google_key <- config::get("google_cloud")
 ```
 
-# List of Venues with google place API
+## Creating a venue list with the Google Places API
 
-Because almost everything is possible in R thanks to our awesome community, I was thinking of getting a list of venues from google. And thankfully there is a package to do that called `googleway`. Google API has many different [services](https://console.cloud.google.com/apis/) related to geocoding such as Direction API, Geolocalisation API or Place API which I'm using to get venues from search key words. To use it you just need to register on google cloud your Credit/Debit Card to obtain an API key, but no worries if you use the service in a gentle way, that won't cost you anything. I found a very useful answer from [stack overflow to use the `googleway` package](https://stackoverflow.com/questions/28026897/google-place-with-r).
+Since R offers a package for almost everything, I used {googleway} to pull venue data from Google Places. [This API includes several services](https://console.cloud.google.com/apis/) like Directions, Geolocation and Places. To use it, you must register a card on Google Cloud to get an API key. Used moderately, this is free. [I found this Stack Overflow answer helpful when learning googleway](https://stackoverflow.com/questions/28026897/google-place-with-r).
 
-## List of targeted cities
+### Targeted cities
 
-I also don't want to organize my wedding everywhere in France, I'd it to be in the Auvergne-Rhone-Alpes region which is a lovely area. So I wasn't sure that by using the key word "Auvergne-Rhone-Alpes" I'll find all the venues I wanted, so I decided to loop the search on a list of cities in this region based on their department numbers.
+I wanted my wedding in the Auvergne-Rhone-Alpes region of France. A single search term like “Auvergne-Rhone-Alpes” might not catch all options, so I built a loop that searches by city. My list of cities comes from their department codes (e.g. the department codes 01, 07, 26, 38, 69, 73 and 74 correspond to Ain, Ardèche, Drôme, Isère, Rhône, Savoie and Haute-Savoie in France).
 
 ```{r}
 dept_target <- c(01,07,26,38,69,73,74)
@@ -64,9 +63,9 @@ list_city <- read.csv(
   magrittr::use_series(city)
 ```
 
-## Querying google place API
+### Querying Google Places
 
-Once the list of cities obtained, I made a loop to query Google place for these cities. A tricky part is to get the search results from other pages. If a "next_page_token" is found, an while statement is querying for this new page. If no result is found the loop goes to the next city.
+Once the cities are ready, I run a loop querying Google Places for each one. If a next page token is found, the script fetches results from subsequent pages until all results are retrieved.
 
 ```{r}
 df_places_final <- NULL
@@ -105,7 +104,7 @@ for(city in list_city){
 }
 ```
 
-Obviously in the search results we obtain not only wedding venues but also photographers, caterers, and wedding shops. So an easy solution is to filter by name to find "castle", "mansions" and "domains". It should be noticed that there are some duplicated values to be filtered as well.
+The raw results include caterers, photographers and shops. I filtered them to keep only venues such as castles, mansions and estates. Duplicates are also removed.
 
 ```{r}
 df_places_filtered <- df_places_final %>%
@@ -113,7 +112,7 @@ df_places_filtered <- df_places_final %>%
   dplyr::distinct(place_id, .keep_all = TRUE)
 ```
 
-We can have an overview of the localisation of the venues thanks to the `leaflet` package.
+With {leaflet}, I visualised the locations on a map.
 
 ```{r}
 leaflet() %>%
@@ -121,9 +120,9 @@ leaflet() %>%
   addMarkers(lng=df_places_filtered$lng, lat=df_places_filtered$lat, popup=df_places_filtered$name)
 ```
 
-## Obtaining venues' website
+### Getting venue websites
 
-`googleway::google_place()` is great to find places with their addresses, GPS coordinates and types but the first loop doesn't provide their website URLs. In order to get them we have to query the Google place API using venues "places_id" with `googleway::google_place_details()` by applying a small function to with `purrr`.
+The first API call does not return website URLs, but `google_place_details()` does. Using {purrr}, I applied a small function to fetch them.
 
 ```{r}
 get_website <- function(place_id){
@@ -140,7 +139,7 @@ website_list <- df_places_filtered$place_id %>%
 df_places_filtered$website <- website_list
 ```
 
-For the next stages of the process I'm going to remove the venues without website URL but if like me you are organizing your wedding I suggest to manually contact them. Most of the URL are clean but sometimes some errors are possible so it is possible to remove them with a `gsub()` for example. I'm creating a new variable called "website_contact" which will be used as well for web scraping.
+I removed venues without websites and cleaned up the remaining URLs for later use in web scraping.
 
 ```{r}
 df_places_filtered <- df_places_filtered %>%
@@ -152,9 +151,9 @@ df_places_filtered <- df_places_filtered %>%
 
 The list of venues is now "clean" we can start the web scraping to obtain venues' emails.
 
-# Website scraping for emails
+## Scraping websites for emails
 
-I already said that Google place is great but as far as I know it doesn' provides venues emails. However we won't stop here and R is providing some excellent tool like `rvest` package in order to get information for the web. Thankfully, venues websites made their emails very easy to get on their home page or on their contact page so the idea is to web scrap these pages to see if we can find venues emails in a very short function. The function contains `trycatch` to check the URL before scraping for emails.
+Google does not provide emails, so I scraped the websites using {rvest}. Most venues list emails on their home or contact page. A simple function handles this, with `tryCatch()` to skip broken URLs.
 
 ```{r}
 extract_email <- function(website){
@@ -194,28 +193,26 @@ df_places_filtered %>%
   DT::datatable(options = list(pageLength = 5))
 ```
 
-Excellent we obtained a list of some venues to email!
+We now have a list of venues to contact.
 
-# google drive and automatic emails
+## Google Drive and automated emails
 
-A classic advice for wedding planning is to setup a specific email only dedicated to this task. One advantage of Google is not only very easy email setup but also the access to a Google drive to store your documents in order to keep track. Of course it's possible to store it locally but I found Google drive nice for sharing with your partner.
+It helps to create a separate email account just for wedding planning. Google makes this easy and also offers Google Drive for storing documents. With the {googledrive} package, sharing and updating files with your partner is straightforward (see https://googledrive.tidyverse.org/index.html for some information about {googledrive}).
 
-Once it's done, Google drive documents are easily accessed with the package `googledrive` (see https://googledrive.tidyverse.org/index.html for some information about `googledrive`).
+### Uploading the list to Google Drive
 
-## Upload list of venues to google drive
+First, save the data frame locally, then upload.
 
-the workflow of `googledrive` is quite specific, we must save the data frame locally first and then upload the file.
-
-```{r, eval=FALSE}
+```{r}
 # first save the list of venues local
 write.csv(df_places_filtered, "list_venues.csv",row.names = FALSE)
 # upload to google drive
 drive_upload(media = "list_venues.csv", name = "list_venues",type = "spreadsheet")
 ```
 
-## Download list of venues from google drive
+### Downloading from Google Drive
 
-Once it is done, we have to download the file locally and to read it again.
+You can then download and reload the file when needed.
 
 ```{r, eval=FALSE}
 # select file id from google drive
@@ -229,11 +226,9 @@ list_venues <- read.csv("list_venues.csv",row.names = NULL) %>%
   dplyr::mutate_if(is.factor,as.character)
 ```
 
-## Select email to be send
+### Sending emails
 
-Now the list of venues is stored in Google drive it's time to send our emails with R. Because it is easier for me, I've set up another for loop (yes it's not great but very re insuring at least). For each row of the data frame we are going to extract the venue name and email and send the same text ask for availability at a certain date.
-
-An important thing to be able to send emails from R is to [*allow less secure app: Yes*](https://support.google.com/accounts/answer/6010255?hl=en) in gmail settings.
+With the list ready, I sent emails in a simple loop. The script extracts each venue name and email and sends a standard message asking about availability. [Make sure to allow less secure apps in Gmail settings](https://support.google.com/accounts/answer/6010255?hl=en).
 
 ```{r, eval=FALSE}
 email_to_send <- list_venues
@@ -258,9 +253,7 @@ for(i in 1:nrow(email_to_send)){
 }
 ```
 
-You can have a look at the email send in your mail box in order to check that the process worked.
-
-Then, the final stage it to update the list of venue with the contact date in order to not send an email twice.
+After sending, I updated the contact date in the data to avoid duplicates.
 
 ```{r, eval=FALSE}
 email_to_send <- email_to_send %>%
@@ -275,7 +268,10 @@ write.csv(list_venues,"ist_venues.csv",row.names = FALSE)
 drive_update(file = "list_venues", media = "list_venues.csv")
 ```
 
-I hope these scripts will help you in finding the best place for your wedding. And good luck for the organisation!
-
+I hope these scripts help you find the perfect venue. Best of luck with your planning.
 
 ## Updates and Comments {#sec-updates}
+
+Since I wrote this code in 2018, things have changed. I would rely less on for loops and use {purrr} map or walk functions instead.
+
+To send batch emails with Gmail, I now use {blastula} instead of {mailR}.

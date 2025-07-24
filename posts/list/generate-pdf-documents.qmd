@@ -3,7 +3,7 @@ title: "Generate PDF documents using R Markdown with a .docx letter template"
 ---
 
 ::: {.callout-note}
-Originally published on my previous website in 2019, this blog post has been slightly updated.
+This blog post was first published on my previous website in 2019 and has since been lightly revised.
 :::
 
 I keep discovering new ways to use R Markdown, and this one’s worth sharing: generating PDF documents using RMarkdown from a .docx letter template.

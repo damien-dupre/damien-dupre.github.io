@@ -1,0 +1,100 @@
+---
+title: "Generating Multiple PDF at Once: A use case of Rmarkdown render in a {purrr} loop"
+execute: 
+  eval: false
+---
+
+::: {.callout-note}
+This blog post was first published on my previous website in 2019 and has since been lightly revised.
+:::
+
+Following on from my earlier post about generating PDFs with R Markdown and a .docx template, a few people asked for more details on how I use R Markdown in day-to-day work. I’ve got a few examples worth sharing, and one I use regularly is batch-generating PDF reports. It’s simple, efficient, and solves a real problem.
+
+Here’s the situation. For some of the modules I teach, I ask students to write short research papers and submit them as PDFs. That’s fine, but annotating PDFs to give feedback is awkward. My workaround is to create a feedback PDF for each student, with comments on their work section by section.
+
+Now, I could manually write and export one PDF per student, but that quickly becomes tedious. Instead, I write my comments in a spreadsheet and then use that to automatically generate all the PDFs at once.
+
+The approach is borrowed from Alison Hill’s presentation ["Made with YAML, strings, and glue. An R Markdown valentine for you](https://alison.netlify.app/rmd-valentine), which is excellent. I’m just applying it to a different case, so if you want a deeper guide, I’d recommend reading her slides. Still, seeing it in a teaching context might be useful.
+
+Let’s get to the code.
+
+## Step 1: Prepare the data
+
+Here are the packages that you need:
+
+```{r}
+library(tidyverse)
+library(knitr)
+```
+
+To keep things light, I’m using a table of TV characters and quotes instead of real student data. Here’s the data frame:
+
+```{r}
+ms_1 <- "Sometimes I’ll start a sentence and I don’t even know where it’s going. I just hope I find it along the way."
+ms_2 <- "I’m not superstitious, but I am a little stitious."
+ms_3 <- "Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me."
+lk_1 <- "We have to remember what’s important in life: friends, waffles, and work. Or waffles, friends, work. But work has to come third."
+lk_2 <- "What I hear when I’m being yelled at is people caring really loudly at me."
+lk_3 <- "There’s nothing we can’t do if we work hard, never sleep, and shirk from all other responsibilities in our lives."
+jp_1 <- "Fine, but in protest, I’m walking over there extremely slowly!"
+jp_2 <- "I wasn't hurt that badly. The doctor said all my bleeding was internal. That's where the blood's supposed to be."
+jp_3 <- "I appealed to their sense of teamwork and camaraderie with a rousing speech that would put Shakespeare to shame."
+
+tribble(
+    ~fullname, ~quote_1, ~quote_2, ~quote_3,
+  "Michael Scott", ms_1, ms_2, ms_3,
+  "Leslie Knope",  lk_1, lk_2, lk_3,
+  "Jake Peralta",  jp_1, jp_2, jp_3
+) |> 
+  kable()
+```
+
+Save this as `data_batch.csv`. It’s the input for the batch process.
+
+## Step 2: Build the Rmd template
+
+Create a file called `index.Rmd`. This is the template that will generate one PDF per person. The YAML at the top sets things up:
+
+```{yml}
+#| eval: false
+---
+title: "Batch PDF processing - `r params$fullname` quotes"
+output: pdf_document
+params:
+  fullname: "TV Show Character"
+---
+```
+
+The key bit is `params:`. It tells RMarkdown to expect a value (in this case, a name) to insert wherever you call `params$fullname`. It also allows you to filter the input data, so each report is personalised.
+
+Within the body of the template, read the CSV and filter it down to just the row that matches `params$fullname`. Then pull in the quotes.
+
+You can do this using inline R code like this:
+
+```{r}
+`r filtered_data$quote_1`
+```
+
+Or, if you prefer, use [the package {epoxy}](https://github.com/gadenbuie/epoxy) by Garrick Aden-Buie. It’s great for longer texts with lots of variables. In this case, it’s probably overkill, but still a good tool to know.
+
+## Step 3: The batch script
+
+Now, the script that does the heavy lifting. Save this as `_render_batch.R`:
+
+```{r}
+data_batch <- read_csv("data_batch.csv")
+
+walk(
+  .x = data_batch$fullname,
+  ~ render(
+    input = "index.Rmd",
+    output_file = glue::glue("PDF output - {.x} quotes.pdf"),
+    params = list(fullname = {.x})
+  )
+)
+```
+
+`walk()` takes a list and applies a function to each element. In this case, it runs `render()` for each character name. The params argument tells it which row to pull from the CSV, and `glue::glue()` ensures each output file gets a unique name.
+
+That’s it. No overwriting, no manual labour. One spreadsheet in, a stack of PDFs out.
+
