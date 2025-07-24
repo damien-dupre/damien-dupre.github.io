@@ -41,11 +41,11 @@ jp_2 <- "I wasn't hurt that badly. The doctor said all my bleeding was internal.
 jp_3 <- "I appealed to their sense of teamwork and camaraderie with a rousing speech that would put Shakespeare to shame."
 
 tribble(
-    ~fullname, ~quote_1, ~quote_2, ~quote_3,
+  ~fullname, ~quote_1, ~quote_2, ~quote_3,
   "Michael Scott", ms_1, ms_2, ms_3,
-  "Leslie Knope",  lk_1, lk_2, lk_3,
-  "Jake Peralta",  jp_1, jp_2, jp_3
-) |> 
+  "Leslie Knope", lk_1, lk_2, lk_3,
+  "Jake Peralta", jp_1, jp_2, jp_3
+) |>
   kable()
 ```
 
@@ -89,7 +89,9 @@ walk(
   ~ render(
     input = "index.Rmd",
     output_file = glue::glue("PDF output - {.x} quotes.pdf"),
-    params = list(fullname = {.x})
+    params = list(fullname = {
+      .x
+    })
   )
 )
 ```
@@ -97,4 +99,3 @@ walk(
 `walk()` takes a list and applies a function to each element. In this case, it runs `render()` for each character name. The params argument tells it which row to pull from the CSV, and `glue::glue()` ensures each output file gets a unique name.
 
 That’s it. No overwriting, no manual labour. One spreadsheet in, a stack of PDFs out.
-

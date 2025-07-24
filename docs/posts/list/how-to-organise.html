@@ -236,16 +236,17 @@ Note
 <h3 class="anchored" data-anchor-id="targeted-cities">Targeted cities</h3>
 <p>I wanted my wedding in the Auvergne-Rhone-Alpes region of France. A single search term like “Auvergne-Rhone-Alpes” might not catch all options, so I built a loop that searches by city. My list of cities comes from their department codes (e.g.&nbsp;the department codes 01, 07, 26, 38, 69, 73 and 74 correspond to Ain, Ardèche, Drôme, Isère, Rhône, Savoie and Haute-Savoie in France).</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>dept_target <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">01</span>,<span class="dv">07</span>,<span class="dv">26</span>,<span class="dv">38</span>,<span class="dv">69</span>,<span class="dv">73</span>,<span class="dv">74</span>)</span>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>dept_target <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">01</span>, <span class="dv">07</span>, <span class="dv">26</span>, <span class="dv">38</span>, <span class="dv">69</span>, <span class="dv">73</span>, <span class="dv">74</span>)</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>list_city <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(</span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">file =</span> <span class="fu">url</span>(<span class="st">"https://sql.sh/ressources/sql-villes-france/villes_france.csv"</span>),</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">header =</span> <span class="cn">FALSE</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="at">dept =</span> V2, <span class="at">city =</span> V5, <span class="at">pop2010 =</span> V15) <span class="sc">%&gt;%</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">city =</span> <span class="fu">as.character</span>(city)) <span class="sc">%&gt;%</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(dept <span class="sc">%in%</span> dept_target) <span class="sc">%&gt;%</span> <span class="co"># filter by target departments</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(pop2010 <span class="sc">&gt;</span> <span class="dv">5000</span>) <span class="sc">%&gt;%</span> <span class="co"># filter by city population size</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  magrittr<span class="sc">::</span><span class="fu">use_series</span>(city)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">header =</span> <span class="cn">FALSE</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>) <span class="sc">%&gt;%</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="at">dept =</span> V2, <span class="at">city =</span> V5, <span class="at">pop2010 =</span> V15) <span class="sc">%&gt;%</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">city =</span> <span class="fu">as.character</span>(city)) <span class="sc">%&gt;%</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(dept <span class="sc">%in%</span> dept_target) <span class="sc">%&gt;%</span> <span class="co"># filter by target departments</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(pop2010 <span class="sc">&gt;</span> <span class="dv">5000</span>) <span class="sc">%&gt;%</span> <span class="co"># filter by city population size</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  magrittr<span class="sc">::</span><span class="fu">use_series</span>(city)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="querying-google-places" class="level3">
@@ -253,62 +254,63 @@ Note
 <p>Once the cities are ready, I run a loop querying Google Places for each one. If a next page token is found, the script fetches results from subsequent pages until all results are retrieved.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>df_places_final <span class="ot">&lt;-</span> <span class="cn">NULL</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(city <span class="cf">in</span> list_city){</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="co">#print(city)</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>  df_places <span class="ot">&lt;-</span> googleway<span class="sc">::</span><span class="fu">google_places</span>(</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">search_string =</span> <span class="fu">paste</span>(<span class="st">"mariage"</span>, city, <span class="st">"france"</span>), </span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">key =</span> google_key<span class="sc">$</span>key) <span class="co"># replace by your Google API key</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(<span class="fu">length</span>(df_places<span class="sc">$</span>results) <span class="sc">==</span> <span class="dv">0</span>) <span class="cf">next</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (city <span class="cf">in</span> list_city) {</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># print(city)</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  df_places <span class="ot">&lt;-</span> googleway<span class="sc">::</span><span class="fu">google_places</span>(</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">search_string =</span> <span class="fu">paste</span>(<span class="st">"mariage"</span>, city, <span class="st">"france"</span>),</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">key =</span> google_key<span class="sc">$</span>key</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  ) <span class="co"># replace by your Google API key</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">length</span>(df_places<span class="sc">$</span>results) <span class="sc">==</span> <span class="dv">0</span>) <span class="cf">next</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  df_places_results <span class="ot">&lt;-</span> df_places<span class="sc">$</span>results</span>
 <span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>  geometry <span class="ot">&lt;-</span> df_places_results<span class="sc">$</span>geometry<span class="sc">$</span>location</span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  df_places_results <span class="ot">&lt;-</span> df_places_results[,<span class="fu">c</span>(<span class="st">"name"</span>,<span class="st">"formatted_address"</span>,<span class="st">"place_id"</span>,<span class="st">"types"</span>)]</span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  df_places_results <span class="ot">&lt;-</span> <span class="fu">cbind</span>(df_places_results,geometry)</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  df_places_results <span class="ot">&lt;-</span> df_places_results[, <span class="fu">c</span>(<span class="st">"name"</span>, <span class="st">"formatted_address"</span>, <span class="st">"place_id"</span>, <span class="st">"types"</span>)]</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>  df_places_results <span class="ot">&lt;-</span> <span class="fu">cbind</span>(df_places_results, geometry)</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  <span class="cf">while</span> (<span class="sc">!</span><span class="fu">is.null</span>(df_places<span class="sc">$</span>next_page_token)) {</span>
 <span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    df_places <span class="ot">&lt;-</span> googleway<span class="sc">::</span><span class="fu">google_places</span>(</span>
 <span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>      <span class="at">search_string =</span> <span class="fu">paste</span>(<span class="st">"mariage"</span>, city, <span class="st">"france"</span>),</span>
 <span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>      <span class="at">page_token =</span> df_places<span class="sc">$</span>next_page_token,</span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>      <span class="at">key =</span> google_key<span class="sc">$</span>key)</span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>    df_places_next <span class="ot">&lt;-</span> df_places<span class="sc">$</span>results</span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span>(<span class="fu">length</span>(df_places_next)<span class="sc">&gt;</span><span class="dv">0</span>){</span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>      geometry <span class="ot">&lt;-</span> df_places_next<span class="sc">$</span>geometry<span class="sc">$</span>location</span>
-<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>      df_places_next <span class="ot">&lt;-</span> df_places_next[,<span class="fu">c</span>(<span class="st">"name"</span>,<span class="st">"formatted_address"</span>,<span class="st">"place_id"</span>,<span class="st">"types"</span>)]</span>
-<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>      df_places_next <span class="ot">&lt;-</span> <span class="fu">cbind</span>(df_places_next,geometry)</span>
-<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>      df_places_results <span class="ot">&lt;-</span> <span class="fu">rbind</span>(df_places_results, df_places_next)</span>
-<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Sys.sleep</span>(<span class="dv">2</span>) <span class="co"># time to not overload  the google API</span></span>
-<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>  df_places_final <span class="ot">&lt;-</span> <span class="fu">rbind</span>(df_places_final,df_places_results)</span>
-<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>      <span class="at">key =</span> google_key<span class="sc">$</span>key</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>    df_places_next <span class="ot">&lt;-</span> df_places<span class="sc">$</span>results</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">length</span>(df_places_next) <span class="sc">&gt;</span> <span class="dv">0</span>) {</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>      geometry <span class="ot">&lt;-</span> df_places_next<span class="sc">$</span>geometry<span class="sc">$</span>location</span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>      df_places_next <span class="ot">&lt;-</span> df_places_next[, <span class="fu">c</span>(<span class="st">"name"</span>, <span class="st">"formatted_address"</span>, <span class="st">"place_id"</span>, <span class="st">"types"</span>)]</span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>      df_places_next <span class="ot">&lt;-</span> <span class="fu">cbind</span>(df_places_next, geometry)</span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>      df_places_results <span class="ot">&lt;-</span> <span class="fu">rbind</span>(df_places_results, df_places_next)</span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>    <span class="fu">Sys.sleep</span>(<span class="dv">2</span>) <span class="co"># time to not overload  the google API</span></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>  df_places_final <span class="ot">&lt;-</span> <span class="fu">rbind</span>(df_places_final, df_places_results)</span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The raw results include caterers, photographers and shops. I filtered them to keep only venues such as castles, mansions and estates. Duplicates are also removed.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>df_places_filtered <span class="ot">&lt;-</span> df_places_final <span class="sc">%&gt;%</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="fu">grepl</span>(<span class="st">'castle|chateau|domaine|manoir|ferme'</span>, name,<span class="at">ignore.case =</span> <span class="cn">TRUE</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="fu">grepl</span>(<span class="st">"castle|chateau|domaine|manoir|ferme"</span>, name, <span class="at">ignore.case =</span> <span class="cn">TRUE</span>)) <span class="sc">%&gt;%</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">distinct</span>(place_id, <span class="at">.keep_all =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>With {leaflet}, I visualised the locations on a map.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span>  <span class="co"># Add default OpenStreetMap map tiles</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addMarkers</span>(<span class="at">lng=</span>df_places_filtered<span class="sc">$</span>lng, <span class="at">lat=</span>df_places_filtered<span class="sc">$</span>lat, <span class="at">popup=</span>df_places_filtered<span class="sc">$</span>name)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span> <span class="co"># Add default OpenStreetMap map tiles</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addMarkers</span>(<span class="at">lng =</span> df_places_filtered<span class="sc">$</span>lng, <span class="at">lat =</span> df_places_filtered<span class="sc">$</span>lat, <span class="at">popup =</span> df_places_filtered<span class="sc">$</span>name)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="getting-venue-websites" class="level3">
 <h3 class="anchored" data-anchor-id="getting-venue-websites">Getting venue websites</h3>
 <p>The first API call does not return website URLs, but <code>google_place_details()</code> does. Using {purrr}, I applied a small function to fetch them.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>get_website <span class="ot">&lt;-</span> <span class="cf">function</span>(place_id){</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">#print(place_id)</span></span>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>get_website <span class="ot">&lt;-</span> <span class="cf">function</span>(place_id) {</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># print(place_id)</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  place_id <span class="ot">&lt;-</span> <span class="fu">as.character</span>(place_id)</span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  dat <span class="ot">&lt;-</span> googleway<span class="sc">::</span><span class="fu">google_place_details</span>(<span class="at">place_id =</span> place_id, <span class="at">key =</span> google_key<span class="sc">$</span>key)</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  res <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(<span class="fu">is.null</span>(dat<span class="sc">$</span>result<span class="sc">$</span>website),<span class="st">"no_website"</span>,dat<span class="sc">$</span>result<span class="sc">$</span>website)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  res <span class="ot">&lt;-</span> <span class="fu">ifelse</span>(<span class="fu">is.null</span>(dat<span class="sc">$</span>result<span class="sc">$</span>website), <span class="st">"no_website"</span>, dat<span class="sc">$</span>result<span class="sc">$</span>website)</span>
 <span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(res)</span>
 <span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
@@ -321,9 +323,9 @@ Note
 <div class="cell">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df_places_filtered <span class="ot">&lt;-</span> df_places_filtered <span class="sc">%&gt;%</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(website <span class="sc">!=</span> <span class="st">"no_website"</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">website =</span> <span class="fu">gsub</span>(<span class="st">"</span><span class="sc">\\</span><span class="st">,.*"</span>,<span class="st">""</span>,website)) <span class="sc">%&gt;%</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">website =</span> <span class="fu">gsub</span>(<span class="st">"com/fr"</span>,<span class="st">"com"</span>,website)) <span class="sc">%&gt;%</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">website_contact =</span> <span class="fu">paste0</span>(website,<span class="st">"contact"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">website =</span> <span class="fu">gsub</span>(<span class="st">"</span><span class="sc">\\</span><span class="st">,.*"</span>, <span class="st">""</span>, website)) <span class="sc">%&gt;%</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">website =</span> <span class="fu">gsub</span>(<span class="st">"com/fr"</span>, <span class="st">"com"</span>, website)) <span class="sc">%&gt;%</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">website_contact =</span> <span class="fu">paste0</span>(website, <span class="st">"contact"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>The list of venues is now “clean” we can start the web scraping to obtain venues’ emails.</p>
 </section>
@@ -332,17 +334,17 @@ Note
 <h2 class="anchored" data-anchor-id="scraping-websites-for-emails">Scraping websites for emails</h2>
 <p>Google does not provide emails, so I scraped the websites using {rvest}. Most venues list emails on their home or contact page. A simple function handles this, with <code>tryCatch()</code> to skip broken URLs.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>extract_email <span class="ot">&lt;-</span> <span class="cf">function</span>(website){</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="co">#print(website)</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  url_test <span class="ot">&lt;-</span> <span class="fu">tryCatch</span>(xml2<span class="sc">::</span><span class="fu">read_html</span>(website), <span class="at">error=</span><span class="cf">function</span>(e) <span class="fu">print</span>(<span class="st">"url_error"</span>))</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(url_test <span class="sc">==</span> <span class="st">"url_error"</span>){</span>
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>extract_email <span class="ot">&lt;-</span> <span class="cf">function</span>(website) {</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># print(website)</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  url_test <span class="ot">&lt;-</span> <span class="fu">tryCatch</span>(xml2<span class="sc">::</span><span class="fu">read_html</span>(website), <span class="at">error =</span> <span class="cf">function</span>(e) <span class="fu">print</span>(<span class="st">"url_error"</span>))</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (url_test <span class="sc">==</span> <span class="st">"url_error"</span>) {</span>
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(<span class="cn">NA</span>)</span>
 <span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    text_web <span class="ot">&lt;-</span> xml2<span class="sc">::</span><span class="fu">read_html</span>(website)<span class="sc">%&gt;%</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    text_web <span class="ot">&lt;-</span> xml2<span class="sc">::</span><span class="fu">read_html</span>(website) <span class="sc">%&gt;%</span></span>
 <span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>      rvest<span class="sc">::</span><span class="fu">html_text</span>()</span>
 <span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    email_text <span class="ot">&lt;-</span> <span class="fu">unlist</span>(<span class="fu">regmatches</span>(text_web, <span class="fu">gregexpr</span>(<span class="st">"([_a-z0-9-]+(</span><span class="sc">\\</span><span class="st">.[_a-z0-9-]+)*@[a-z0-9-]+(</span><span class="sc">\\</span><span class="st">.[a-z0-9-]+)*(</span><span class="sc">\\</span><span class="st">.[a-z]{2,4}))"</span>, text_web)))</span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    email_text <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">"</span>,<span class="st">""</span>,email_text)</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    email_text <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">" "</span>,<span class="st">""</span>,email_text)</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>    email_text <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">"</span>, <span class="st">""</span>, email_text)</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>    email_text <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">" "</span>, <span class="st">""</span>, email_text)</span>
 <span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(email_text[<span class="dv">1</span>])</span>
 <span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a>}</span>
@@ -358,7 +360,7 @@ Note
 <span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a>df_places_filtered<span class="sc">$</span>email_contact <span class="ot">&lt;-</span> email_list</span>
 <span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a><span class="co"># merge email and email_contact</span></span>
 <span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a>df_places_filtered <span class="ot">&lt;-</span> df_places_filtered <span class="sc">%&gt;%</span></span>
-<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">email =</span> <span class="fu">ifelse</span>(<span class="fu">is.na</span>(email),email_contact,email)) <span class="sc">%&gt;%</span></span>
+<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">email =</span> <span class="fu">ifelse</span>(<span class="fu">is.na</span>(email), email_contact, email)) <span class="sc">%&gt;%</span></span>
 <span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(email)) <span class="sc">%&gt;%</span></span>
 <span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(<span class="sc">-</span>email_contact, <span class="sc">-</span>types)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -377,9 +379,9 @@ Note
 <p>First, save the data frame locally, then upload.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># first save the list of venues local</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(df_places_filtered, <span class="st">"list_venues.csv"</span>,<span class="at">row.names =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(df_places_filtered, <span class="st">"list_venues.csv"</span>, <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="co"># upload to google drive</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">drive_upload</span>(<span class="at">media =</span> <span class="st">"list_venues.csv"</span>, <span class="at">name =</span> <span class="st">"list_venues"</span>,<span class="at">type =</span> <span class="st">"spreadsheet"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">drive_upload</span>(<span class="at">media =</span> <span class="st">"list_venues.csv"</span>, <span class="at">name =</span> <span class="st">"list_venues"</span>, <span class="at">type =</span> <span class="st">"spreadsheet"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="downloading-from-google-drive" class="level3">
@@ -391,10 +393,10 @@ Note
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">filter</span>(name <span class="sc">==</span> <span class="st">"list_venues"</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  magrittr<span class="sc">::</span><span class="fu">use_series</span>(id)</span>
 <span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="co"># download list of venues locally</span></span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="fu">drive_download</span>(<span class="fu">as_id</span>(list_venues_id),<span class="at">overwrite =</span> <span class="cn">TRUE</span>,  <span class="at">type =</span> <span class="st">"csv"</span>)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="fu">drive_download</span>(<span class="fu">as_id</span>(list_venues_id), <span class="at">overwrite =</span> <span class="cn">TRUE</span>, <span class="at">type =</span> <span class="st">"csv"</span>)</span>
 <span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="co"># read local list of venues file</span></span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>list_venues <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"list_venues.csv"</span>,<span class="at">row.names =</span> <span class="cn">NULL</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate_if</span>(is.factor,as.character)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>list_venues <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"list_venues.csv"</span>, <span class="at">row.names =</span> <span class="cn">NULL</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate_if</span>(is.factor, as.character)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="sending-emails" class="level3">
@@ -406,21 +408,25 @@ Note
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Email to send</span></span>
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>email_text <span class="ot">&lt;-</span> <span class="st">"&lt;p&gt;Dear owner/manager of '{name}', &lt;br&gt;&lt;br&gt;We are contacting you because we would like to organise our wedding &lt;b&gt;Sunday 9 of June 2019&lt;/b&gt; and your plac would be amazing for it.&lt;br&gt;&lt;br&gt;That's why we would like to know if your venue '{name}' is available &lt;b&gt;Sunday 9 of June 2019&lt;/b&gt;?&lt;/b&gt;&lt;br&gt;&lt;br&gt;Best regards,&lt;br&gt;&lt;br&gt;YOUR NAMES&lt;/p&gt;"</span></span>
 <span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span>(i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(email_to_send)){</span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>  df <span class="ot">&lt;-</span> email_to_send[i,]</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">nrow</span>(email_to_send)) {</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>  df <span class="ot">&lt;-</span> email_to_send[i, ]</span>
 <span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>  name <span class="ot">&lt;-</span> <span class="fu">as.character</span>(df<span class="sc">$</span>name)</span>
 <span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>  <span class="do">################################</span></span>
-<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">send.mail</span>(<span class="at">from =</span> gmail_wedding<span class="sc">$</span>email,</span>
-<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>            <span class="at">to =</span> <span class="fu">as.character</span>(df<span class="sc">$</span>email),</span>
-<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>            <span class="at">subject =</span> <span class="st">"Availability for a wedding on the 09/06/2019"</span>,</span>
-<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>            <span class="at">body =</span> glue<span class="sc">::</span><span class="fu">glue</span>(email_text),</span>
-<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>            <span class="at">smtp =</span> <span class="fu">list</span>(<span class="at">host.name =</span> <span class="st">"smtp.gmail.com"</span>, <span class="at">port =</span> <span class="dv">465</span>, </span>
-<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>                        <span class="at">user.name =</span> gmail_wedding<span class="sc">$</span>email,            </span>
-<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>                        <span class="at">passwd =</span> gmail_wedding<span class="sc">$</span>passwd, <span class="at">ssl =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>            <span class="at">authenticate =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>            <span class="at">send =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a>            <span class="at">html =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">send.mail</span>(</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">from =</span> gmail_wedding<span class="sc">$</span>email,</span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">to =</span> <span class="fu">as.character</span>(df<span class="sc">$</span>email),</span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">subject =</span> <span class="st">"Availability for a wedding on the 09/06/2019"</span>,</span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">body =</span> glue<span class="sc">::</span><span class="fu">glue</span>(email_text),</span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a>    <span class="at">smtp =</span> <span class="fu">list</span>(</span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a>      <span class="at">host.name =</span> <span class="st">"smtp.gmail.com"</span>, <span class="at">port =</span> <span class="dv">465</span>,</span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>      <span class="at">user.name =</span> gmail_wedding<span class="sc">$</span>email,</span>
+<span id="cb13-18"><a href="#cb13-18" aria-hidden="true" tabindex="-1"></a>      <span class="at">passwd =</span> gmail_wedding<span class="sc">$</span>passwd, <span class="at">ssl =</span> <span class="cn">TRUE</span></span>
+<span id="cb13-19"><a href="#cb13-19" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb13-20"><a href="#cb13-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">authenticate =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb13-21"><a href="#cb13-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">send =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb13-22"><a href="#cb13-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">html =</span> <span class="cn">TRUE</span></span>
+<span id="cb13-23"><a href="#cb13-23" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb13-24"><a href="#cb13-24" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>After sending, I updated the contact date in the data to avoid duplicates.</p>
 <div class="cell">
@@ -432,7 +438,7 @@ Note
 <span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>list_venues<span class="sc">$</span>date_contact[id <span class="sc">!=</span> <span class="dv">0</span>] <span class="ot">&lt;-</span> email_to_send<span class="sc">$</span>date_contact[id]</span>
 <span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>list_venues<span class="sc">$</span>type_contact[id <span class="sc">!=</span> <span class="dv">0</span>] <span class="ot">&lt;-</span> email_to_send<span class="sc">$</span>type_contact[id]</span>
 <span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Write data on local and Upload data from local to google drive</span></span>
-<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(list_venues,<span class="st">"ist_venues.csv"</span>,<span class="at">row.names =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(list_venues, <span class="st">"ist_venues.csv"</span>, <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span>
 <span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="fu">drive_update</span>(<span class="at">file =</span> <span class="st">"list_venues"</span>, <span class="at">media =</span> <span class="st">"list_venues.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>I hope these scripts help you find the perfect venue. Best of luck with your planning.</p>

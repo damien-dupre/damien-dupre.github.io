@@ -216,26 +216,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># classic run</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>noise <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">420</span>) <span class="co"># random noise</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">1</span>,<span class="dv">420</span>) <span class="co"># 42km with a measure every 100m</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">1</span>, <span class="dv">420</span>) <span class="co"># 42km with a measure every 100m</span></span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>pace_min <span class="ot">&lt;-</span> <span class="dv">5</span> <span class="co"># min/km (corresponds to fast run)</span></span>
 <span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>ts_sim_classic_run <span class="ot">&lt;-</span> (<span class="fu">sin</span>(x<span class="sc">/</span><span class="dv">10</span>)<span class="sc">+</span>x<span class="sc">/</span><span class="dv">100</span><span class="sc">+</span>noise<span class="sc">+</span>pace_min) <span class="sc">%&gt;%</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>ts_sim_classic_run <span class="ot">&lt;-</span> (<span class="fu">sin</span>(x <span class="sc">/</span> <span class="dv">10</span>) <span class="sc">+</span> x <span class="sc">/</span> <span class="dv">100</span> <span class="sc">+</span> noise <span class="sc">+</span> pace_min) <span class="sc">%&gt;%</span></span>
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.ts</span>(.)</span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ts.plot</span>(ts_sim_classic_run, <span class="at">xlab =</span> <span class="st">"Distance [x100m]"</span>, <span class="at">ylab =</span> <span class="st">"Differential pace [min/km]"</span>, <span class="at">main =</span> <span class="st">"Example of classic run"</span>, <span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">25</span>))</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">ts.plot</span>(ts_sim_classic_run, <span class="at">xlab =</span> <span class="st">"Distance [x100m]"</span>, <span class="at">ylab =</span> <span class="st">"Differential pace [min/km]"</span>, <span class="at">main =</span> <span class="st">"Example of classic run"</span>, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">25</span>))</span>
 <span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># wall run</span></span>
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>noise <span class="ot">&lt;-</span> <span class="fu">runif</span>(<span class="dv">210</span>) <span class="co"># random noise</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">1</span>,<span class="dv">210</span>) <span class="co"># 21km with a measure every 100m </span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">seq</span>(<span class="dv">1</span>, <span class="dv">210</span>) <span class="co"># 21km with a measure every 100m</span></span>
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>pace_min <span class="ot">&lt;-</span> <span class="dv">5</span> <span class="co"># min/km (corresponds to fast run)</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>pace_wall <span class="ot">&lt;-</span> <span class="dv">20</span> <span class="co"># min/km (corresponds to very slow run) </span></span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>ts_sim_part1 <span class="ot">&lt;-</span> <span class="fu">sin</span>(x<span class="sc">/</span><span class="dv">5</span>)<span class="sc">+</span>x<span class="sc">/</span><span class="dv">50</span><span class="sc">+</span>noise<span class="sc">+</span>pace_min</span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>ts_sim_part2 <span class="ot">&lt;-</span> <span class="fu">sin</span>(x<span class="sc">/</span><span class="dv">5</span>)<span class="sc">+</span>noise<span class="sc">+</span>pace_wall</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>pace_wall <span class="ot">&lt;-</span> <span class="dv">20</span> <span class="co"># min/km (corresponds to very slow run)</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>ts_sim_part1 <span class="ot">&lt;-</span> <span class="fu">sin</span>(x <span class="sc">/</span> <span class="dv">5</span>) <span class="sc">+</span> x <span class="sc">/</span> <span class="dv">50</span> <span class="sc">+</span> noise <span class="sc">+</span> pace_min</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>ts_sim_part2 <span class="ot">&lt;-</span> <span class="fu">sin</span>(x <span class="sc">/</span> <span class="dv">5</span>) <span class="sc">+</span> noise <span class="sc">+</span> pace_wall</span>
 <span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>ts_sim_wall_run <span class="ot">&lt;-</span> <span class="fu">c</span>(ts_sim_part1,ts_sim_part2) <span class="sc">%&gt;%</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>ts_sim_wall_run <span class="ot">&lt;-</span> <span class="fu">c</span>(ts_sim_part1, ts_sim_part2) <span class="sc">%&gt;%</span></span>
 <span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.ts</span>(.)</span>
 <span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="fu">ts.plot</span>(ts_sim_wall_run, <span class="at">xlab =</span> <span class="st">"Distance [x100m]"</span>, <span class="at">ylab =</span> <span class="st">"Differential pace [min/km]"</span>, <span class="at">main =</span> <span class="st">"Example of wall run"</span>, <span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">25</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="fu">ts.plot</span>(ts_sim_wall_run, <span class="at">xlab =</span> <span class="st">"Distance [x100m]"</span>, <span class="at">ylab =</span> <span class="st">"Differential pace [min/km]"</span>, <span class="at">main =</span> <span class="st">"Example of wall run"</span>, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">25</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -254,21 +254,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>For a more sophisticated simulation, we can use an ARIMA model, specifically its autoregressive (AR) component.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>pace_min <span class="ot">&lt;-</span> <span class="dv">5</span> <span class="co"># min/km (corresponds to fast run)</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>pace_wall <span class="ot">&lt;-</span> <span class="dv">20</span> <span class="co"># min/km (corresponds to very slow run) </span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>pace_wall <span class="ot">&lt;-</span> <span class="dv">20</span> <span class="co"># min/km (corresponds to very slow run)</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># classic run</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>ts_sim_classic_run <span class="ot">&lt;-</span> <span class="fu">abs</span>(<span class="fu">arima.sim</span>(<span class="at">n =</span> <span class="dv">420</span>, <span class="at">mean =</span> <span class="fl">0.001</span>, <span class="at">model =</span> <span class="fu">list</span>(<span class="at">order =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">0</span>), <span class="at">ar =</span> <span class="fl">0.9</span>))) <span class="sc">+</span> pace_min</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>ts_sim_classic_run <span class="ot">&lt;-</span> <span class="fu">abs</span>(<span class="fu">arima.sim</span>(<span class="at">n =</span> <span class="dv">420</span>, <span class="at">mean =</span> <span class="fl">0.001</span>, <span class="at">model =</span> <span class="fu">list</span>(<span class="at">order =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>), <span class="at">ar =</span> <span class="fl">0.9</span>))) <span class="sc">+</span> pace_min</span>
 <span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ts.plot</span>(ts_sim_classic_run, <span class="at">xlab =</span> <span class="st">"Distance [x100m]"</span>, <span class="at">ylab =</span> <span class="st">"Differential pace [min/km]"</span>, <span class="at">main =</span> <span class="st">"Example of classic run"</span>, <span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">25</span>))</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ts.plot</span>(ts_sim_classic_run, <span class="at">xlab =</span> <span class="st">"Distance [x100m]"</span>, <span class="at">ylab =</span> <span class="st">"Differential pace [min/km]"</span>, <span class="at">main =</span> <span class="st">"Example of classic run"</span>, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">25</span>))</span>
 <span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="co"># wall run</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>ts_sim_part1 <span class="ot">&lt;-</span> <span class="fu">abs</span>(<span class="fu">arima.sim</span>(<span class="at">n =</span> <span class="dv">210</span>, <span class="at">model =</span> <span class="fu">list</span>(<span class="at">order =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">0</span>), <span class="at">ar =</span> <span class="fl">0.9</span>))) <span class="sc">+</span> pace_min</span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>ts_sim_part2 <span class="ot">&lt;-</span> <span class="fu">ts</span>(<span class="fu">arima.sim</span>(<span class="at">n =</span> <span class="dv">210</span>, <span class="at">model =</span> <span class="fu">list</span>(<span class="at">order =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">0</span>), <span class="at">ar =</span> <span class="fl">0.9</span>)) <span class="sc">+</span> pace_wall, <span class="at">start =</span> <span class="dv">211</span>,<span class="at">end =</span><span class="dv">420</span>)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>ts_sim_part1 <span class="ot">&lt;-</span> <span class="fu">abs</span>(<span class="fu">arima.sim</span>(<span class="at">n =</span> <span class="dv">210</span>, <span class="at">model =</span> <span class="fu">list</span>(<span class="at">order =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>), <span class="at">ar =</span> <span class="fl">0.9</span>))) <span class="sc">+</span> pace_min</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>ts_sim_part2 <span class="ot">&lt;-</span> <span class="fu">ts</span>(<span class="fu">arima.sim</span>(<span class="at">n =</span> <span class="dv">210</span>, <span class="at">model =</span> <span class="fu">list</span>(<span class="at">order =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">0</span>, <span class="dv">0</span>), <span class="at">ar =</span> <span class="fl">0.9</span>)) <span class="sc">+</span> pace_wall, <span class="at">start =</span> <span class="dv">211</span>, <span class="at">end =</span> <span class="dv">420</span>)</span>
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>ts_sim_wall_run <span class="ot">&lt;-</span> <span class="fu">ts.union</span>(ts_sim_part1,ts_sim_part2)</span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>ts_sim_wall_run<span class="ot">&lt;-</span> <span class="fu">pmin</span>(ts_sim_wall_run[,<span class="dv">1</span>], ts_sim_wall_run[,<span class="dv">2</span>], <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>ts_sim_wall_run <span class="ot">&lt;-</span> <span class="fu">ts.union</span>(ts_sim_part1, ts_sim_part2)</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>ts_sim_wall_run <span class="ot">&lt;-</span> <span class="fu">pmin</span>(ts_sim_wall_run[, <span class="dv">1</span>], ts_sim_wall_run[, <span class="dv">2</span>], <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
 <span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="fu">ts.plot</span>(ts_sim_wall_run, <span class="at">xlab =</span> <span class="st">"Distance [x100m]"</span>, <span class="at">ylab =</span> <span class="st">"Differential pace [min/km]"</span>, <span class="at">main =</span> <span class="st">"Example of wall run"</span>, <span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">25</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="fu">ts.plot</span>(ts_sim_wall_run, <span class="at">xlab =</span> <span class="st">"Distance [x100m]"</span>, <span class="at">ylab =</span> <span class="st">"Differential pace [min/km]"</span>, <span class="at">main =</span> <span class="st">"Example of wall run"</span>, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">25</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -290,34 +290,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>With our two base profiles created, we’ll now bootstrap them. This process replicates the profiles with slight variations, giving us two groups with five time series each.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>ts_sim_boot_classic <span class="ot">&lt;-</span> ts_sim_classic_run <span class="sc">%&gt;%</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  tseries<span class="sc">::</span><span class="fu">tsbootstrap</span>(., <span class="at">nb=</span><span class="dv">5</span>, <span class="at">b=</span><span class="dv">200</span>, <span class="at">type =</span> <span class="st">"block"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  tseries<span class="sc">::</span><span class="fu">tsbootstrap</span>(., <span class="at">nb =</span> <span class="dv">5</span>, <span class="at">b =</span> <span class="dv">200</span>, <span class="at">type =</span> <span class="st">"block"</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>(.) <span class="sc">%&gt;%</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">rename_all</span>(<span class="fu">funs</span>(<span class="fu">c</span>(<span class="fu">paste0</span>(<span class="st">"classic_"</span>,.))))</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">rename_all</span>(<span class="fu">funs</span>(<span class="fu">c</span>(<span class="fu">paste0</span>(<span class="st">"classic_"</span>, .))))</span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>ts_sim_boot_wall <span class="ot">&lt;-</span> ts_sim_wall_run <span class="sc">%&gt;%</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  tseries<span class="sc">::</span><span class="fu">tsbootstrap</span>(., <span class="at">nb=</span><span class="dv">5</span>, <span class="at">b=</span><span class="dv">350</span>, <span class="at">type =</span> <span class="st">"block"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  tseries<span class="sc">::</span><span class="fu">tsbootstrap</span>(., <span class="at">nb =</span> <span class="dv">5</span>, <span class="at">b =</span> <span class="dv">350</span>, <span class="at">type =</span> <span class="st">"block"</span>) <span class="sc">%&gt;%</span></span>
 <span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>(.) <span class="sc">%&gt;%</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">rename_all</span>(<span class="fu">funs</span>(<span class="fu">c</span>(<span class="fu">paste0</span>(<span class="st">"wall_"</span>,.))))</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">rename_all</span>(<span class="fu">funs</span>(<span class="fu">c</span>(<span class="fu">paste0</span>(<span class="st">"wall_"</span>, .))))</span>
 <span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>ts_sim_df <span class="ot">&lt;-</span> <span class="fu">cbind</span>(ts_sim_boot_classic,ts_sim_boot_wall)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>ts_sim_df <span class="ot">&lt;-</span> <span class="fu">cbind</span>(ts_sim_boot_classic, ts_sim_boot_wall)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="heatmap-cluster" class="level3">
 <h3 class="anchored" data-anchor-id="heatmap-cluster">Heatmap cluster</h3>
 <p>{ggplot2} is fantastic, but for a quick and efficient heatmap, other packages are sometimes better. I’ll use {gplots} here, as it can generate a heatmap with dendrograms using a single function. You can find a complete guide to R heatmaps <a href="http://www.sthda.com/english/articles/28-hierarchical-clustering-essentials/93-heatmap-static-and-interactive-absolute-guide/">here</a>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>dtw_dist <span class="ot">&lt;-</span> <span class="cf">function</span>(x){<span class="fu">dist</span>(x, <span class="at">method=</span><span class="st">"DTW"</span>)}</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>ts_sim_df <span class="sc">%&gt;%</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.matrix</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  gplots<span class="sc">::</span><span class="fu">heatmap.2</span> (</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># dendrogram control</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="at">distfun =</span> dtw_dist,</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">hclustfun =</span> hclust,</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">dendrogram =</span> <span class="st">"column"</span>,</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">Rowv =</span> <span class="cn">FALSE</span>,</span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">labRow =</span> <span class="cn">FALSE</span></span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>dtw_dist <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dist</span>(x, <span class="at">method =</span> <span class="st">"DTW"</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>ts_sim_df <span class="sc">%&gt;%</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.matrix</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  gplots<span class="sc">::</span><span class="fu">heatmap.2</span>(</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="co"># dendrogram control</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">distfun =</span> dtw_dist,</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">hclustfun =</span> hclust,</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">dendrogram =</span> <span class="st">"column"</span>,</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">Rowv =</span> <span class="cn">FALSE</span>,</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">labRow =</span> <span class="cn">FALSE</span></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -341,11 +343,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># cluster analysis</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>dist_ts <span class="ot">&lt;-</span> TSclust<span class="sc">::</span><span class="fu">diss</span>(<span class="at">SERIES =</span> <span class="fu">t</span>(ts_sim_df), <span class="at">METHOD =</span> <span class="st">"DTWARP"</span>) <span class="co"># note the dataframe must be transposed</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>hc <span class="ot">&lt;-</span> stats<span class="sc">::</span><span class="fu">hclust</span>(dist_ts, <span class="at">method=</span><span class="st">"complete"</span>) <span class="co"># meathod can be also "average" or diana (for DIvisive ANAlysis Clustering)</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>hc <span class="ot">&lt;-</span> stats<span class="sc">::</span><span class="fu">hclust</span>(dist_ts, <span class="at">method =</span> <span class="st">"complete"</span>) <span class="co"># meathod can be also "average" or diana (for DIvisive ANAlysis Clustering)</span></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># k for cluster which is 2 in our case (classic vs. wall)</span></span>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>hclus <span class="ot">&lt;-</span> stats<span class="sc">::</span><span class="fu">cutree</span>(hc, <span class="at">k =</span> <span class="dv">2</span>) <span class="sc">%&gt;%</span> <span class="co"># hclus &lt;- cluster::pam(dist_ts, k = 2)$clustering has a similar result</span></span>
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>(.) <span class="sc">%&gt;%</span></span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">rename</span>(.,<span class="at">cluster_group =</span> .) <span class="sc">%&gt;%</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">rename</span>(., <span class="at">cluster_group =</span> .) <span class="sc">%&gt;%</span></span>
 <span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  tibble<span class="sc">::</span><span class="fu">rownames_to_column</span>(<span class="st">"type_col"</span>)</span>
 <span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>hcdata <span class="ot">&lt;-</span> ggdendro<span class="sc">::</span><span class="fu">dendro_data</span>(hc)</span>
@@ -353,24 +355,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Use the folloing to remove labels from dendogram so not doubling up - but good for checking hcdata$labels$label &lt;- ""</span></span>
 <span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> hcdata <span class="sc">%&gt;%</span></span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>  ggdendro<span class="sc">::</span><span class="fu">ggdendrogram</span>(., <span class="at">rotate=</span><span class="cn">TRUE</span>, <span class="at">leaf_labels=</span><span class="cn">FALSE</span>)</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>  ggdendro<span class="sc">::</span><span class="fu">ggdendrogram</span>(., <span class="at">rotate =</span> <span class="cn">TRUE</span>, <span class="at">leaf_labels =</span> <span class="cn">FALSE</span>)</span>
 <span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>p2 <span class="ot">&lt;-</span> ts_sim_df <span class="sc">%&gt;%</span></span>
 <span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">index =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">420</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">gather</span>(<span class="at">key =</span> type_col,<span class="at">value =</span> value, <span class="sc">-</span>index) <span class="sc">%&gt;%</span></span>
-<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">full_join</span>(., hclus, <span class="at">by =</span> <span class="st">"type_col"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">type_col =</span> <span class="fu">factor</span>(type_col, <span class="at">levels =</span> <span class="fu">rev</span>(<span class="fu">as.character</span>(names_order)))) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">gather</span>(<span class="at">key =</span> type_col, <span class="at">value =</span> value, <span class="sc">-</span>index) <span class="sc">%&gt;%</span></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">full_join</span>(., hclus, <span class="at">by =</span> <span class="st">"type_col"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">type_col =</span> <span class="fu">factor</span>(type_col, <span class="at">levels =</span> <span class="fu">rev</span>(<span class="fu">as.character</span>(names_order)))) <span class="sc">%&gt;%</span></span>
 <span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> index, <span class="at">y =</span> value, <span class="at">colour =</span> cluster_group)) <span class="sc">+</span></span>
 <span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
-<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>type_col, <span class="at">ncol =</span> <span class="dv">1</span>, <span class="at">strip.position=</span><span class="st">"left"</span>) <span class="sc">+</span> </span>
-<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">color=</span><span class="cn">FALSE</span>) <span class="sc">+</span></span>
-<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span> </span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>type_col, <span class="at">ncol =</span> <span class="dv">1</span>, <span class="at">strip.position =</span> <span class="st">"left"</span>) <span class="sc">+</span></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">color =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
 <span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">strip.background =</span> <span class="fu">element_blank</span>(), <span class="at">strip.text =</span> <span class="fu">element_blank</span>())</span>
 <span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>gp1<span class="ot">&lt;-</span><span class="fu">ggplotGrob</span>(p1)</span>
-<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>gp2<span class="ot">&lt;-</span><span class="fu">ggplotGrob</span>(p2) </span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>gp1 <span class="ot">&lt;-</span> <span class="fu">ggplotGrob</span>(p1)</span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>gp2 <span class="ot">&lt;-</span> <span class="fu">ggplotGrob</span>(p2)</span>
 <span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(gp2, gp1, <span class="at">ncol=</span><span class="dv">2</span>, <span class="at">widths=</span><span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(gp2, gp1, <span class="at">ncol =</span> <span class="dv">2</span>, <span class="at">widths =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -385,42 +387,43 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="using-dtwclust">Using {dtwclust}</h3>
 <p>The standout feature of {dtwclust} is its high level of customization for the clustering process. The <a href="https://cran.r-project.org/web/packages/dtwclust/vignettes/dtwclust.pdf">package vignette</a> provides a comprehensive look at all the available options.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>cluster_dtw_h2 <span class="ot">&lt;-</span> dtwclust<span class="sc">::</span><span class="fu">tsclust</span>(<span class="fu">t</span>(ts_sim_df), </span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>                                    <span class="at">type =</span> <span class="st">"h"</span>, </span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>                                    <span class="at">k =</span> <span class="dv">2</span>,  </span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>                                    <span class="at">distance =</span> <span class="st">"dtw"</span>, </span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>                                    <span class="at">control =</span> <span class="fu">hierarchical_control</span>(<span class="at">method =</span> <span class="st">"complete"</span>),</span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>                                    <span class="at">preproc =</span> <span class="cn">NULL</span>, </span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>                                    <span class="at">args =</span> <span class="fu">tsclust_args</span>(<span class="at">dist =</span> <span class="fu">list</span>(<span class="at">window.size =</span> <span class="dv">5</span>L)))</span>
-<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>hclus <span class="ot">&lt;-</span> stats<span class="sc">::</span><span class="fu">cutree</span>(cluster_dtw_h2, <span class="at">k =</span> <span class="dv">2</span>) <span class="sc">%&gt;%</span> <span class="co"># hclus &lt;- cluster::pam(dist_ts, k = 2)$clustering has a similar result</span></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>(.) <span class="sc">%&gt;%</span></span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">rename</span>(.,<span class="at">cluster_group =</span> .) <span class="sc">%&gt;%</span></span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>  tibble<span class="sc">::</span><span class="fu">rownames_to_column</span>(<span class="st">"type_col"</span>)</span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>hcdata <span class="ot">&lt;-</span> ggdendro<span class="sc">::</span><span class="fu">dendro_data</span>(cluster_dtw_h2)</span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>names_order <span class="ot">&lt;-</span> hcdata<span class="sc">$</span>labels<span class="sc">$</span>label</span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Use the folloing to remove labels from dendogram so not doubling up - but good for checking hcdata$labels$label &lt;- ""</span></span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> hcdata <span class="sc">%&gt;%</span></span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>  ggdendro<span class="sc">::</span><span class="fu">ggdendrogram</span>(., <span class="at">rotate=</span><span class="cn">TRUE</span>, <span class="at">leaf_labels=</span><span class="cn">FALSE</span>)</span>
-<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>p2 <span class="ot">&lt;-</span> ts_sim_df <span class="sc">%&gt;%</span></span>
-<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">index =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">420</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">gather</span>(<span class="at">key =</span> type_col,<span class="at">value =</span> value, <span class="sc">-</span>index) <span class="sc">%&gt;%</span></span>
-<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">full_join</span>(., hclus, <span class="at">by =</span> <span class="st">"type_col"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">type_col =</span> <span class="fu">factor</span>(type_col, <span class="at">levels =</span> <span class="fu">rev</span>(<span class="fu">as.character</span>(names_order)))) <span class="sc">%&gt;%</span> </span>
-<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> index, <span class="at">y =</span> value, <span class="at">colour =</span> cluster_group)) <span class="sc">+</span></span>
-<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
-<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>type_col, <span class="at">ncol =</span> <span class="dv">1</span>, <span class="at">strip.position=</span><span class="st">"left"</span>) <span class="sc">+</span> </span>
-<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">color=</span><span class="cn">FALSE</span>) <span class="sc">+</span></span>
-<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span> </span>
-<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">strip.background =</span> <span class="fu">element_blank</span>(), <span class="at">strip.text =</span> <span class="fu">element_blank</span>())</span>
-<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>gp1<span class="ot">&lt;-</span><span class="fu">ggplotGrob</span>(p1)</span>
-<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>gp2<span class="ot">&lt;-</span><span class="fu">ggplotGrob</span>(p2) </span>
-<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(gp2, gp1, <span class="at">ncol=</span><span class="dv">2</span>, <span class="at">widths=</span><span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>cluster_dtw_h2 <span class="ot">&lt;-</span> dtwclust<span class="sc">::</span><span class="fu">tsclust</span>(<span class="fu">t</span>(ts_sim_df),</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"h"</span>,</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">k =</span> <span class="dv">2</span>,</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">distance =</span> <span class="st">"dtw"</span>,</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">control =</span> <span class="fu">hierarchical_control</span>(<span class="at">method =</span> <span class="st">"complete"</span>),</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">preproc =</span> <span class="cn">NULL</span>,</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">args =</span> <span class="fu">tsclust_args</span>(<span class="at">dist =</span> <span class="fu">list</span>(<span class="at">window.size =</span> <span class="dv">5</span>L))</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>hclus <span class="ot">&lt;-</span> stats<span class="sc">::</span><span class="fu">cutree</span>(cluster_dtw_h2, <span class="at">k =</span> <span class="dv">2</span>) <span class="sc">%&gt;%</span> <span class="co"># hclus &lt;- cluster::pam(dist_ts, k = 2)$clustering has a similar result</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>(.) <span class="sc">%&gt;%</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">rename</span>(., <span class="at">cluster_group =</span> .) <span class="sc">%&gt;%</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>  tibble<span class="sc">::</span><span class="fu">rownames_to_column</span>(<span class="st">"type_col"</span>)</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>hcdata <span class="ot">&lt;-</span> ggdendro<span class="sc">::</span><span class="fu">dendro_data</span>(cluster_dtw_h2)</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>names_order <span class="ot">&lt;-</span> hcdata<span class="sc">$</span>labels<span class="sc">$</span>label</span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Use the folloing to remove labels from dendogram so not doubling up - but good for checking hcdata$labels$label &lt;- ""</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> hcdata <span class="sc">%&gt;%</span></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>  ggdendro<span class="sc">::</span><span class="fu">ggdendrogram</span>(., <span class="at">rotate =</span> <span class="cn">TRUE</span>, <span class="at">leaf_labels =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>p2 <span class="ot">&lt;-</span> ts_sim_df <span class="sc">%&gt;%</span></span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">index =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">420</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">gather</span>(<span class="at">key =</span> type_col, <span class="at">value =</span> value, <span class="sc">-</span>index) <span class="sc">%&gt;%</span></span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">full_join</span>(., hclus, <span class="at">by =</span> <span class="st">"type_col"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">type_col =</span> <span class="fu">factor</span>(type_col, <span class="at">levels =</span> <span class="fu">rev</span>(<span class="fu">as.character</span>(names_order)))) <span class="sc">%&gt;%</span></span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> index, <span class="at">y =</span> value, <span class="at">colour =</span> cluster_group)) <span class="sc">+</span></span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>type_col, <span class="at">ncol =</span> <span class="dv">1</span>, <span class="at">strip.position =</span> <span class="st">"left"</span>) <span class="sc">+</span></span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">color =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">strip.background =</span> <span class="fu">element_blank</span>(), <span class="at">strip.text =</span> <span class="fu">element_blank</span>())</span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>gp1 <span class="ot">&lt;-</span> <span class="fu">ggplotGrob</span>(p1)</span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>gp2 <span class="ot">&lt;-</span> <span class="fu">ggplotGrob</span>(p2)</span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(gp2, gp1, <span class="at">ncol =</span> <span class="dv">2</span>, <span class="at">widths =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -432,39 +435,41 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This result is better. The clusters correctly separate the ‘classic’ and ‘wall’ runs, and now, time series with similar shapes are also grouped together within each cluster.</p>
 <p>We can refine this further by modifying the arguments to cluster based on z-scores and calculate centroids using the built-in <code>shape_extraction()</code> function.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>cluster_dtw_h2 <span class="ot">&lt;-</span> dtwclust<span class="sc">::</span><span class="fu">tsclust</span>(<span class="fu">t</span>(ts_sim_df), <span class="at">type =</span> <span class="st">"h"</span>, <span class="at">k =</span> <span class="dv">2</span>L,</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>                                    <span class="at">preproc =</span> zscore,</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>                                    <span class="at">distance =</span> <span class="st">"dtw"</span>, <span class="at">centroid =</span> shape_extraction,</span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>                                    <span class="at">control =</span> <span class="fu">hierarchical_control</span>(<span class="at">method =</span> <span class="st">"complete"</span>))</span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>hclus <span class="ot">&lt;-</span> stats<span class="sc">::</span><span class="fu">cutree</span>(cluster_dtw_h2, <span class="at">k =</span> <span class="dv">2</span>) <span class="sc">%&gt;%</span> <span class="co"># hclus &lt;- cluster::pam(dist_ts, k = 2)$clustering has a similar result</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>(.) <span class="sc">%&gt;%</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">rename</span>(.,<span class="at">cluster_group =</span> .) <span class="sc">%&gt;%</span></span>
-<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  tibble<span class="sc">::</span><span class="fu">rownames_to_column</span>(<span class="st">"type_col"</span>)</span>
-<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>hcdata <span class="ot">&lt;-</span> ggdendro<span class="sc">::</span><span class="fu">dendro_data</span>(cluster_dtw_h2)</span>
-<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>names_order <span class="ot">&lt;-</span> hcdata<span class="sc">$</span>labels<span class="sc">$</span>label</span>
-<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Use the folloing to remove labels from dendogram so not doubling up - but good for checking hcdata$labels$label &lt;- ""</span></span>
-<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> hcdata <span class="sc">%&gt;%</span></span>
-<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>  ggdendro<span class="sc">::</span><span class="fu">ggdendrogram</span>(., <span class="at">rotate=</span><span class="cn">TRUE</span>, <span class="at">leaf_labels=</span><span class="cn">FALSE</span>)</span>
-<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>p2 <span class="ot">&lt;-</span> ts_sim_df <span class="sc">%&gt;%</span></span>
-<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">index =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">420</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">gather</span>(<span class="at">key =</span> type_col,<span class="at">value =</span> value, <span class="sc">-</span>index) <span class="sc">%&gt;%</span></span>
-<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">full_join</span>(., hclus, <span class="at">by =</span> <span class="st">"type_col"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">type_col =</span> <span class="fu">factor</span>(type_col, <span class="at">levels =</span> <span class="fu">rev</span>(<span class="fu">as.character</span>(names_order)))) <span class="sc">%&gt;%</span> </span>
-<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> index, <span class="at">y =</span> value, <span class="at">colour =</span> cluster_group)) <span class="sc">+</span></span>
-<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
-<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>type_col, <span class="at">ncol =</span> <span class="dv">1</span>, <span class="at">strip.position=</span><span class="st">"left"</span>) <span class="sc">+</span> </span>
-<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">color=</span><span class="cn">FALSE</span>) <span class="sc">+</span></span>
-<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span> </span>
-<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">strip.background =</span> <span class="fu">element_blank</span>(), <span class="at">strip.text =</span> <span class="fu">element_blank</span>())</span>
-<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>gp1<span class="ot">&lt;-</span><span class="fu">ggplotGrob</span>(p1)</span>
-<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>gp2<span class="ot">&lt;-</span><span class="fu">ggplotGrob</span>(p2) </span>
-<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(gp2, gp1, <span class="at">ncol=</span><span class="dv">2</span>, <span class="at">widths=</span><span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>cluster_dtw_h2 <span class="ot">&lt;-</span> dtwclust<span class="sc">::</span><span class="fu">tsclust</span>(<span class="fu">t</span>(ts_sim_df),</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">type =</span> <span class="st">"h"</span>, <span class="at">k =</span> <span class="dv">2</span>L,</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">preproc =</span> zscore,</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">distance =</span> <span class="st">"dtw"</span>, <span class="at">centroid =</span> shape_extraction,</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">control =</span> <span class="fu">hierarchical_control</span>(<span class="at">method =</span> <span class="st">"complete"</span>)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>hclus <span class="ot">&lt;-</span> stats<span class="sc">::</span><span class="fu">cutree</span>(cluster_dtw_h2, <span class="at">k =</span> <span class="dv">2</span>) <span class="sc">%&gt;%</span> <span class="co"># hclus &lt;- cluster::pam(dist_ts, k = 2)$clustering has a similar result</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>(.) <span class="sc">%&gt;%</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">rename</span>(., <span class="at">cluster_group =</span> .) <span class="sc">%&gt;%</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>  tibble<span class="sc">::</span><span class="fu">rownames_to_column</span>(<span class="st">"type_col"</span>)</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>hcdata <span class="ot">&lt;-</span> ggdendro<span class="sc">::</span><span class="fu">dendro_data</span>(cluster_dtw_h2)</span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>names_order <span class="ot">&lt;-</span> hcdata<span class="sc">$</span>labels<span class="sc">$</span>label</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Use the folloing to remove labels from dendogram so not doubling up - but good for checking hcdata$labels$label &lt;- ""</span></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>p1 <span class="ot">&lt;-</span> hcdata <span class="sc">%&gt;%</span></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>  ggdendro<span class="sc">::</span><span class="fu">ggdendrogram</span>(., <span class="at">rotate =</span> <span class="cn">TRUE</span>, <span class="at">leaf_labels =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>p2 <span class="ot">&lt;-</span> ts_sim_df <span class="sc">%&gt;%</span></span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">mutate</span>(<span class="at">index =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">420</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>  tidyr<span class="sc">::</span><span class="fu">gather</span>(<span class="at">key =</span> type_col, <span class="at">value =</span> value, <span class="sc">-</span>index) <span class="sc">%&gt;%</span></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">full_join</span>(., hclus, <span class="at">by =</span> <span class="st">"type_col"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">type_col =</span> <span class="fu">factor</span>(type_col, <span class="at">levels =</span> <span class="fu">rev</span>(<span class="fu">as.character</span>(names_order)))) <span class="sc">%&gt;%</span></span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> index, <span class="at">y =</span> value, <span class="at">colour =</span> cluster_group)) <span class="sc">+</span></span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span>type_col, <span class="at">ncol =</span> <span class="dv">1</span>, <span class="at">strip.position =</span> <span class="st">"left"</span>) <span class="sc">+</span></span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">guides</span>(<span class="at">color =</span> <span class="cn">FALSE</span>) <span class="sc">+</span></span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>() <span class="sc">+</span></span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">strip.background =</span> <span class="fu">element_blank</span>(), <span class="at">strip.text =</span> <span class="fu">element_blank</span>())</span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a>gp1 <span class="ot">&lt;-</span> <span class="fu">ggplotGrob</span>(p1)</span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a>gp2 <span class="ot">&lt;-</span> <span class="fu">ggplotGrob</span>(p2)</span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(gp2, gp1, <span class="at">ncol =</span> <span class="dv">2</span>, <span class="at">widths =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -478,17 +483,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Normalized DTW</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>ndtw <span class="ot">&lt;-</span> <span class="cf">function</span>(x, y, ...) {</span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dtw</span>(x, y, ...,</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>      <span class="at">step.pattern =</span> asymmetric,</span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>      <span class="at">distance.only =</span> <span class="cn">TRUE</span>)<span class="sc">$</span>normalizedDistance</span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Register the distance with proxy</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>proxy<span class="sc">::</span>pr_DB<span class="sc">$</span><span class="fu">set_entry</span>(<span class="at">FUN =</span> ndtw, <span class="at">names =</span> <span class="fu">c</span>(<span class="st">"nDTW"</span>),</span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>                       <span class="at">loop =</span> <span class="cn">TRUE</span>, <span class="at">type =</span> <span class="st">"metric"</span>, <span class="at">distance =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>                       <span class="at">description =</span> <span class="st">"Normalized, asymmetric DTW"</span>)</span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Partitional clustering</span></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>cluster_dtw_h2 <span class="ot">&lt;-</span> dtwclust<span class="sc">::</span><span class="fu">tsclust</span>(<span class="fu">t</span>(ts_sim_df), <span class="at">k =</span> <span class="dv">2</span>L,<span class="at">distance =</span> <span class="st">"nDTW"</span>)</span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(cluster_dtw_h2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">step.pattern =</span> asymmetric,</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">distance.only =</span> <span class="cn">TRUE</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  )<span class="sc">$</span>normalizedDistance</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Register the distance with proxy</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>proxy<span class="sc">::</span>pr_DB<span class="sc">$</span><span class="fu">set_entry</span>(</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">FUN =</span> ndtw, <span class="at">names =</span> <span class="fu">c</span>(<span class="st">"nDTW"</span>),</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">loop =</span> <span class="cn">TRUE</span>, <span class="at">type =</span> <span class="st">"metric"</span>, <span class="at">distance =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">description =</span> <span class="st">"Normalized, asymmetric DTW"</span></span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Partitional clustering</span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>cluster_dtw_h2 <span class="ot">&lt;-</span> dtwclust<span class="sc">::</span><span class="fu">tsclust</span>(<span class="fu">t</span>(ts_sim_df), <span class="at">k =</span> <span class="dv">2</span>L, <span class="at">distance =</span> <span class="st">"nDTW"</span>)</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(cluster_dtw_h2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">

@@ -17,7 +17,7 @@ First, the automatic generation of pages for parallel sessions. Most conferences
 #| filename: "~/cere2025/internal/computation_pages.R"
 
 # List all the parallel sessions
-sessions <- parallel_sessions |> 
+sessions <- parallel_sessions |>
   distinct(session, track)
 
 # Read the quarto template
@@ -25,20 +25,22 @@ template <- readr::read_file("internal/parallel_session_template.qmd")
 
 # Create a .qmd file per session
 page_creation <- function(session, track) {
-  file_conn <- 
-    glue::glue("program/{paste(snakecase::to_any_case(session), track, sep = '_')}.qmd") |> 
+  file_conn <-
+    glue::glue("program/{paste(snakecase::to_any_case(session), track, sep = '_')}.qmd") |>
     file("w")
-  
-  writeLines(glue::glue(
-    template,
-    .open = "{{", .close = "}}"), # glue double fenced because of code chunk capsule
-    con = file_conn)
-  
+
+  writeLines(
+    glue::glue(
+      template,
+      .open = "{{", .close = "}}"
+    ), # glue double fenced because of code chunk capsule
+    con = file_conn
+  )
+
   close(file_conn)
 }
 
 purrr::pwalk(sessions, page_creation)
-
 ```
 
 ::: {.callout-caution}
@@ -65,18 +67,18 @@ Second, the abstract book. Like the sessions, the book needed to group all the a
 #| eval: false
 #| filename: "~/cere2025/internal/pdf_program.qmd"
 
-sessions <- parallel_sessions |> 
+sessions <- parallel_sessions |>
   distinct(session, track)
 
 res <- map2(
   sessions$session, sessions$track,
-  ~knit_child(
+  ~ knit_child(
     here("internal/pdf_template.qmd"),
     envir = environment(),
     quiet = TRUE
   )
 )
-cat(unlist(res), sep = '\n')
+cat(unlist(res), sep = "\n")
 ```
 
 ## 2.	Using sciencesconf.org for Abstract Management

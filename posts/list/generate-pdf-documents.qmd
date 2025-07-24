@@ -61,4 +61,3 @@ You can avoid the `system()` workaround on Mac M1 by making sure the correct Pyt
 The issue seems to come from mismatched Python setups. The {doconv} package uses the {locatexec} package to find the right Python executable with `python_exec()`, but this might not be the one that holds your installed docx2pdf library.
 
 To fix this, copy the path returned by which docx2pdf and paste that file into the folder returned by `dirname(locatexec::python_exec())`. That way, everything stays reproducible and you’re not relying on hardcoded paths that only work on your machine.
-
