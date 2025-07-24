@@ -2,7 +2,8 @@
 title: "Time series Clustering with Dynamic Time Warping"
 
 execute: 
-  eval: false
+  eval: true
+  warning: false
 ---
 
 If you want to cluster time series in R, you're in luck. There are many available solutions, and the web is packed with helpful tutorials like those from [Thomas Girke](http://girke.bioinformatics.ucr.edu/GEN242/pages/mydoc/Rclustering.html), [Rafael Irizarry and Michael Love](http://genomicsclass.github.io/book/pages/clustering_and_heatmaps.html), [Andrew B. Collier](https://datawookie.netlify.com/blog/2017/04/clustering-time-series-data/), [Peter Laurinec](https://petolau.github.io/TSrepr-clustering-time-series-representations/), [Dylan Glotzer](http://www.stat.unc.edu/faculty/pipiras/timeseries/Multivariate_6_-_Classification_Clustering_-_Menu.html), and [Ana Rita Marques](http://rstudio-pubs-static.s3.amazonaws.com/398402_abe1a0343a4e4e03977de8f3791e96bb.html).

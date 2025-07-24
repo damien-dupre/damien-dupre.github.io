@@ -76,6 +76,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-beb951377dedf5b883d8e4eef4e48d3b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -109,8 +112,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="../../assets/styles.css">
 <meta name="twitter:title" content="Time series Clustering with Dynamic Time Warping – Damien Dupré">
 <meta name="twitter:description" content="Research, Statistics, and Data Analytics">
+<meta name="twitter:image" content="https://damien-dupre.github.io/posts/list/timeseries-clustering-part1_files/figure-html/unnamed-chunk-2-1.png">
 <meta name="twitter:creator" content="@damien_dupre">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image-height" content="576">
+<meta name="twitter:image-width" content="768">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -230,6 +236,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.ts</span>(.)</span>
 <span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="fu">ts.plot</span>(ts_sim_wall_run, <span class="at">xlab =</span> <span class="st">"Distance [x100m]"</span>, <span class="at">ylab =</span> <span class="st">"Differential pace [min/km]"</span>, <span class="at">main =</span> <span class="st">"Example of wall run"</span>, <span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">25</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="timeseries-clustering-part1_files/figure-html/unnamed-chunk-2-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="timeseries-clustering-part1_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="384"></a></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="timeseries-clustering-part1_files/figure-html/unnamed-chunk-2-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="timeseries-clustering-part1_files/figure-html/unnamed-chunk-2-2.png" class="img-fluid figure-img" width="384"></a></p>
+</figure>
+</div>
+</div>
 </div>
 <p>For a more sophisticated simulation, we can use an ARIMA model, specifically its autoregressive (AR) component.</p>
 <div class="cell">
@@ -249,6 +269,20 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>ts_sim_wall_run<span class="ot">&lt;-</span> <span class="fu">pmin</span>(ts_sim_wall_run[,<span class="dv">1</span>], ts_sim_wall_run[,<span class="dv">2</span>], <span class="at">na.rm =</span> <span class="cn">TRUE</span>)</span>
 <span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a><span class="fu">ts.plot</span>(ts_sim_wall_run, <span class="at">xlab =</span> <span class="st">"Distance [x100m]"</span>, <span class="at">ylab =</span> <span class="st">"Differential pace [min/km]"</span>, <span class="at">main =</span> <span class="st">"Example of wall run"</span>, <span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">25</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="timeseries-clustering-part1_files/figure-html/unnamed-chunk-3-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="timeseries-clustering-part1_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="384"></a></p>
+</figure>
+</div>
+</div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="timeseries-clustering-part1_files/figure-html/unnamed-chunk-3-2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="timeseries-clustering-part1_files/figure-html/unnamed-chunk-3-2.png" class="img-fluid figure-img" width="384"></a></p>
+</figure>
+</div>
+</div>
 </div>
 </section>
 <section id="bootstrap" class="level3">
@@ -284,6 +318,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">Rowv =</span> <span class="cn">FALSE</span>,</span>
 <span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">labRow =</span> <span class="cn">FALSE</span></span>
 <span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="timeseries-clustering-part1_files/figure-html/unnamed-chunk-5-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="timeseries-clustering-part1_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid figure-img" width="672"></a></p>
+</figure>
+</div>
+</div>
 </div>
 <p>The heatmap already shows a clear separation between the ‘classic’ and ‘wall’ runs. But since our focus is on DTW, let’s move on to the {TSclust} and {dtwclust} packages.</p>
 </section>
@@ -330,6 +371,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>gp2<span class="ot">&lt;-</span><span class="fu">ggplotGrob</span>(p2) </span>
 <span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(gp2, gp1, <span class="at">ncol=</span><span class="dv">2</span>, <span class="at">widths=</span><span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="timeseries-clustering-part1_files/figure-html/unnamed-chunk-6-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="timeseries-clustering-part1_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></a></p>
+</figure>
+</div>
+</div>
 </div>
 <p>{TSclust} successfully separates the time series into two groups as expected. Looking closer, however, the ‘wall’ runs within their cluster aren’t perfectly ordered by shape. Let’s see if {dtwclust} performs better.</p>
 </section>
@@ -373,6 +421,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>gp2<span class="ot">&lt;-</span><span class="fu">ggplotGrob</span>(p2) </span>
 <span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(gp2, gp1, <span class="at">ncol=</span><span class="dv">2</span>, <span class="at">widths=</span><span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="timeseries-clustering-part1_files/figure-html/unnamed-chunk-7-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="timeseries-clustering-part1_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid figure-img" width="672"></a></p>
+</figure>
+</div>
+</div>
 </div>
 <p>This result is better. The clusters correctly separate the ‘classic’ and ‘wall’ runs, and now, time series with similar shapes are also grouped together within each cluster.</p>
 <p>We can refine this further by modifying the arguments to cluster based on z-scores and calculate centroids using the built-in <code>shape_extraction()</code> function.</p>
@@ -410,6 +465,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>gp2<span class="ot">&lt;-</span><span class="fu">ggplotGrob</span>(p2) </span>
 <span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a><span class="fu">grid.arrange</span>(gp2, gp1, <span class="at">ncol=</span><span class="dv">2</span>, <span class="at">widths=</span><span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">2</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="timeseries-clustering-part1_files/figure-html/unnamed-chunk-8-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="timeseries-clustering-part1_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid figure-img" width="672"></a></p>
+</figure>
+</div>
+</div>
 </div>
 <p>As shown in the vignette, we can also register a custom function for a normalized and asymmetric variant of DTW.</p>
 <div class="cell">
@@ -427,6 +489,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>cluster_dtw_h2 <span class="ot">&lt;-</span> dtwclust<span class="sc">::</span><span class="fu">tsclust</span>(<span class="fu">t</span>(ts_sim_df), <span class="at">k =</span> <span class="dv">2</span>L,<span class="at">distance =</span> <span class="st">"nDTW"</span>)</span>
 <span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(cluster_dtw_h2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><a href="timeseries-clustering-part1_files/figure-html/unnamed-chunk-9-1.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="timeseries-clustering-part1_files/figure-html/unnamed-chunk-9-1.png" class="img-fluid figure-img" width="672"></a></p>
+</figure>
+</div>
+</div>
 </div>
 <p>While this partitional approach works well for the sine data, it’s less accurate for our ARIMA-based simulations. A drawback of this method is that I can’t extract a dendrogram from the <code>cluster_dtw_h2</code> object directly, but the distance matrix it contains could still be useful.</p>
 <p>This initial analysis shows the promise of DTW. To continue this work, future steps would involve testing the method on time series with greater dissimilarities and, most importantly, applying it to a real-world dataset.</p>
@@ -849,6 +918,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
