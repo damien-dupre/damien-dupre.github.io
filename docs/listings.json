@@ -1,21 +1,22 @@
 [
   {
-    "listing": "/courses/index.html",
-    "items": [
-      "/courses/details/BAA1028.html",
-      "/courses/details/BAA1030.html",
-      "/courses/details/mt612.html",
-      "/courses/details/STA1005.html"
-    ]
-  },
-  {
     "listing": "/posts/index.html",
     "items": [
       "/posts/list/generate-pdf-documents.html",
       "/posts/list/generating-multiple-pdf.html",
       "/posts/list/how-to-organise.html",
       "/posts/list/organising-research-conferences.html",
-      "/posts/list/timeseries-clustering-part1.html"
+      "/posts/list/timeseries-clustering-part1.html",
+      "/posts/list/timeseries-clustering-part2.html"
+    ]
+  },
+  {
+    "listing": "/courses/index.html",
+    "items": [
+      "/courses/details/BAA1028.html",
+      "/courses/details/BAA1030.html",
+      "/courses/details/mt612.html",
+      "/courses/details/STA1005.html"
     ]
   }
 ]

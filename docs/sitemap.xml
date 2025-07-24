@@ -1,55 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://damien-dupre.github.io/posts/list/timeseries-clustering-part1.html</loc>
-    <lastmod>2025-07-24T19:09:07.347Z</lastmod>
+    <loc>https://damien-dupre.github.io/posts/list/timeseries-clustering-part2.html</loc>
+    <lastmod>2025-07-24T19:33:49.095Z</lastmod>
   </url>
   <url>
-    <loc>https://damien-dupre.github.io/posts/list/how-to-organise.html</loc>
-    <lastmod>2025-07-24T19:09:55.303Z</lastmod>
-  </url>
-  <url>
-    <loc>https://damien-dupre.github.io/posts/list/generate-pdf-documents.html</loc>
-    <lastmod>2025-07-24T19:09:24.368Z</lastmod>
-  </url>
-  <url>
-    <loc>https://damien-dupre.github.io/index.html</loc>
-    <lastmod>2024-06-17T11:46:06.000Z</lastmod>
-  </url>
-  <url>
-    <loc>https://damien-dupre.github.io/courses/details/mt612.html</loc>
-    <lastmod>2025-04-09T19:45:25.010Z</lastmod>
-  </url>
-  <url>
-    <loc>https://damien-dupre.github.io/courses/details/BAA1030.html</loc>
-    <lastmod>2025-04-09T19:44:08.583Z</lastmod>
-  </url>
-  <url>
-    <loc>https://damien-dupre.github.io/about.html</loc>
-    <lastmod>2025-07-23T15:21:02.597Z</lastmod>
-  </url>
-  <url>
-    <loc>https://damien-dupre.github.io/courses/details/BAA1028.html</loc>
-    <lastmod>2025-04-09T19:39:21.044Z</lastmod>
-  </url>
-  <url>
-    <loc>https://damien-dupre.github.io/courses/details/STA1005.html</loc>
-    <lastmod>2025-04-09T19:46:27.704Z</lastmod>
-  </url>
-  <url>
-    <loc>https://damien-dupre.github.io/courses/index.html</loc>
-    <lastmod>2025-07-23T15:45:44.731Z</lastmod>
-  </url>
-  <url>
-    <loc>https://damien-dupre.github.io/posts/index.html</loc>
-    <lastmod>2025-07-23T15:21:58.175Z</lastmod>
+    <loc>https://damien-dupre.github.io/posts/list/organising-research-conferences.html</loc>
+    <lastmod>2025-07-24T19:10:06.183Z</lastmod>
   </url>
   <url>
     <loc>https://damien-dupre.github.io/posts/list/generating-multiple-pdf.html</loc>
     <lastmod>2025-07-24T19:09:34.867Z</lastmod>
   </url>
   <url>
-    <loc>https://damien-dupre.github.io/posts/list/organising-research-conferences.html</loc>
-    <lastmod>2025-07-24T19:10:06.183Z</lastmod>
+    <loc>https://damien-dupre.github.io/posts/index.html</loc>
+    <lastmod>2025-07-23T15:21:58.175Z</lastmod>
+  </url>
+  <url>
+    <loc>https://damien-dupre.github.io/courses/index.html</loc>
+    <lastmod>2025-07-23T15:45:44.731Z</lastmod>
+  </url>
+  <url>
+    <loc>https://damien-dupre.github.io/courses/details/STA1005.html</loc>
+    <lastmod>2025-04-09T19:46:27.704Z</lastmod>
+  </url>
+  <url>
+    <loc>https://damien-dupre.github.io/courses/details/BAA1028.html</loc>
+    <lastmod>2025-04-09T19:39:21.044Z</lastmod>
+  </url>
+  <url>
+    <loc>https://damien-dupre.github.io/about.html</loc>
+    <lastmod>2025-07-23T15:21:02.597Z</lastmod>
+  </url>
+  <url>
+    <loc>https://damien-dupre.github.io/courses/details/BAA1030.html</loc>
+    <lastmod>2025-04-09T19:44:08.583Z</lastmod>
+  </url>
+  <url>
+    <loc>https://damien-dupre.github.io/courses/details/mt612.html</loc>
+    <lastmod>2025-04-09T19:45:25.010Z</lastmod>
+  </url>
+  <url>
+    <loc>https://damien-dupre.github.io/index.html</loc>
+    <lastmod>2024-06-17T11:46:06.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://damien-dupre.github.io/posts/list/generate-pdf-documents.html</loc>
+    <lastmod>2025-07-24T19:09:24.368Z</lastmod>
+  </url>
+  <url>
+    <loc>https://damien-dupre.github.io/posts/list/how-to-organise.html</loc>
+    <lastmod>2025-07-24T19:09:55.303Z</lastmod>
+  </url>
+  <url>
+    <loc>https://damien-dupre.github.io/posts/list/timeseries-clustering-part1.html</loc>
+    <lastmod>2025-07-24T19:09:07.347Z</lastmod>
   </url>
 </urlset>
