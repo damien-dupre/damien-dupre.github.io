@@ -1,0 +1,23 @@
+- title: "Comparing virtual reality with computer monitors as rating environments for affective dimensions in social interactions"
+  author: Gary J McKeown, Christine Spencer, Alex Patterson, Thomas Creaney, and Damien Dupré
+  published: Proceedings of the 7th International Conference on Affective Computing and Intelligent Interaction
+  links:
+  - name: DOI
+    url: https://doi.org/10.1109/ACII.2017.8273640
+    icon: fa-solid fa-globe
+
+- title: "Dynamic analysis of automatic emotion recognition using generalized additive mixed models"
+  author: Damien Dupré, Adam Booth, Andrew Bolster, Gawain Morrison, and Gary J McKeown
+  published: Proceedings of the Annual Convention of the Society for the Study of Artificial Intelligence and Simulation for Behaviour
+  links:
+  - name: URL
+    url: http://aisb2017.cs.bath.ac.uk/proceedings.html
+    icon: fa-solid fa-globe
+
+- title: "Dynamic model of athletes’ emotions based on wearable devices"
+  author: Damien Dupré, Ben Bland, Andrew Bolster, Gawain Morrison, and Gary J McKeown
+  published: Proceedings of the International Conference on Applied Human Factors in Sports, Injury Prevention and Outdoor Recreation
+  links:
+  - name: DOI
+    url: https://doi.org/10.1007/978-3-319-60822-8_4
+    icon: fa-solid fa-globe

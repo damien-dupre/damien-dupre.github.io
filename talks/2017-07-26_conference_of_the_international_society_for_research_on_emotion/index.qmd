@@ -1,0 +1,7 @@
+---
+image: img.png
+title: "Physiological correlates of emotions 'in the wild': A case study with mountain bikers"
+author: Damien Dupré, Gawain Morrison, and Gary J McKeown
+description: Conference of the International Society for Research on Emotion (ISRE 2017)
+date: "2017-07-26"
+---

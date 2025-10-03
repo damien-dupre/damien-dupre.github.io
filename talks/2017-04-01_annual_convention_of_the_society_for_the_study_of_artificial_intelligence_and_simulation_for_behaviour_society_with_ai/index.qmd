@@ -1,0 +1,7 @@
+---
+image: img.jpg
+title: "Dynamic analysis of automatic emotion recognition using generalized additive mixed models"
+author: Damien Dupré, Adam Booth, Andrew Bolster, Gawain Morrison, and Gary J McKeown
+description: Annual Convention of the Society for the Study of Artificial Intelligence and Simulation for Behaviour (AISB 2017)
+date: "2017-04-01"
+---

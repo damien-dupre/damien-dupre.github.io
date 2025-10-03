@@ -1,0 +1,23 @@
+- title: "A performance comparison of eight commercially available automatic classifiers for facial affect recognition"
+  author: Damien Dupré, Eva G Krumhuber, Dennis Kuster, and Gary J McKeown
+  published: Plos one
+  links:
+  - name: DOI
+    url: https://doi.org/10.1371/journal.pone.0231968
+    icon: fa-solid fa-globe
+
+- title: "Analysis of physiological changes related to emotions during a zipline activity"
+  author: Damien Dupré, Nicole Andelic, Daniel Moore, Gawain Morrison, and Gary J McKeown
+  published: Sports Engineering
+  links:
+  - name: DOI
+    url: https://doi.org/10.1007/s12283-020-00328-9
+    icon: fa-solid fa-globe
+
+- title: "Urban and socio-economic correlates of property prices in Dublin’s area"
+  author: Damien Dupré
+  published: Proceedings of the 7th International Conference on Data Science and Advanced Analytics
+  links:
+  - name: DOI
+    url: https://doi.org/10.1109/DSAA49011.2020.00070
+    icon: fa-solid fa-globe

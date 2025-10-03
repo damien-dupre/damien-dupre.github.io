@@ -1,0 +1,11 @@
+---
+image: img.jpg
+title: "Cloud-Powered Equity: Driving Student Success in Data Analytics"
+author: Damien Dupré
+description: DCU TEU Teaching & Learning Week 2025
+abstract: This presentation details how accessible cloud tools foster equity and inclusion in data analytics education. We demonstrate using Tableau Public for data visualisation, alongside Google Colab and GitHub for Python programming. These platforms eliminate cost and software barriers, providing all students opportunities to develop vital data skills. This approach creates an inclusive learning environment, empowering diverse students. Notably, since 2021, DCU students taught with these methods have consistently featured in the Top 10 of the European Student Data Visualisation Challenge, underscoring the strategy's success in equipping learners.
+date: "2025-09-30"
+---
+
+- Slides: <https://damien-dupre.github.io/cloud_powered_equity>.
+- Code: <https://github.com/damien-dupre/cloud_powered_equity>.

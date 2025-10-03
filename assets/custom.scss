@@ -100,3 +100,61 @@ body {
   font-family: "Red Hat Text";
   justify-content: flex-end !important;
 }
+
+/* Talks Listing Design */
+h3.no-anchor.listing-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Publications Listing Design */
+.publications {
+    .publication-entry {
+        display: flex;
+        flex-direction: row;
+        font-family: $headings-font-family;
+        line-height: 1.3;
+        margin-bottom: 1.5em;
+        column-gap: 1em;
+
+        .body {
+            flex: 1 0 80%;
+        }
+
+        .metadata {
+            flex: 1 0 20%;
+        }
+        
+        .author {
+            font-size: 12px;
+            text-align: left;
+        }
+
+        .title {
+            font-weight: 500;
+            font-size: 1.2em;
+            margin-bottom: 0.2em;
+            line-height: 1.2;
+        }
+
+        .published {
+            font-weight: 300;
+            font-size: 1em;
+            margin-bottom: 0.3em;
+        }
+
+        ul.publication-links {
+            padding: 0 0.5em;
+/*             background-color: shift-color($light-orange, -91%); */
+            margin-bottom: 0;
+
+            .publication-link {
+                display: inline-block;
+                white-space: nowrap;
+                margin: 0;
+                padding: 0.5em 1em 0.5em 0;
+                font-size: 0.85em;
+            }
+        }
+    }
+}

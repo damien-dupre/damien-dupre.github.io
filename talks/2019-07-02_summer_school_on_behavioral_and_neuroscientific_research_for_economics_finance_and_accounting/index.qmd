@@ -1,0 +1,7 @@
+---
+image: img.png
+title: "Data analytics for behavioral research"
+author: Damien Dupré
+description: Summer School on Behavioral and Neuroscientific Research for Economics, Finance and Accounting (ECMCRC 2019)
+date: "2019-07-02"
+---

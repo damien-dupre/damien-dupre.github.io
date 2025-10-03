@@ -1,0 +1,7 @@
+---
+image: img.png
+title: "Urban and socio-economic correlates of property prices in Dublin’s area"
+author: Damien Dupré
+description: International Conference on Data Science and Advanced Analytics (DSAA 2020)
+date: "2020-10-01"
+---

@@ -1,0 +1,24 @@
+---
+title: "Talks"
+description: |
+  Presentations to scientific events and public dissemination.
+listing:
+  contents: talks
+  sort: "date desc"
+  type: default
+  fields: [title, author, description, date, image]
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  image-height: 150px
+  
+page-layout: full
+# https://mickael.canouil.fr/talks
+# https://www.apreshill.com/talk/
+# https://emilhvitfeldt.com/talks
+# https://meghan.rbind.io/talks/
+# https://nrennie.rbind.io/talks/
+# https://remlapmot.github.io/#talks
+# https://ivelasq.rbind.io/talk
+---
+

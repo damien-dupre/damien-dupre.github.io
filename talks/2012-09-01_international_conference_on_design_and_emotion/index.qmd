@@ -1,0 +1,7 @@
+---
+image: img.jpg
+title: "Measuring emotional states and behavioral responses to innovative design"
+author: Damien Dupré, Michel Dubois, Anna Tcherkassof, and Pascal Pizelle
+description: 8th International Conference on Design and Emotion
+date: "2012-09-01"
+---

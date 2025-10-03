@@ -1,22 +1,62 @@
 [
   {
-    "listing": "/posts/index.html",
+    "listing": "/publications.html",
+    "items": []
+  },
+  {
+    "listing": "/courses.html",
     "items": [
-      "/posts/list/generate-pdf-documents.html",
-      "/posts/list/generating-multiple-pdf.html",
-      "/posts/list/how-to-organise.html",
-      "/posts/list/organising-research-conferences.html",
-      "/posts/list/timeseries-clustering-part1.html",
-      "/posts/list/timeseries-clustering-part2.html"
+      "/courses/BAA1028.html",
+      "/courses/BAA1030.html",
+      "/courses/mt612.html",
+      "/courses/STA1005.html"
     ]
   },
   {
-    "listing": "/courses/index.html",
+    "listing": "/posts.html",
     "items": [
-      "/courses/details/BAA1028.html",
-      "/courses/details/BAA1030.html",
-      "/courses/details/mt612.html",
-      "/courses/details/STA1005.html"
+      "/posts/generate-pdf-documents.html",
+      "/posts/generating-multiple-pdf.html",
+      "/posts/how-to-organise.html",
+      "/posts/organising-research-conferences.html",
+      "/posts/timeseries-clustering-part1.html",
+      "/posts/timeseries-clustering-part2.html"
+    ]
+  },
+  {
+    "listing": "/talks.html",
+    "items": [
+      "/talks/2025-09-30_teaching_and_learning_week/index.html",
+      "/talks/2024-06-13_irish_accounting_and_finance_association_conference/index.html",
+      "/talks/2021-11-19_goutai_seminars_at_rennes_school_of_business/index.html",
+      "/talks/2021-06-25_entrepreneurial_finance_conference/index.html",
+      "/talks/2021-03-01_international_conference_on_pervasive_computing_and_communications_workshops/index.html",
+      "/talks/2020-12-07_irish_conference_on_artificial_intelligence_and_cognitive_science/index.html",
+      "/talks/2020-11-19_psychological_society_of_ireland_annual_conference/index.html",
+      "/talks/2020-10-01_international_conference_on_data_science_and_advanced_analytics/index.html",
+      "/talks/2020-07-22_cx_emotion_conference/index.html",
+      "/talks/2020-07-09_summer_school_on_behavioral_and_neuroscientific_research_for_economics_finance_and_accounting/index.html",
+      "/talks/2019-07-11_conference_of_the_international_society_for_research_on_emotion/index.html",
+      "/talks/2019-07-02_summer_school_on_behavioral_and_neuroscientific_research_for_economics_finance_and_accounting/index.html",
+      "/talks/2018-10-01_international_conference_on_data_science_and_advanced_analytics/index.html",
+      "/talks/2018-07-01_international_bcs_human_computer_interaction_conference/index.html",
+      "/talks/2018-06-01_international_conference_on_methods_and_techniques_in_behavioral_research/index.html",
+      "/talks/2018-04-04_consortium_of_european_research_on_emotion/index.html",
+      "/talks/2017-10-01_international_conference_on_affective_computing_and_intelligent_interaction/index.html",
+      "/talks/2017-07-26_conference_of_the_international_society_for_research_on_emotion/index.html",
+      "/talks/2017-07-01_international_conference_on_applied_human_factors_in_sports_injury_prevention_and_outdoor_recreation/index.html",
+      "/talks/2017-04-01_annual_convention_of_the_society_for_the_study_of_artificial_intelligence_and_simulation_for_behaviour_society_with_ai/index.html",
+      "/talks/2016-07-01_association_internationale_de_psychologie_du_travail_de_langue_francaise/index.html",
+      "/talks/2016-03-26_consortium_of_european_research_on_emotion/index.html",
+      "/talks/2015-09-01_international_conference_on_affective_computing_and_intelligent_interaction/index.html",
+      "/talks/2014-10-22_colloque_technuse/index.html",
+      "/talks/2014-10-11_world_congress_on_facial_expression_of_emotion/index.html",
+      "/talks/2013-12-05_les_doctorales_de_l_innovation/index.html",
+      "/talks/2012-09-01_international_conference_on_design_and_emotion/index.html",
+      "/talks/2011-05-01_environnements_informatiques_pour_l_apprentissage_humain/index.html",
+      "/talks/2010-10-01_ergonomie_et_informatique_avancee_conference/index.html",
+      "/talks/2010-05-01_international_workshop_series_on_multimodal_corpora/index.html",
+      "/talks/2010-04-22_consortium_of_european_research_on_emotion/index.html"
     ]
   }
 ]

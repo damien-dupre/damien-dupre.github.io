@@ -1,0 +1,7 @@
+---
+image: img.jpg
+title: "Dynamic model of athletes’ emotions based on wearable devices"
+author: Damien Dupré, Ben Bland, Andrew Bolster, Gawain Morrison, and Gary J McKeown
+description: International Conference on Applied Human Factors in Sports, Injury Prevention and Outdoor Recreation (AHFE 2017)
+date: "2017-07-01"
+---

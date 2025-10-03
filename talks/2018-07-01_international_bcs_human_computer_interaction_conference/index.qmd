@@ -1,0 +1,7 @@
+---
+image: img.jpg
+title: "Dynamic Analysis of Automatic Facial Expressions Recognition 'in the Wild' Using Generalized Additive Mixed Models and Significant Zero Crossing of the Derivatives"
+author: Damien Dupré, Nicole Andelic, Gawain Morrison, and Gary J McKeown
+description: International BCS Human Computer Interaction Conference (HCI 2018)
+date: "2018-07-01"
+---

@@ -1,0 +1,7 @@
+---
+image: img.png
+title: "DynEmo: A Corpus of dynamic and spontaneous emotional facial expressions"
+author: Brigitte Meillon, Anna Tcherkassof, Nadine Mandran, Jean-Michel Adam, Michel Dubois, Damien Dupré, Anne-Marie Benoit, Anne Guérin-Dugué, and Alice Caplier
+description: International Conference on Language Resources and Evaluation (LREC 2010)
+date: "2010-05-01"
+---

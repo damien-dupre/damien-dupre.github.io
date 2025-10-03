@@ -1,0 +1,7 @@
+---
+image: img.jpg
+title: "Disenchantment with emotion recognition technologies: A comparison between humans observers and automatic classifiers"
+author: Damien Dupré
+description: Irish Conference on Artificial Intelligence and Cognitive Science (AICS 2020)
+date: "2020-12-07"
+---

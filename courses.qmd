@@ -1,0 +1,11 @@
+---
+title: "Courses"
+description: |
+  Here is the list of the current modules that you can access. These slides are the latest version of the corresponding courses.
+listing: 
+  contents: courses
+  type: grid
+  fields: [title, image]
+  grid-columns: 2
+---
+

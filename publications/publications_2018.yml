@@ -1,0 +1,39 @@
+- title: "Accuracy of three commercial automatic emotion recognition systems across different individuals and their facial expressions"
+  author: Damien Dupré, Nicole Andelic, Gawain Morrison, and Gary J McKeown
+  published: Proceedings of the International Conference on Pervasive Computing and Communications Workshops
+  links:
+  - name: DOI
+    url: https://doi.org/10.1109/PERCOMW.2018.8480127
+    icon: fa-solid fa-globe
+
+- title: "Dynamic Analysis of Automatic Facial Expressions Recognition in the Wild ‘Using Generalized Additive Mixed Models and Significant Zero Crossing of the Derivatives"
+  author: Damien Dupré, Nicole Andelic, Gawain Morrison, and Gary J McKeown
+  published: Proceedings of the 32nd International BCS Human Computer Interaction Conference
+  links:
+  - name: DOI
+    url: https://doi.org/10.14236/ewic/HCI2018.1
+    icon: fa-solid fa-globe
+
+- title: "Multivariate Body Area Network of Physiological Measures “In the Wild”: A case study with zipline activity"
+  author: Damien Dupré, Nicole Andelic, Daniel Moore, Gawain Morrison, and Gary J McKeown
+  published: Proceedings of the 11th International Conference on Methods and Techniques in Behavioral Research
+  links:
+  - name: URL
+    url: https://www.measuringbehavior.org/mb2018/Publications.html
+    icon: fa-solid fa-globe
+
+- title: "Rôle de l’émotion dans l’acceptabilité d’un produit: évaluation des composantes cognitive, motivationnelle et subjective"
+  author: Damien Dupré, Michel Dubois, and Anna Tcherkassof
+  published: Psychologie du Travail et des Organisations
+  links:
+  - name: DOI
+    url: https://doi.org/10.1016/j.pto.2017.07.001
+    icon: fa-solid fa-globe
+
+- title: "Willingness to share emotion information on social media: Influence of personality and social context"
+  author: Damien Dupré, Gary J McKeown, Nicole Andelic, and Gawain Morrison
+  published: Proceedings of the 5th International Conference on Data Science and Advanced Analytics
+  links:
+  - name: DOI
+    url: https://doi.org/10.1109/DSAA.2018.00086
+    icon: fa-solid fa-globe

@@ -1,0 +1,7 @@
+---
+image: img.png
+title: "Emotional facial expression interface: Effects of displayed facial designs"
+author: Damien Dupré, Michel Dubois, Nadine Mandran, and Anna Tcherkassof
+description: Ergonomie et Informatique Avancées (ErgoIA 2010)
+date: "2010-10-01"
+---

@@ -1,0 +1,15 @@
+- title: "Emotions triggered by innovative products: A multi-componential approach of emotions for user experience tools"
+  author: Damien Dupré, Anna Tcherkassof, and Michel Dubois
+  published: Proceedings of the 6th International Conference on Affective Computing and Intelligent Interaction
+  links:
+  - name: DOI
+    url: https://doi.org/10.1109/acii.2015.7344657
+    icon: fa-solid fa-globe
+
+- title: "Oudjat: A configurable and usable annotation tool for the study of facial expressions of emotion"
+  author: Damien Dupré, Daniel Akpan, Elena Elias, Jean-Michel Adam, Brigitte Meillon, Nicolas Bonnefond, Michel Dubois, and Anna Tcherkassof
+  published: International Journal of Human-Computer Studies
+  links:
+  - name: DOI
+    url: https://doi.org/10.1016/j.ijhcs.2015.05.010
+    icon: fa-solid fa-globe

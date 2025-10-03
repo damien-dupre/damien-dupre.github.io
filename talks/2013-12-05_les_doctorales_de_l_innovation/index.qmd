@@ -1,0 +1,7 @@
+---
+image: img.png
+title: "Mesurer de l'expérience utilisateur émotionnelle de produits innovants: Quels paradigmes et outils?"
+author: Damien Dupré, Pascal Pizelle, Michel Dubois, and Anna Tcherkassof
+description: Les Doctorales de l'Innovation
+date: "2013-12-05"
+---

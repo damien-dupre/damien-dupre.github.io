@@ -1,0 +1,15 @@
+- title: "DynEmo: A video database of natural facial expressions of emotions"
+  author: Anna Tcherkassof, Damien Dupré, Brigitte Meillon, Nadine Mandran, Michel Dubois, and Jean-Michel Adam
+  published: The International Journal of Multimedia & its Applications
+  links:
+  - name: DOI
+    url: https://doi.org/10.5121/ijma.2013.5505
+    icon: fa-solid fa-globe
+
+- title: "The influence of facial interface design on dynamic emotional recognition"
+  author: Michel Dubois, Damien Dupré, Jean-Michel Adam, Anna Tcherkassof, Nadine Mandran, and Brigitte Meillon
+  published: Journal on Multimodal User Interfaces
+  links:
+  - name: DOI
+    url: https://doi.org/10.1007/s12193-012-0103-y
+    icon: fa-solid fa-globe

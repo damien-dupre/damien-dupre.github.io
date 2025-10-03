@@ -1,0 +1,7 @@
+---
+image: img.png
+title: "Pensum, un système d'aide à la compréhension de cours à distance"
+author: Mathieu Loiseau, Damien Dupré, and Philippe Dessus
+description: Environnements Informatiques pour l’Apprentissage Humain (EIAH 2011)
+date: "2011-05-01"
+---

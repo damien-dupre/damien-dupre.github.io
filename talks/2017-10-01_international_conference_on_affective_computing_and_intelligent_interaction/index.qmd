@@ -1,0 +1,7 @@
+---
+image: img.jpg
+title: "Comparing virtual reality with computer monitors as rating environments for affective dimensions in social interactions"
+author: Gary J McKeown, Christine Spencer, Alex Patterson, Thomas Creaney, and Damien Dupré, 
+description: International Conference on Affective Computing and Intelligent Interaction (ACII 2017)
+date: "2017-10-01"
+---

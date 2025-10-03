@@ -1,0 +1,29 @@
+
+```{=html}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<div class="publications">
+  <% for (const publication of items) { %>
+    <div class="publication-entry">
+      <div class="metadata">          
+        <p class="author"><%= publication.author %></p>
+      </div>
+      <div class="body">
+        <p class="title"><%= publication.title %></p>
+        <p class="published"><%= publication.published %></p>
+
+        <ul class="publication-links">
+          <% for (const link of publication.links) { %>
+            <li class="publication-link">
+              <a href="<%- link.local 
+                ? publication.path.substring(0, publication.path.lastIndexOf('/')) + '/' + link.url 
+                : link.url %>">
+                <i class="<%= link.icon %>"></i> <%= link.name %>
+              </a>
+            </li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+  <% } %>
+</div>
+```

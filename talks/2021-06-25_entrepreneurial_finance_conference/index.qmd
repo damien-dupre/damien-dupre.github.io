@@ -1,0 +1,7 @@
+---
+image: img.jpg
+title: "The determinants of post-acquisition growth in entrepreneurial start-ups: Evidence from India"
+author: Anish Tiwari, Teresa Hogan, and Damien Dupré
+description: Entrepreneurial Finance Conference (ENTFIN 2021)
+date: "2021-06-25"
+---

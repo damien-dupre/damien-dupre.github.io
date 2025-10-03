@@ -1,0 +1,7 @@
+---
+image: img.jpg
+title: "Disenchantment with emotion recognition technologies: Implications and future directions"
+author: Damien Dupré
+description: The Psychological Society of Ireland Annual Conference (PSI 2020)
+date: "2020-11-19"
+---

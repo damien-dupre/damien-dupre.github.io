@@ -1,0 +1,7 @@
+---
+image: img.png
+title: "Emotions triggered by innovative products: A multi-componential approach of emotions for user experience tools"
+author: Damien Dupré, Anna Tcherkassof, Michel and Dubois
+description: 6th International Conference on Affective Computing and Intelligent Interaction (ACII 2015)
+date: "2015-09-01"
+---

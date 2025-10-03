@@ -1,0 +1,7 @@
+---
+image: img.png
+title: "Effect of Facial Expression Categories and Calculation Methods on Automatic Emotion Recognition"
+author: Damien Dupré
+description: 5th International Workshop on Emotion Awareness for Pervasive Computing (EmotionAware 2021)
+date: "2021-03-01"
+---

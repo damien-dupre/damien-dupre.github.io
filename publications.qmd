@@ -1,0 +1,92 @@
+---
+title: "Publications"
+description: |
+  Research published in peer-reviewed journals and conferences
+listing:
+    - id: publications_2021
+      contents: publications/publications_2021.yml
+      template: publications/listing.ejs
+    - id: publications_2020
+      contents: publications/publications_2020.yml
+      template: publications/listing.ejs
+    - id: publications_2018
+      contents: publications/publications_2018.yml
+      template: publications/listing.ejs
+    - id: publications_2017
+      contents: publications/publications_2017.yml
+      template: publications/listing.ejs
+    - id: publications_2016
+      contents: publications/publications_2016.yml
+      template: publications/listing.ejs
+    - id: publications_2015
+      contents: publications/publications_2015.yml
+      template: publications/listing.ejs
+    - id: publications_2013
+      contents: publications/publications_2013.yml
+      template: publications/listing.ejs
+    - id: publications_2012
+      contents: publications/publications_2012.yml
+      template: publications/listing.ejs
+    - id: publications_2011
+      contents: publications/publications_2011.yml
+      template: publications/listing.ejs
+    - id: publications_2010
+      contents: publications/publications_2010.yml
+      template: publications/listing.ejs
+page-layout: full
+toc: true
+toc-location: right
+toc-title: Year
+
+# https://www.andrewheiss.com/talks/
+---
+
+## 2021
+
+:::{#publications_2021}
+:::
+
+## 2020
+
+:::{#publications_2020}
+:::
+
+## 2018
+
+:::{#publications_2018}
+:::
+
+## 2017
+
+:::{#publications_2017}
+:::
+
+## 2016
+
+:::{#publications_2016}
+:::
+
+## 2015
+
+:::{#publications_2015}
+:::
+
+## 2013
+
+:::{#publications_2013}
+:::
+
+## 2012
+
+:::{#publications_2012}
+:::
+
+## 2011
+
+:::{#publications_2011}
+:::
+
+## 2010
+
+:::{#publications_2010}
+:::

@@ -1,0 +1,10 @@
+---
+title: "Posts"
+description: |
+  Research updates, code tutorials, and general thoughts. 
+listing:
+  contents: posts
+  type: table
+  fields: [title]  
+---
+

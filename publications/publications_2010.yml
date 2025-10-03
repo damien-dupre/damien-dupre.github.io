@@ -1,0 +1,15 @@
+- title: "DynEmo: A Corpus of dynamic and spontaneous emotional facial expressions"
+  author: Brigitte Meillon, Anna Tcherkassof, Nadine Mandran, Jean-Michel Adam, Michel Dubois, Damien Dupré, Anne-Marie Benoit, Anne Guérin-Dugué, and Alice Caplier
+  published: Proceedings of International Workshop Series on Multimodal Corpora, Tools and Resources
+  links:
+  - name: URL
+    url: http://www.lrec-conf.org/proceedings/lrec2010/workshops/W6.pdf
+    icon: fa-solid fa-globe
+
+- title: "Emotional facial expression interface: Effects of displayed facial designs"
+  author: Damien Dupré, Michel Dubois, Nadine Mandran, and Anna Tcherkassof
+  published: Proceedings of the Ergonomie et Informatique Avancee Conference
+  links:
+  - name: DOI
+    url: https://doi.org/10.1145/1868650.1868657
+    icon: fa-solid fa-globe

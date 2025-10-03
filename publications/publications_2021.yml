@@ -1,0 +1,23 @@
+- title: "Effect of Facial Expression Categories and Calculation Methods on Automatic Emotion Recognition"
+  author: Damien Dupré
+  published: Proceedings of the International Conference on Pervasive Computing and Communications Workshops
+  links:
+  - name: DOI
+    url: https://doi.org/10.1109/PerComWorkshops51409.2021.9430999
+    icon: fa-solid fa-globe
+
+- title: "Emotional user experience of innovative human-computer interactions: A multi-component approach"
+  author: Damien Dupré and Gary Sinclair
+  published: Journal of Customer Behaviour
+  links:
+  - name: DOI
+    url: https://doi.org/10.1362/147539221X16206323664359
+    icon: fa-solid fa-globe
+
+- title: "The emotion--facial expression link: evidence from human and automatic expression recognition"
+  author: Anna Tcherkassof and Damien Dupré
+  published: Psychological Research
+  links:
+  - name: DOI
+    url: https://doi.org/10.1007/s00426-020-01448-4
+    icon: fa-solid fa-globe

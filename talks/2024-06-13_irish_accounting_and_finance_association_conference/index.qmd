@@ -1,0 +1,7 @@
+---
+image: img.jpg
+title: "A comparison of key audit matter and audit-committee risk disclosures"
+author: Karen-Ann Dwyer, Brid Murphy, and Damien Dupré
+description: Irish Accounting & Finance Association Conference (IAFA 2024)
+date: "2024-06-13"
+---

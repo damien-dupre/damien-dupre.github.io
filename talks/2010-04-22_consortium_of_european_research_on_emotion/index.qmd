@@ -1,0 +1,7 @@
+---
+image: img.jpg
+title: "Online recognition of dynamic and spontaneous facial expression"
+author: Damien Dupré & Anna Tcherkassof
+description: Consortium of European Research on Emotion (CERE 2010)
+date: "2010-04-22"
+---
