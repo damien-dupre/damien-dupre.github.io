@@ -36,6 +36,229 @@ $navbar-bg: #6C757D !default;
 }
 
 /* css styles */
+
+// Navbar
+
+.navbar {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-bottom: 1px solid body-mix(50%);
+
+  &.bg-primary {
+    border: 1px solid body-mix(50%);
+  }
+
+  &.bg-dark {
+    background-color: $body-bg !important;
+    border: 1px solid body-mix(50%);
+  }
+
+  &.bg-light {
+    background-color: body-mix(16%) !important;
+  }
+
+  &.fixed-top {
+    border-width: 0 0 1px;
+  }
+
+  &.fixed-bottom {
+    border-width: 1px 0 0;
+  }
+}
+
+.nav-footer-center {
+  min-height: unset;
+
+  p,
+  ol,
+  ul,
+  dl {
+    margin-bottom: 0;
+  }
+
+  .toc-actions {
+
+    ol,
+    ul {
+      padding-left: 0;
+    }
+  }
+}
+
+.nav-footer {
+  border-top: 1px solid body-mix(50%);
+}
+
+.nav-footer a:hover {
+  color: $body-color;
+}
+
+.navbar-logo {
+  max-height: 2em;
+}
+
+.navbar-nav {
+
+  .show>.nav-link,
+  .active>.nav-link,
+  .nav-link.active {
+    color: $body-color;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    color: $body-color;
+  }
+
+  .nav-link {
+    color: body-mix(50%);
+  }
+
+  a.nav-link,
+  a.nav-link:after,
+  a.nav-link:before {
+    transition: all .75s;
+  }
+
+  a.nav-link {
+    position: relative;
+  }
+
+  a.nav-link:hover:after {
+    width: 80%;
+  }
+
+  a.nav-link.active:after,
+  a.nav-link.active:hover:after {
+    border-top: .2em solid $body-color;
+  }
+
+  a.nav-link:hover:after,
+  a.nav-link:after {
+    border-top: .1em solid $body-color;
+  }
+
+  a.nav-link:after {
+    position: absolute;
+    border-top: .1em solid body-mix(90%);
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+  }
+
+  .show>.nav-link,
+  .active>.nav-link,
+  .nav-link.active {
+    font-weight: bolder;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    color: $body-color;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-expand-lg {
+
+    a.nav-link.active:after,
+    a.nav-link.active:hover:after,
+    a.nav-link:hover:after,
+    a.nav-link:after {
+      border-top: 0 solid $body-color;
+    }
+  }
+}
+
+.navbar-brand {
+  color: $body-color;
+}
+
+.nav-tabs {
+
+  .nav-link.active,
+  .nav-item.show .nav-link {
+    color: $body-color;
+    background-color: $body-bg;
+    border-color: $body-color;
+  }
+
+  .nav-link,
+  .nav-pills .nav-link {
+    color: $body-color;
+  }
+
+  border-bottom: 1px solid $body-color;
+}
+
+.navbar-title {
+  transition: all .35s ease;
+  display: inline-block;
+  padding: .25em .4em;
+  position: relative;
+  font-weight: bolder;
+}
+
+.navbar-title::before,
+.navbar-title::after {
+  content: '';
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  transition: all .35s ease;
+  opacity: 0;
+}
+
+.navbar-title::before {
+  content: '';
+  right: 0;
+  top: 0;
+  border-top: 3px solid $body-color;
+  border-right: 3px solid $body-color;
+  transform: translate(-100%, 50%);
+}
+
+.navbar-title:after {
+  content: '';
+  left: 0;
+  bottom: 0;
+  border-bottom: 3px solid $body-color;
+  border-left: 3px solid $body-color;
+  transform: translate(100%, -50%)
+}
+
+.navbar-title:hover:before,
+.navbar-title:hover:after {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+.quarto-title-banner .quarto-title .title {
+  color: $body-color;
+}
+
+.quarto-title-banner a {
+  color: body-mix(50%);
+}
+
+.quarto-title-banner a:hover {
+  color: $body-color;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  color: $body-color;
+}
+
+.quarto-title-banner {
+  margin-bottom: 1em;
+  color: $body-color;
+  background: body-mix(99%);
+}
+
 .navbar {
   padding-top: 0;
   padding-bottom: 0;
@@ -105,6 +328,10 @@ body {
 h3.no-anchor.listing-title {
     font-size: 20px;
     font-weight: bold;
+}
+
+.listing-author {
+    text-align: left;
 }
 
 /* Publications Listing Design */

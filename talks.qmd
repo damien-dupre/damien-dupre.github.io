@@ -11,7 +11,7 @@ listing:
   sort-ui: false
   filter-ui: false
   image-height: 150px
-  
+
 page-layout: full
 # https://mickael.canouil.fr/talks
 # https://www.apreshill.com/talk/
@@ -20,5 +20,6 @@ page-layout: full
 # https://nrennie.rbind.io/talks/
 # https://remlapmot.github.io/#talks
 # https://ivelasq.rbind.io/talk
+# https://samanthacsik.github.io/talks_workshops.html
 ---
 
