@@ -1,0 +1,10 @@
+---
+image: img.png
+title: "Open and Reproducible Research Outputs with Quarto"
+author: Damien Dupré
+description: DCU Open Research for Global Impact
+abstract: This communication will showcase how open research practices are embedded in my work, which spans psychology, focusing on AI-driven emotion recognition from physiological and facial cues, and data science support for Business School projects in Economics, Accounting, and Public Policy. A core component of my methodology is the use of Quarto, an open-source scientific publishing system. I will demonstrate how Quarto facilitates the creation of reproducible and high-quality research outputs (articles, presentations, etc.) by integrating text and code (R, Python, Julia). The presentation will advocate for the university-wide adoption of Quarto to enhance research best practices, transparency, and impact, aligning with the goals of promoting open research for globa reach.
+date: "2025-10-15"
+---
+
+

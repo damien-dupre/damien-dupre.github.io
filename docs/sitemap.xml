@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://damien-dupre.github.io/talks/2025-09-30_teaching_and_learning_week/index.html</loc>
-    <lastmod>2025-10-02T14:33:40.601Z</lastmod>
+    <loc>https://damien-dupre.github.io/talks/2025-10-15_open_research_for_global_impact/index.html</loc>
+    <lastmod>2025-10-03T20:05:20.674Z</lastmod>
+  </url>
+  <url>
+    <loc>https://damien-dupre.github.io/talks/2025-05-19_pint_of_science/index.html</loc>
+    <lastmod>2025-10-03T19:53:01.411Z</lastmod>
   </url>
   <url>
     <loc>https://damien-dupre.github.io/talks/2021-11-19_goutai_seminars_at_rennes_school_of_business/index.html</loc>
@@ -187,5 +191,9 @@
   <url>
     <loc>https://damien-dupre.github.io/talks/2024-06-13_irish_accounting_and_finance_association_conference/index.html</loc>
     <lastmod>2025-10-02T15:32:05.092Z</lastmod>
+  </url>
+  <url>
+    <loc>https://damien-dupre.github.io/talks/2025-09-30_teaching_and_learning_week/index.html</loc>
+    <lastmod>2025-10-02T14:33:40.601Z</lastmod>
   </url>
 </urlset>

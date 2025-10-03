@@ -1,0 +1,9 @@
+---
+image: img.jpg
+title: "Can AI Read Your Emotions? The Truth Behind Emotion Recognition Technology"
+author: Damien Dupré
+description: Dublin Pint of Science Festival 2025
+abstract: AI promises to read emotions from faces, but does it really work? Studies reveal surprising flaws, questioning the very foundations of emotion recognition technology.
+date: "2025-05-19"
+---
+
