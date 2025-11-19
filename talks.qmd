@@ -14,11 +14,8 @@ listing:
 
 page-layout: full
 # https://mickael.canouil.fr/talks
-# https://www.apreshill.com/talk/
 # https://emilhvitfeldt.com/talks
 # https://meghan.rbind.io/talks/
-# https://nrennie.rbind.io/talks/
-# https://remlapmot.github.io/#talks
 # https://ivelasq.rbind.io/talk
 # https://samanthacsik.github.io/talks_workshops.html
 ---

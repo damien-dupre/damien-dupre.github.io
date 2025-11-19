@@ -1,0 +1,15 @@
+{
+  "hash": "55d41ee191f6eca34fef319507766227",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nimage: img.png\ntitle: \"Open and Reproducible Research Outputs with Quarto\"\nauthor: Damien Dupré\ndescription: DCU Open Research for Global Impact\nabstract: This communication will showcase how open research practices are embedded in my work, which spans psychology, focusing on AI-driven emotion recognition from physiological and facial cues, and data science support for Business School projects in Economics, Accounting, and Public Policy. A core component of my methodology is the use of Quarto, an open-source scientific publishing system. I will demonstrate how Quarto facilitates the creation of reproducible and high-quality research outputs (articles, presentations, etc.) by integrating text and code (R, Python, Julia). The presentation will advocate for the university-wide adoption of Quarto to enhance research best practices, transparency, and impact, aligning with the goals of promoting open research for global reach.\ndate: \"2025-10-15\"\n---\n\n[{{< fa tv >}} Slides](https://damien-dupre.github.io/open_research_quarto){.btn .btn-outline-primary .button_custom role=\"button\" target=\"_blank\"} \n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](img.png){fig-align='center' width=70%}\n:::\n:::\n\n\n![](img.png){fig-align=\"center\" width=4in}\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
