@@ -1,29 +1,5 @@
 [
   {
-    "listing": "/publications.html",
-    "items": []
-  },
-  {
-    "listing": "/courses.html",
-    "items": [
-      "/courses/BAA1028.html",
-      "/courses/BAA1030.html",
-      "/courses/mt612.html",
-      "/courses/STA1005.html"
-    ]
-  },
-  {
-    "listing": "/posts.html",
-    "items": [
-      "/posts/generate-pdf-documents.html",
-      "/posts/generating-multiple-pdf.html",
-      "/posts/how-to-organise.html",
-      "/posts/organising-research-conferences.html",
-      "/posts/timeseries-clustering-part1.html",
-      "/posts/timeseries-clustering-part2.html"
-    ]
-  },
-  {
     "listing": "/talks.html",
     "items": [
       "/talks/2025-10-15_open_research_for_global_impact/index.html",
@@ -61,5 +37,29 @@
       "/talks/2010-05-01_international_workshop_series_on_multimodal_corpora/index.html",
       "/talks/2010-04-22_consortium_of_european_research_on_emotion/index.html"
     ]
+  },
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/generate-pdf-documents.html",
+      "/posts/generating-multiple-pdf.html",
+      "/posts/how-to-organise.html",
+      "/posts/organising-research-conferences.html",
+      "/posts/timeseries-clustering-part1.html",
+      "/posts/timeseries-clustering-part2.html"
+    ]
+  },
+  {
+    "listing": "/courses.html",
+    "items": [
+      "/courses/BAA1028.html",
+      "/courses/BAA1030.html",
+      "/courses/mt612.html",
+      "/courses/STA1005.html"
+    ]
+  },
+  {
+    "listing": "/publications.html",
+    "items": []
   }
 ]
