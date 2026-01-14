@@ -119,18 +119,18 @@
     "text": "This module is designed for students already mastering linear regression models, to give them a deeper knowledge of more advanced models: logistic regressions, multilevel / hierarchical models, and paths analyses (mediation, factor analysis, structural equation model). Each of these advanced models will be taught with JAMOVI (open-source software for advanced statistics and with R (open-source programming language for advanced statistics). The module will focus on how to test hypotheses using these models, how to interpret their results and how to communicate them in academic publications.\n\n\n\n\n\nLink to the lecture slides:\n\n1: The General Linear Model\n2: The Generalised Linear Model\n3: Linear Mixed Models\n4: Generalized Additive (Mixed) Models\n5: Path Analysis for Mediation Hypotheses\n6: From Path Analysis to SEM"
   },
   {
-    "objectID": "courses/BAA1030.html",
-    "href": "courses/BAA1030.html",
-    "title": "BAA1030 - Data Analytics and Story Telling",
+    "objectID": "courses/BAA1104.html",
+    "href": "courses/BAA1104.html",
+    "title": "BAA1104 - E-Portfolio and Business Analytics Challenges",
     "section": "",
-    "text": "Data and visual analytics is an emerging field concerned with analysing, modelling, and visualising complex high dimensional data. This course will introduce students to the field by covering state of the art modelling, analysis, and visualisation techniques. It will emphasise practical challenges involving complex real world data and include several case studies and hands on work with programming languages (Python and Markdown) and visualisation software (Tableau and PowerBI).\n\n\n\n\n\nLink to the lecture slides:\n\n1: Introduction\n2: Data Collection, Storage and Access\n3: Principles of Data Visualisation\n4: Introduction to Power BI\n5: Introduction to Tableau\n6: Advanced Features in Tableau\n7: Introduction to Python\n8: Data Wrangling with Polars\n9: Visualisation in python with plotnine\n10: Introduction to Quarto\n11: Publish your Report with GitHub"
+    "text": "This module prepares students to present their Business Analytics capability clearly and professionally to future employers. Using GitHub, they will build a polished eportfolio that demonstrates their analytics skills and showcases business projects completed across other modules. The portfolio will be further developed through topics introduced in this module, allowing students to strengthen both content and presentation.\nCore areas including regulation, information risk, security, ethics and sustainable analytics are explored through sessions led by expert guest speakers. Students also complete targeted online training via Kubicle, covering subjects such as GDPR, data security, and data ethics and risk.\n\n\n\n\n\nLink to the lecture slides:\n\n1. Introduction to ePortfolios\n2. HTML and CSS\n3. Publishing with GitHub Pages\n4. Git, GitHub, and Version Control\n5. The Final Workflow of Git, GitHub and Quarto with VS Code\n6. Advanced Quarto for Website Creation\n7. Customizing Quarto Websites\n8. HTML Theming in a Quarto Website\n9. Displaying Projects in a Quarto Website\n10. Quarto Dashboards\n11. Python Apps without Server\n12. Python in your Project Pages"
   },
   {
-    "objectID": "courses.html",
-    "href": "courses.html",
-    "title": "Courses",
+    "objectID": "courses/BAA1028.html",
+    "href": "courses/BAA1028.html",
+    "title": "BAA1028 - Workflow & Data Management",
     "section": "",
-    "text": "BAA1028 - Workflow & Data Management\n\n\n\n\n\n\n\n\n\n\n\n\nBAA1030 - Data Analytics and Story Telling\n\n\n\n\n\n\n\n\n\n\n\n\nMT612 - Advanced Quantitative Research Methods\n\n\n\n\n\n\n\n\n\n\n\n\nSTA1005 - Quantitative Research Methods\n\n\n\n\n\nNo matching items"
+    "text": "By developing skills and gaining hands-on experience in designing and implementing cloud-based databases and workflows, students will acquire proficiency in some of the most widely used technologies for managing data analytics within organisations.\nTo support this, students will be introduced to modern tools for data management and web development (e.g., HTML, CSS, Markdown), cloud computing platforms (e.g., the AWS ecosystem), and version control systems (e.g., Git and GitHub). They will also gain a solid understanding of data security, including strategies to safeguard API keys and other sensitive information from breaches.\n\n\n\n\n\nLink to the lecture slides:\n\n1. Introduction to ePortfolios\n2. HTML and CSS\n3. Publishing with GitHub Pages\n4. Git, GitHub, and Version Control\n5. The Final Workflow of Git, GitHub and Quarto with VS Code\n6. Advanced Quarto for Website Creation\n7. Customizing Quarto Websites\n8. HTML Theming in a Quarto Website\n9. Displaying Projects in a Quarto Website\n10. Quarto Dashboards\n11. Python Apps without Server\n12. Python in your Project Pages"
   },
   {
     "objectID": "about.html",
@@ -140,11 +140,18 @@
     "text": "PhD in Social and Experimental Psychology from the University Grenoble-Alpes, France. My research centres on psycho-physiological responses in real-world settings. Working with Anna Tcherkassof in Grenoble, I helped develop the DynEmo database by recording and analysing dynamic, spontaneous facial expressions of emotion.\nMy thesis focused on evaluating Emotional User eXperience of new technologies for the innovation consultancy firm Ixiade (Grenoble, France). Alongside that, I collaborated with Queen’s University Belfast and Sensum Ltd. (Belfast, UK), using physiological sensors and automated facial expression recognition to explore emotional responses. I also worked at the Insight Centre for Data Analytics at University College Dublin, where I processed physiological data from marathon runners to better understand stress and effort in endurance contexts.\nCurrently Assistant Professor of Business Research Methods at Dublin City University, I specialise in multivariate time series analysis and trend extraction, applying these techniques to both supervised and unsupervised machine learning classification tasks."
   },
   {
-    "objectID": "courses/BAA1028.html",
-    "href": "courses/BAA1028.html",
-    "title": "BAA1028 - Workflow & Data Management",
+    "objectID": "courses.html",
+    "href": "courses.html",
+    "title": "Courses",
     "section": "",
-    "text": "By developing skills and gaining hands-on experience in designing and implementing cloud-based databases and workflows, students will acquire proficiency in some of the most widely used technologies for managing data analytics within organisations.\nTo support this, students will be introduced to modern tools for data management and web development (e.g., HTML, CSS, Markdown), cloud computing platforms (e.g., the AWS ecosystem), and version control systems (e.g., Git and GitHub). They will also gain a solid understanding of data security, including strategies to safeguard API keys and other sensitive information from breaches.\n\n\n\n\n\nLink to the lecture slides:\n\n1. Introduction to ePortfolios\n2. HTML and CSS\n3. Publishing with GitHub Pages\n4. Git, GitHub, and Version Control\n5. The Final Workflow of Git, GitHub and Quarto with VS Code\n6. Advanced Quarto for Website Creation\n7. Customizing Quarto Websites\n8. HTML Theming in a Quarto Website\n9. Displaying Projects in a Quarto Website\n10. Quarto Dashboards\n11. Python Apps without Server\n12. Python in your Project Pages"
+    "text": "BAA1028 - Workflow & Data Management\n\n\n\n\n\n\n\n\n\n\n\n\nBAA1030 - Data Analytics and Story Telling\n\n\n\n\n\n\n\n\n\n\n\n\nBAA1104 - E-Portfolio and Business Analytics Challenges\n\n\n\n\n\n\n\n\n\n\n\n\nMT612 - Advanced Quantitative Research Methods\n\n\n\n\n\n\n\n\n\n\n\n\nSTA1005 - Quantitative Research Methods\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "courses/BAA1030.html",
+    "href": "courses/BAA1030.html",
+    "title": "BAA1030 - Data Analytics and Story Telling",
+    "section": "",
+    "text": "Data and visual analytics is an emerging field concerned with analysing, modelling, and visualising complex high dimensional data. This course will introduce students to the field by covering state of the art modelling, analysis, and visualisation techniques. It will emphasise practical challenges involving complex real world data and include several case studies and hands on work with programming languages (Python and Markdown) and visualisation software (Tableau and PowerBI).\n\n\n\n\n\nLink to the lecture slides:\n\n1: Introduction\n2: Data Collection, Storage and Access\n3: Principles of Data Visualisation\n4: Introduction to Power BI\n5: Introduction to Tableau\n6: Advanced Features in Tableau\n7: Introduction to Python\n8: Data Wrangling with Polars\n9: Visualisation in python with plotnine\n10: Introduction to Quarto\n11: Publish your Report with GitHub"
   },
   {
     "objectID": "courses/STA1005.html",

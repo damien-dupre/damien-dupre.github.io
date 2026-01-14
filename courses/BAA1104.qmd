@@ -1,0 +1,33 @@
+---
+title: "BAA1104 - E-Portfolio and Business Analytics Challenges"
+title-block-banner: true
+image: BAA1104.jpg
+about:
+  id: hero-heading
+  template: trestles
+  image-shape: rounded
+---
+
+::: {#hero-heading}
+
+This module prepares students to **present their Business Analytics capability** clearly and professionally to future employers. Using GitHub, they will **build a polished eportfolio** that demonstrates their analytics skills and showcases business projects completed across other modules. The portfolio will be further developed through topics introduced in this module, allowing students to strengthen both content and presentation.
+
+Core areas including regulation, information risk, security, ethics and sustainable analytics are explored through sessions led by expert guest speakers. Students also complete targeted online training via Kubicle, covering subjects such as GDPR, data security, and data ethics and risk.
+:::
+
+---
+
+### Link to the lecture slides:
+
+- [1. Introduction to ePortfolios](https://damien-dupre.github.io/BAA1104/lectures/lecture_1)
+- [2. HTML and CSS](https://damien-dupre.github.io/BAA1104/lectures/lecture_2)
+- [3. Publishing with GitHub Pages](https://damien-dupre.github.io/BAA1104/lectures/lecture_3)
+- [4. Git, GitHub, and Version Control](https://damien-dupre.github.io/BAA1104/lectures/lecture_4)
+- [5. The Final Workflow of Git, GitHub and Quarto with VS Code](https://damien-dupre.github.io/BAA1104/lectures/lecture_5)
+- [6. Advanced Quarto for Website Creation](https://damien-dupre.github.io/BAA1104/lectures/lecture_6)
+- [7. Customizing Quarto Websites](https://damien-dupre.github.io/BAA1104/lectures/lecture_7)
+- [8. HTML Theming in a Quarto Website](https://damien-dupre.github.io/BAA1104/lectures/lecture_8)
+- [9. Displaying Projects in a Quarto Website](https://damien-dupre.github.io/BAA1104/lectures/lecture_9)
+- [10. Quarto Dashboards](https://damien-dupre.github.io/BAA1104/lectures/lecture_10)
+- [11. Python Apps without Server](https://damien-dupre.github.io/BAA1104/lectures/lecture_11)
+- [12. Python in your Project Pages](https://damien-dupre.github.io/BAA1104/lectures/lecture_12)
