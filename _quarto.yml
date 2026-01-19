@@ -5,7 +5,7 @@ project:
     - "*.qmd"
     - "!internal/"
   resources:
-  - "assets/my-first-web-page.html"
+  - "my-first-web-page.html"
   
 # Metadata stuff
 pagetitle: "{{< meta title >}} | Damien Dupré"
