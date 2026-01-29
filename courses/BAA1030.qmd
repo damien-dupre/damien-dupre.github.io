@@ -21,7 +21,7 @@ Data and visual analytics is an emerging field concerned with analysing, modelli
 - [1: Introduction](https://damien-dupre.github.io/BAA1030/lectures/lecture_1)
 - [2: Data Collection, Storage and Access](https://damien-dupre.github.io/BAA1030/lectures/lecture_2)
 - [3: Principles of Data Visualisation](https://damien-dupre.github.io/BAA1030/lectures/lecture_3)
-- [4: Introduction to Tableau BI](https://damien-dupre.github.io/BAA1030/lectures/lecture_4)
+- [4: Introduction to Tableau](https://damien-dupre.github.io/BAA1030/lectures/lecture_4)
 - [5: Advanced Features in Tableau](https://damien-dupre.github.io/BAA1030/lectures/lecture_5)
 - [6: Introduction to Python](https://damien-dupre.github.io/BAA1030/lectures/lecture_6)
 - [7: Data Wrangling with Polars](https://damien-dupre.github.io/BAA1030/lectures/lecture_7)
