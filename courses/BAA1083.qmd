@@ -1,7 +1,7 @@
 ---
-title: "MT612 - Advanced Quantitative Research Methods"
+title: "BAA1083 - Advanced Quantitative Research Methods"
 title-block-banner: true
-image: mt612.jpg
+image: BAA1083.jpg
 about:
   id: hero-heading
   template: trestles
@@ -24,3 +24,5 @@ This module is designed for students already mastering linear regression models,
 - [4: Generalized Additive (Mixed) Models](https://damien-dupre.github.io/mt612/lectures/lecture_4)
 - [5: Path Analysis for Mediation Hypotheses](https://damien-dupre.github.io/mt612/lectures/lecture_5)
 - [6: From Path Analysis to SEM](https://damien-dupre.github.io/mt612/lectures/lecture_6)
+- [7: PCA, EFA, CFA, and Structural Equation Models](https://damien-dupre.github.io/mt612/lectures/lecture_7)
+- [8: Practice Session](https://damien-dupre.github.io/mt612/lectures/lecture_8)

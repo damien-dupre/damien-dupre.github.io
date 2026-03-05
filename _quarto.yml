@@ -34,6 +34,13 @@ website:
       - icon: journal-bookmark-fill
         href: courses.qmd
         text: "COURSES"
+      - icon: backpack4-fill
+        text: "TUTORIALS"
+        menu:
+          - text: DCU R Tutorials
+            href:  https://damien-dupre.github.io/dcu-r-tutorials/
+          - text: DCU Python Tutorials
+            href:  https://damien-dupre.github.io/dcu-python-tutorials/
       - icon: person-lines-fill
         href: about.qmd
         text: "ABOUT ME"
