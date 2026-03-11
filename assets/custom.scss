@@ -173,6 +173,16 @@ $navbar-bg: #6C757D !default;
   }
 }
 
+// Hide navbar icons at intermediate widths where items get cramped
+@media (min-width: 992px) and (max-width: 1400px) {
+  .navbar-nav .nav-link .bi {
+    display: none;
+  }
+  .navbar {
+    font-size: 1em;
+  }
+}
+
 .navbar-brand {
   color: $body-color;
 }
@@ -309,12 +319,22 @@ body {
   justify-content: flex-end !important;
   column-gap: 0em !important;
   font-size: 1.2em !important;
+  flex-wrap: wrap !important;
+  flex-direction: row !important;
 }
 
 /* social links: individual links */
 .about-entity .about-link {
   padding: 0.25em 0.25em !important;
-  border: none !important;  
+  border: none !important;
+}
+
+/* Keep social links horizontal on small screens */
+@media (max-width: 992px) {
+  .about-entity .about-links {
+    justify-content: center !important;
+    flex-direction: row !important;
+  }
 }
 
 .button_custom {
