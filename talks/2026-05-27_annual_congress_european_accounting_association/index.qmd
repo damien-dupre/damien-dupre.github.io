@@ -1,0 +1,15 @@
+---
+image: img.png
+title: "Differences between key audit matter and audit-committee risk disclosures"
+author: Karen-Ann Dwyer, Brid Murphy, and Damien Dupré
+description: 48th Annual Congress of the European Accounting Association
+abstract: |
+  Purpose: The objective of this study is to examine differences between key audit matter (KAM) and audit-committee (AC) risk disclosures.
+  Design/methodology/approach: The study examines differences between KAM and AC risk disclosures for (i) total risks; (ii) total ELR risks; (iii) total ALR risks; and (iv) eight types of risks. First, the study uses manual content analysis to understand and assess the extent of differences between KAM and AC risk disclosures for 283 FTSE-350 companies with 2021 year-ends. Second, the study investigates whether the differences are associated with auditor and client characteristics.
+  Findings: The results reveal that the extent of differences varies considerably depending on the risk type. The study reveals that the dominant drivers of disclosure differences between KAM and AC risk disclosures are: audit fees; number of KAMs, audit firm, number of audit committee meetings and industry.
+  Value: The study reveals important implications. On the one hand, different KAM and AC risk disclosures may indicate that enhanced information is provided to readers of the annual report. On the other hand, companies with substantial disclosure differences may suggest ineffective communication between auditors and audit committees. Companies with no disclosures may indicate duplication of disclosures and in turn the disclosures may be less useful for readers of annual reports. The authors recommend that standard setters and regulators consider the extent of differences between KAM and AC risk disclosures and their drivers to improve usefulness of annual reports.
+date: "2026-05-27"
+---
+
+![](img.png){fig-align="center" width=4in}
+

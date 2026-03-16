@@ -1,0 +1,15 @@
+---
+image: img.webp
+title: "The Long-Term Career Trajectories of IPBS Graduates: A Mixed-Methods Investigation into Transnational Education"
+author: Damien Dupré and Breda McNally
+description: CABS Learning, Teaching & Student Experience 2026
+abstract: |
+  The International Partnership of Business Schools (IPBS) is a consortium of 11 leading business schools across Europe, North America, Latin America, and Asia. Established 50 years ago to promote cross-cultural management education, the network is distinct from standard exchange partnerships due to its highly integrated Double Degree model. As the systematisation of joint international programmes becomes a critical priority for Higher Education Institutions (Nizamov et al., 2021), such structures have been identified as key accelerators for internationalisation (Steagall et al., 2021). However, as the transnational education space shifts toward new forms of mobility (Cheng, 2018), little is known about the specific impact of these double degree programmes on the student’s future career.
+  This research investigates the causal impact of international double-degree programmes on the long-term career trajectories of business graduates. While the value of dual degrees is currently being explored across various professional disciplines (Dang et al., 2024; Shaw et al., 2017) the evidence base within business education remains inconsistent (Culver et al., 2012) and often biased toward short-term salary premiums. This project leverages the unique IPBS alumni network to conduct a mixed-methods study, comparing the objective (salary, seniority) and subjective (job satisfaction, perceived marketability) career outcomes of graduates who engaged in deep cultural immersion.
+  The primary focus is to move beyond the assumption that travel equals competence, addressing the complex challenges of provider mobility policies (Hanada et al., 2022). Situated within the context of a globalised labour market that increasingly demands cross-cultural agility, the purpose of this research is to identify which specific components of international education (e.g., duration, internship intensity, academic rigour) actually drive career success.
+
+date: "2026-05-18"
+---
+
+![](img.webp){fig-align="center" width=4in}
+
