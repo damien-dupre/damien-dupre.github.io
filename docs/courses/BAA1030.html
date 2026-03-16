@@ -42,6 +42,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-bffdcb66f54a554b8b6aad846e8491dd.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,6 +72,15 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<script src="../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+<script src="../site_libs/plotly-binding-4.10.4/plotly.js"></script>
+<script src="../site_libs/typedarray-0.1/typedarray.min.js"></script>
+<script src="../site_libs/jquery-3.5.1/jquery.min.js"></script>
+<link href="../site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet">
+<script src="../site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+<link href="../site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet">
+<script src="../site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+<link href="../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
 
 
 <meta name="twitter:title" content="BAA1030 - Data Analytics and Story Telling | Damien Dupré">
@@ -196,9 +207,361 @@ ul.task-list li input[type="checkbox"] {
 <li><a href="https://damien-dupre.github.io/BAA1030/lectures/lecture_9">9: Introduction to Quarto</a></li>
 <li><a href="https://damien-dupre.github.io/BAA1030/lectures/lecture_10">10: Publish your Report with GitHub</a></li>
 </ul>
+<hr>
+</section>
+<section id="student-feedback-survey-spring-2025" class="level2">
+<h2 data-anchor-id="student-feedback-survey-spring-2025">Student Feedback Survey — Spring 2025</h2>
+<div class="callout callout-style-simple callout-note">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>This section presents anonymous student feedback collected through DCU’s official module evaluation survey (Spring 2025, <em>n</em> = 11). Quantitative scores use a 5-point Likert scale (1 = Strongly Disagree to 5 = Strongly Agree).</p>
+</div>
+</div>
+</div>
+<section id="overall-satisfaction" class="level3">
+<h3 data-anchor-id="overall-satisfaction">Overall Satisfaction</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-d52ad536bb215c4b8c2c" style="width:100%;height:270px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-d52ad536bb215c4b8c2c">{"x":{"visdat":{"dd7825cfc42c":["function () ","plotlyVisDat"]},"cur_data":"dd7825cfc42c","attrs":{"dd7825cfc42c":{"mode":"gauge+number","value":3.4500000000000002,"number":{"suffix":" / 5","font":{"size":28,"color":"#003865"}},"gauge":{"axis":{"range":[1,5],"tickwidth":1,"dtick":1},"bar":{"color":"#003865","thickness":0.29999999999999999},"bgcolor":"white","steps":[{"range":[1,2],"color":"#c0392b"},{"range":[2,3],"color":"#e07b39"},{"range":[3,4],"color":"#2e7d50"},{"range":[4,5],"color":"#003865"}],"threshold":{"line":{"color":"black","width":3},"thickness":0.80000000000000004,"value":3.4500000000000002}},"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"indicator"}},"layout":{"height":280,"margin":{"b":20,"l":40,"t":40,"r":40},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"mode":"gauge+number","value":3.4500000000000002,"number":{"suffix":" / 5","font":{"size":28,"color":"#003865"}},"gauge":{"axis":{"range":[1,5],"tickwidth":1,"dtick":1},"bar":{"color":"#003865","thickness":0.29999999999999999},"bgcolor":"white","steps":[{"range":[1,2],"color":"#c0392b"},{"range":[2,3],"color":"#e07b39"},{"range":[3,4],"color":"#2e7d50"},{"range":[4,5],"color":"#003865"}],"threshold":{"line":{"color":"black","width":3},"thickness":0.80000000000000004,"value":3.4500000000000002}},"type":"indicator","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="radar-profile" class="level3">
+<h3 data-anchor-id="radar-profile">Radar Profile</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-3047358729f62d27378a" style="width:100%;height:483px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3047358729f62d27378a">{"x":{"visdat":{"dd787cf0ee86":["function () ","plotlyVisDat"]},"cur_data":"dd787cf0ee86","attrs":{"dd787cf0ee86":{"mode":"lines+markers","r":[4,3.8199999999999998,3.6400000000000001,3.8199999999999998,4.0899999999999999,3.6400000000000001,3.6400000000000001,3.1800000000000002,3.8199999999999998,3.5499999999999998,3.4500000000000002,4],"theta":["Clear objectives","Topics explained well","Topics coherently linked","Lecturer motivates students","Lecturer well prepared","Links to other modules","Intellectually stimulating","Pace satisfactory","Assignments relevant","Advice & support","Overall satisfaction","Clear objectives"],"fill":"toself","fillcolor":"rgba(0, 56, 101, 0.15)","line":{"color":"#003865","width":2},"marker":{"color":"#003865","size":6},"hovertemplate":"%{theta}: %{r:.2f}<extra><\/extra>","name":"BAA1030 (n=11)","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatterpolar"}},"layout":{"height":500,"margin":{"b":60,"l":80,"t":40,"r":80},"polar":{"radialaxis":{"range":[1,5],"dtick":1,"gridcolor":"#dde3ed"},"angularaxis":{"gridcolor":"#dde3ed"}},"showlegend":true,"legend":{"x":0.5,"xanchor":"center","y":-0.10000000000000001},"hovermode":"closest"},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"fillcolor":"rgba(0, 56, 101, 0.15)","mode":"lines+markers","r":[4,3.8199999999999998,3.6400000000000001,3.8199999999999998,4.0899999999999999,3.6400000000000001,3.6400000000000001,3.1800000000000002,3.8199999999999998,3.5499999999999998,3.4500000000000002,4],"theta":["Clear objectives","Topics explained well","Topics coherently linked","Lecturer motivates students","Lecturer well prepared","Links to other modules","Intellectually stimulating","Pace satisfactory","Assignments relevant","Advice & support","Overall satisfaction","Clear objectives"],"fill":"toself","line":{"color":"#003865","width":2},"marker":{"color":"#003865","size":6,"line":{"color":"rgba(31,119,180,1)"}},"hovertemplate":["%{theta}: %{r:.2f}<extra><\/extra>","%{theta}: %{r:.2f}<extra><\/extra>","%{theta}: %{r:.2f}<extra><\/extra>","%{theta}: %{r:.2f}<extra><\/extra>","%{theta}: %{r:.2f}<extra><\/extra>","%{theta}: %{r:.2f}<extra><\/extra>","%{theta}: %{r:.2f}<extra><\/extra>","%{theta}: %{r:.2f}<extra><\/extra>","%{theta}: %{r:.2f}<extra><\/extra>","%{theta}: %{r:.2f}<extra><\/extra>","%{theta}: %{r:.2f}<extra><\/extra>","%{theta}: %{r:.2f}<extra><\/extra>"],"name":"BAA1030 (n=11)","type":"scatterpolar","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="response-distribution-selected-items" class="level3">
+<h3 data-anchor-id="response-distribution-selected-items">Response Distribution (Selected Items)</h3>
+<div class="cell">
+<div class="cell-output-display">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-619b3df970c3d06be6df" style="width:100%;height:371px;"></div>
+<script type="application/json" data-for="htmlwidget-619b3df970c3d06be6df">{"x":{"visdat":{"dd7868ae33a7":["function () ","plotlyVisDat"],"dd784c14ea2":["function () ","data"],"dd782f11701e":["function () ","data"],"dd7821d7d9b6":["function () ","data"],"dd7862164d15":["function () ","data"],"dd78261ed002":["function () ","data"]},"cur_data":"dd78261ed002","attrs":{"dd784c14ea2":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"type":"bar","name":"1 - Strongly Disagree","marker":{"color":"#c0392b"},"hovertemplate":"1 - Strongly Disagree: %{y}<extra><\/extra>","inherit":true},"dd782f11701e":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"type":"bar","name":"2 - Disagree","marker":{"color":"#e07b39"},"hovertemplate":"2 - Disagree: %{y}<extra><\/extra>","inherit":true},"dd7821d7d9b6":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"type":"bar","name":"3 - Mixed","marker":{"color":"#b8a600"},"hovertemplate":"3 - Mixed: %{y}<extra><\/extra>","inherit":true},"dd7862164d15":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"type":"bar","name":"4 - Agree","marker":{"color":"#2e7d50"},"hovertemplate":"4 - Agree: %{y}<extra><\/extra>","inherit":true},"dd78261ed002":{"alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"x":{},"y":{},"type":"bar","name":"5 - Strongly Agree","marker":{"color":"#003865"},"hovertemplate":"5 - Strongly Agree: %{y}<extra><\/extra>","inherit":true}},"layout":{"margin":{"b":100,"l":60,"t":25,"r":10},"barmode":"stack","xaxis":{"domain":[0,1],"automargin":true,"title":"","type":"category","categoryorder":"array","categoryarray":["Clear objectives","Lecturer well prepared","Pace satisfactory"]},"yaxis":{"domain":[0,1],"automargin":true,"title":"Number of responses","dtick":1},"legend":{"orientation":"h","y":-0.20000000000000001},"hovermode":"closest","showlegend":true},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false,"displayModeBar":false},"data":[{"x":["Clear objectives","Lecturer well prepared","Pace satisfactory"],"y":[1,0,2],"type":"bar","name":"1 - Strongly Disagree","marker":{"color":"#c0392b","line":{"color":"rgba(31,119,180,1)"}},"hovertemplate":["1 - Strongly Disagree: %{y}<extra><\/extra>","1 - Strongly Disagree: %{y}<extra><\/extra>","1 - Strongly Disagree: %{y}<extra><\/extra>"],"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Clear objectives","Lecturer well prepared","Pace satisfactory"],"y":[0,1,2],"type":"bar","name":"2 - Disagree","marker":{"color":"#e07b39","line":{"color":"rgba(255,127,14,1)"}},"hovertemplate":["2 - Disagree: %{y}<extra><\/extra>","2 - Disagree: %{y}<extra><\/extra>","2 - Disagree: %{y}<extra><\/extra>"],"error_y":{"color":"rgba(255,127,14,1)"},"error_x":{"color":"rgba(255,127,14,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Clear objectives","Lecturer well prepared","Pace satisfactory"],"y":[1,2,0],"type":"bar","name":"3 - Mixed","marker":{"color":"#b8a600","line":{"color":"rgba(44,160,44,1)"}},"hovertemplate":["3 - Mixed: %{y}<extra><\/extra>","3 - Mixed: %{y}<extra><\/extra>","3 - Mixed: %{y}<extra><\/extra>"],"error_y":{"color":"rgba(44,160,44,1)"},"error_x":{"color":"rgba(44,160,44,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Clear objectives","Lecturer well prepared","Pace satisfactory"],"y":[5,3,6],"type":"bar","name":"4 - Agree","marker":{"color":"#2e7d50","line":{"color":"rgba(214,39,40,1)"}},"hovertemplate":["4 - Agree: %{y}<extra><\/extra>","4 - Agree: %{y}<extra><\/extra>","4 - Agree: %{y}<extra><\/extra>"],"error_y":{"color":"rgba(214,39,40,1)"},"error_x":{"color":"rgba(214,39,40,1)"},"xaxis":"x","yaxis":"y","frame":null},{"x":["Clear objectives","Lecturer well prepared","Pace satisfactory"],"y":[4,5,1],"type":"bar","name":"5 - Strongly Agree","marker":{"color":"#003865","line":{"color":"rgba(148,103,189,1)"}},"hovertemplate":["5 - Strongly Agree: %{y}<extra><\/extra>","5 - Strongly Agree: %{y}<extra><\/extra>","5 - Strongly Agree: %{y}<extra><\/extra>"],"error_y":{"color":"rgba(148,103,189,1)"},"error_x":{"color":"rgba(148,103,189,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="student-comments" class="level3">
+<h3 data-anchor-id="student-comments">Student Comments</h3>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href=""><i class="fa-solid fa-user-check" aria-label="user-check"></i> Strengths</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href=""><i class="fa-solid fa-circle-exclamation" aria-label="circle-exclamation"></i> Difficulties</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href=""><i class="fa-solid fa-lightbulb" aria-label="lightbulb"></i> Suggestions</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="callout callout-style-simple callout-tip no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“excellent explanation of topics and how they are relevant to the assignments, which are clearly stated and how to do them. clear focus from the lecturer. engageing.”</em></p>
+<p>— Anonymous 1, Spring 2025</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“Learning this module equips the students with powerful skills in data analysis, automation and visualization, enable us to make faster decision. The tools we learned making us highly competitive in today environment.”</em></p>
+<p>— Anonymous 2, Spring 2025</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“Using Tableau, Excel in general”</em></p>
+<p>— Anonymous 3, Spring 2025</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“Superb Organisational Skills of Dr.&nbsp;Dupre. Everything was pin-point and tip to the toe. Each class was like a TV series like Game of Thrones except there was no repeat telecast and those who missed did not know what details they missed.”</em></p>
+<p>— Anonymous 4, Spring 2025</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“Some of the module strengths were its clarity of structure and how well content was presented. The lecturer’s explanations were second to none, and he came up with some very engaging methods of teaching that made it possible to simplify rather complicated subjects. Additionally, assignments were highly practical and allowed leeway for day-to-day applicability of what was being discussed in class. The module was agreeable, giving sufficient time to absorb the information, and the materials provided were profound, supporting my research throughout the semester.”</em></p>
+<p>— Anonymous 5, Spring 2025</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“The module introduced us to a wide range of industry-relevant tools and software, which is highly valuable in today’s data-driven environment. It gave us exposure to platforms that are widely used in analytics, and allowed us to explore real data sets for hands-on application. The content itself was well structured and relevant for someone beginning their journey in data analytics.”</em></p>
+<p>— Anonymous 6, Spring 2025</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“This module was included in the module Sufficient seating arrangement for everyone”</em></p>
+<p>— Anonymous 7, Spring 2025</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“It gives more ideas about data analytics.”</em></p>
+<p>— Anonymous 8, Spring 2025</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“The core competencies gained”</em></p>
+<p>— Anonymous 9, Spring 2025</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“How the lecturer give to us the tools and objectives was great. Each lecture was very well designed with on one side the lesson and then exercises. It cas clear to us at each time how we can face a lesson, and at which moment we could receive help from Mr Dupré. It was very good.”</em></p>
+<p>— Anonymous 10, Spring 2025</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-tip no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“help to know more about data analytics and how it works”</em></p>
+<p>— Anonymous 11, Spring 2025</p>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="callout callout-style-simple callout-warning no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“a lot of workload.”</em></p>
+<p>— Anonymous 1, Spring 2025</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“One difficulty I encountered was that I had never used tools like Google Colab, Tableau or Python before, which made the initial learning process challenging.”</em></p>
+<p>— Anonymous 2, Spring 2025</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“120 hours of material condensed into 12 classes. Each class was therefor unique and had the potential to derail all the progress if missed.”</em></p>
+<p>— Anonymous 3, Spring 2025</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“While the pace of the module was mostly acceptable, there were certain weeks where the volume of material was a little too much, and the module was not easy to integrate with other courses. Moreover, some of the more advanced material required further elucidation, and a higher rate of review or discussion of these concepts would have been advantageous.”</em></p>
+<p>— Anonymous 4, Spring 2025</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“Could not related to the module (difficult for students without Data analytics background)”</em></p>
+<p>— Anonymous 5, Spring 2025</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“As I am from the mechanical engineering field, I felt programming was a little bit difficult.”</em></p>
+<p>— Anonymous 6, Spring 2025</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“The only difficulties is not related to the module, but maybe just with TABLEAU. Because we never worked on it before this module, understand all the tools this app can offer to us take a lot of time before concretely work on our final assignment.”</em></p>
+<p>— Anonymous 7, Spring 2025</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“The major difficulty was coding,though i had a mechanical engineering background.”</em></p>
+<p>— Anonymous 8, Spring 2025</p>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<div class="callout callout-style-simple callout-important no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“In my opinion, this module could be improved by offering more beginner-friendly tutorials and more hands-on practice sessions early on to help students with no prior experience build confidence with tools like Google Colab, Tableau and Python.”</em></p>
+<p>— Anonymous 1, Spring 2025</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-important no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“Limiting to a specific program, or extending the module over a longer duration of time.”</em></p>
+<p>— Anonymous 2, Spring 2025</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-important no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“Please shorten it and make it less dense. Or make two courses out of this one big course.”</em></p>
+<p>— Anonymous 3, Spring 2025</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-important no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“I do not believe there are any major changes that should be done to this module. The content format and delivery were successful, and I believe the current format is adequate for the needs of the module.”</em></p>
+<p>— Anonymous 4, Spring 2025</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-important no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“Practical usage of software like python during class Navigation”</em></p>
+<p>— Anonymous 5, Spring 2025</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-important no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“I think by regular practice and hands-on experience.”</em></p>
+<p>— Anonymous 6, Spring 2025</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-important no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“NTD”</em></p>
+<p>— Anonymous 7, Spring 2025</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-simple callout-important no-icon">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><em>“All was perfect, It was very easy (even if we were a lot of student in the same room) to ask questions, understand all things and clearly appreciate all that new knowledges we will have to face in the future !”</em></p>
+<p>— Anonymous 8, Spring 2025</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

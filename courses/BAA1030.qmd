@@ -28,3 +28,249 @@ Data and visual analytics is an emerging field concerned with analysing, modelli
 - [8: Visualisation in python with plotnine](https://damien-dupre.github.io/BAA1030/lectures/lecture_8)
 - [9: Introduction to Quarto](https://damien-dupre.github.io/BAA1030/lectures/lecture_9)
 - [10: Publish your Report with GitHub](https://damien-dupre.github.io/BAA1030/lectures/lecture_10)
+
+---
+
+## Student Feedback Survey — Spring 2025
+
+```{r}
+#| echo: false
+#| message: false
+#| warning: false
+
+library(readr)
+library(dplyr)
+library(tidyr)
+library(plotly)
+library(htmltools)
+
+df <- read_csv("../private/BAA1030_feedback.csv", show_col_types = FALSE)
+
+# Extract Likert question columns (Q00_level to which you agree->...)
+likert_cols <- grep("level to which you agree", names(df), value = TRUE)
+
+# Clean column names for display
+question_labels <- c(
+  "Clear objectives",
+  "Topics explained well",
+  "Topics coherently linked",
+  "Lecturer motivates students",
+  "Lecturer well prepared",
+  "Links to other modules",
+  "Intellectually stimulating",
+  "Pace satisfactory",
+  "Assignments relevant",
+  "Advice & support",
+  "Overall satisfaction"
+)
+
+names(question_labels) <- likert_cols
+
+# Compute means
+means <- df |>
+  summarise(across(all_of(likert_cols), \(x) round(mean(x, na.rm = TRUE), 2))) |>
+  pivot_longer(everything(), names_to = "question", values_to = "mean") |>
+  mutate(label = question_labels[question])
+
+n_responses <- nrow(df)
+```
+
+::: {.callout-note appearance="simple"}
+This section presents anonymous student feedback collected through DCU's official module evaluation survey (Spring 2025, *n* = `r n_responses`). Quantitative scores use a 5-point Likert scale (1 = Strongly Disagree to 5 = Strongly Agree).
+:::
+
+### Overall Satisfaction
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+overall_mean <- means |> filter(label == "Overall satisfaction") |> pull(mean)
+
+plot_ly(
+  type = "indicator",
+  mode = "gauge+number",
+  value = overall_mean,
+  height = 280,
+  number = list(suffix = " / 5", font = list(size = 28, color = "#003865")),
+  gauge = list(
+    axis = list(range = list(1, 5), tickwidth = 1, dtick = 1),
+    bar = list(color = "#003865", thickness = 0.3),
+    bgcolor = "white",
+    steps = list(
+      list(range = c(1, 2), color = "#c0392b"),
+      list(range = c(2, 3), color = "#e07b39"),
+      list(range = c(3, 4), color = "#2e7d50"),
+      list(range = c(4, 5), color = "#003865")
+    ),
+    threshold = list(
+      line = list(color = "black", width = 3),
+      thickness = 0.8,
+      value = overall_mean
+    )
+  )
+) |>
+  layout(margin = list(t = 40, b = 20, l = 40, r = 40)) |>
+  config(displayModeBar = FALSE)
+```
+
+### Radar Profile
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+
+# Close the radar polygon by repeating first value
+radar_values <- c(means$mean, means$mean[1])
+radar_labels <- c(means$label, means$label[1])
+
+plot_ly(
+  type = "scatterpolar",
+  mode = "lines+markers",
+  r = radar_values,
+  theta = radar_labels,
+  fill = "toself",
+  fillcolor = "rgba(0, 56, 101, 0.15)",
+  line = list(color = "#003865", width = 2),
+  marker = list(color = "#003865", size = 6),
+  name = paste0("BAA1030 (n=", n_responses, ")"),
+  height = 500,
+  hovertemplate = "%{theta}: %{r:.2f}<extra></extra>"
+) |>
+  layout(
+    polar = list(
+      radialaxis = list(range = c(1, 5), dtick = 1, gridcolor = "#dde3ed"),
+      angularaxis = list(gridcolor = "#dde3ed")
+    ),
+    showlegend = TRUE,
+    legend = list(x = 0.5, xanchor = "center", y = -0.1),
+    margin = list(t = 40, b = 60, l = 80, r = 80)
+  ) |>
+  config(displayModeBar = FALSE)
+```
+
+### Response Distribution (Selected Items)
+
+```{r}
+#| echo: false
+#| warning: false
+#| message: false
+#| fig-height: 4
+
+# Pick 4 key items for distribution chart
+key_items <- c(
+  "Lecturer well prepared",
+  "Clear objectives",
+  "Pace satisfactory"
+)
+
+key_cols <- names(question_labels[question_labels %in% key_items])
+
+dist_data <- df |>
+  select(all_of(key_cols)) |>
+  pivot_longer(everything(), names_to = "question", values_to = "score") |>
+  mutate(
+    label = question_labels[question],
+    score = factor(score, levels = 1:5)
+  ) |>
+  count(label, score, .drop = FALSE) |>
+  mutate(score_label = case_when(
+    score == "1" ~ "1 - Strongly Disagree",
+    score == "2" ~ "2 - Disagree",
+    score == "3" ~ "3 - Mixed",
+    score == "4" ~ "4 - Agree",
+    score == "5" ~ "5 - Strongly Agree"
+  ))
+
+score_colors <- c("#c0392b", "#e07b39", "#b8a600", "#2e7d50", "#003865")
+score_names <- c("1 - Strongly Disagree", "2 - Disagree", "3 - Mixed", "4 - Agree", "5 - Strongly Agree")
+
+p <- plotly::plot_ly()
+for (i in seq_along(score_names)) {
+  d <- dist_data |> filter(score_label == score_names[i])
+  p <- p |> plotly::add_trace(
+    data = d, x = ~label, y = ~n,
+    type = "bar", name = score_names[i],
+    marker = list(color = score_colors[i]),
+    hovertemplate = paste0(score_names[i], ": %{y}<extra></extra>")
+  )
+}
+p |>
+  plotly::layout(
+    barmode = "stack",
+    xaxis = list(title = ""),
+    yaxis = list(title = "Number of responses", dtick = 1),
+    legend = list(orientation = "h", y = -0.2),
+    margin = list(b = 100)
+  ) |>
+  plotly::config(displayModeBar = FALSE)
+```
+
+### Student Comments
+
+```{r}
+#| echo: false
+#| results: asis
+
+# Extract text columns
+strengths_col <- grep("strengths", names(df), value = TRUE)
+difficulties_col <- grep("difficulties", names(df), value = TRUE)
+improvements_col <- grep("how to improve", names(df), value = TRUE)
+
+strengths <- df[[strengths_col]] |> na.omit() |> trimws()
+strengths <- strengths[nchar(strengths) > 0]
+
+difficulties <- df[[difficulties_col]] |> na.omit() |> trimws()
+difficulties <- difficulties[nchar(difficulties) > 0]
+
+improvements <- df[[improvements_col]] |> na.omit() |> trimws()
+improvements <- improvements[nchar(improvements) > 0]
+```
+
+::: {.panel-tabset}
+
+#### {{< fa user-check >}} Strengths
+
+```{r}
+#| echo: false
+#| results: asis
+
+for (i in seq_along(strengths)) {
+  cat(sprintf(
+    '::: {.callout-tip appearance="minimal"}\n*"%s"*\n\n--- Anonymous %d, Spring 2025\n:::\n\n',
+    strengths[i], i
+  ))
+}
+```
+
+#### {{< fa circle-exclamation >}} Difficulties
+
+```{r}
+#| echo: false
+#| results: asis
+
+for (i in seq_along(difficulties)) {
+  cat(sprintf(
+    '::: {.callout-warning appearance="minimal"}\n*"%s"*\n\n--- Anonymous %d, Spring 2025\n:::\n\n',
+    difficulties[i], i
+  ))
+}
+```
+
+#### {{< fa lightbulb >}} Suggestions
+
+```{r}
+#| echo: false
+#| results: asis
+
+for (i in seq_along(improvements)) {
+  cat(sprintf(
+    '::: {.callout-important appearance="minimal"}\n*"%s"*\n\n--- Anonymous %d, Spring 2025\n:::\n\n',
+    improvements[i], i
+  ))
+}
+```
+
+:::
