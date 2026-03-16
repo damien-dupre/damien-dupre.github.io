@@ -1,7 +1,18 @@
 ---
 image: img.png
-title: "Identifying Correct or Incorrect Emotion Recognition from Facial Expression Time Series using R"
+title: Identifying Correct or Incorrect Emotion Recognition from Facial Expression
+  Time Series using R
 author: Damien Dupré
 description: Consortium of European Research on Emotion (CERE 2025)
-date: "2025-07-16"
+date: '2025-07-16'
+about:
+  id: hero-heading
+  template: jolla
+  image-shape: rounded
 ---
+
+::: {#hero-heading}
+
+Consortium of European Research on Emotion (CERE 2025)
+
+:::

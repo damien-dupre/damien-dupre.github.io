@@ -1,7 +1,19 @@
 ---
 image: img.jpg
-title: "Introduction à l'expérience utilisateur émotionnelle : Quels sont les impacts des émotions suscitées des produits innovants sur les perceptions et les réactions des utilisateurs ?"
+title: 'Introduction à l''expérience utilisateur émotionnelle : Quels sont les impacts
+  des émotions suscitées des produits innovants sur les perceptions et les réactions
+  des utilisateurs ?'
 author: Damien Dupré, Anna Tcherkassof, and Michel Dubois
 description: Colloque TechnUse - De l'acceptabilité à l'usage des technologies innovantes
-date: "2014-10-22"
+date: '2014-10-22'
+about:
+  id: hero-heading
+  template: jolla
+  image-shape: rounded
 ---
+
+::: {#hero-heading}
+
+Colloque TechnUse - De l'acceptabilité à l'usage des technologies innovantes
+
+:::

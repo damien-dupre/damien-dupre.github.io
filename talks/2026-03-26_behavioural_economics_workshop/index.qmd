@@ -1,16 +1,19 @@
 ---
 image: img.jpg
-title: "Characterising Online Private Treaty Negotiations: Field Evidence from Irish Residential Property"
+title: 'Characterising Online Private Treaty Negotiations: Field Evidence from Irish
+  Residential Property'
 author: Damien Dupré and Healy Hynes
 description: Irish Economic Association, Behavioural Economics Network
 abstract: |
   The mechanisms governing residential property transactions in Ireland have undergone a fundamental transformation in recent years. Historically, the market was characterised by opaque, agent-mediated negotiations in which offers were submitted by telephone, email or in person. In this traditional system, prospective buyers often lacked certainty regarding the existence or magnitude of competing offers, creating significant information asymmetry and a deficit of trust in the process (Lunn et al., 2025). The contemporary market, however, is witnessing a decisive shift towards digital platforms that allow verified participants to observe competing interest in real time, thereby democratising access to market information.
   These online offer management platforms are widely perceived as fairer and more transparent than the traditional estate-agent-mediated process. Recent survey evidence from the ESRI confirms this perception: when asked to design a fair system for transacting property, a majority of a nationally representative Irish sample selected online visible platforms as their preferred bidding mechanism (Robertson et al., 2026). However, the same study provides experimental evidence that challenges the assumption that transparency benefits buyers. In a simulated auction experiment, online platforms and more generally open bidding systems led participants to bid significantly higher than in sealed-bid conditions, often exceeding their self-stated ideal budgets. This suggests that the competitive visibility inherent in transparent platforms may activate behavioural mechanisms such as auction fever and loss aversion that push prices upward (Kahneman & Tversky, 1979; McGee, 2013).
   These experimental findings raise an important question: do similar dynamics manifest in real-world property transactions conducted on online platforms? To date, this question has remained largely unanswered due to the difficulty of obtaining detailed transactional data from live negotiations. This paper addresses this gap by presenting the first descriptive field evidence on the structure and dynamics of online private treaty negotiations in Ireland.
-
-
-date: "2026-03-26"
+date: '2026-03-26'
+about:
+  id: hero-heading
+  template: jolla
+  image-shape: rounded
 ---
 
-![](img.jpg){fig-align="center" width=4in}
-
+::: {#hero-heading}
+:::

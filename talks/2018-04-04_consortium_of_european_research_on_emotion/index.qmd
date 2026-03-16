@@ -1,7 +1,18 @@
 ---
 image: img.jpg
-title: "A comparison of three commercial systems for automatic recognition of spontaneous facial expressions"
+title: A comparison of three commercial systems for automatic recognition of spontaneous
+  facial expressions
 author: Damien Dupré & Gary J McKeown
 description: Consortium of European Research on Emotion (CERE 2018)
-date: "2018-04-04"
+date: '2018-04-04'
+about:
+  id: hero-heading
+  template: jolla
+  image-shape: rounded
 ---
+
+::: {#hero-heading}
+
+Consortium of European Research on Emotion (CERE 2018)
+
+:::

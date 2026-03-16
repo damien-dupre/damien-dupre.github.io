@@ -1,7 +1,19 @@
 ---
 image: img.png
-title: "Willingness to share emotion information on social media: Influence of personality and social context"
+title: 'Willingness to share emotion information on social media: Influence of personality
+  and social context'
 author: Damien Dupré, Gary J McKeown, Nicole Andelic, and Gawain Morrison
-description: International Conference on Data Science and Advanced Analytics (DSAA 2018)
-date: "2018-10-01"
+description: International Conference on Data Science and Advanced Analytics (DSAA
+  2018)
+date: '2018-10-01'
+about:
+  id: hero-heading
+  template: jolla
+  image-shape: rounded
 ---
+
+::: {#hero-heading}
+
+International Conference on Data Science and Advanced Analytics (DSAA 2018)
+
+:::

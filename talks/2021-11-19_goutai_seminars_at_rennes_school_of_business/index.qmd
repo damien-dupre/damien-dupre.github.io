@@ -1,7 +1,17 @@
 ---
 image: img.jpg
-title: "Urban and socio-economic correlates of property prices in Dublin area"
+title: Urban and socio-economic correlates of property prices in Dublin area
 author: Damien Dupré
 description: GoutAI Seminars at Rennes School of Business
-date: "2021-11-19"
+date: '2021-11-19'
+about:
+  id: hero-heading
+  template: jolla
+  image-shape: rounded
 ---
+
+::: {#hero-heading}
+
+GoutAI Seminars at Rennes School of Business
+
+:::

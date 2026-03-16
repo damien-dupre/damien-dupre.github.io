@@ -1,6 +1,7 @@
 ---
 image: img.jpg
-title: "Extending guest lecture learning: Hybrid delivery, ai review supports, and reflection in large classes"
+title: 'Extending guest lecture learning: Hybrid delivery, ai review supports, and
+  reflection in large classes'
 author: James Byrne, Colum Foley, Damien Dupré, and Paul Liston
 description: 18th annual International Conference on Education and New Learning Technologies
 abstract: |
@@ -8,9 +9,12 @@ abstract: |
   The study is based on a large postgraduate project management module in a business school, enrolling 284 students across four MSc programmes. Over a 12-week semester, four guest lectures were delivered by senior practitioners from different sectors. One session was delivered remotely and three took place in person on campus; all were supported through Zoom livestreaming and recording. Following each lecture, students were given access through the virtual learning environment to the recording, an AI-generated transcript, and AI-generated summary notes. These materials were lightly edited to improve clarity and correct obvious errors. Students were also encouraged to draw on guest lecture insights within a low-stakes reflective task at the end of the module. Evaluation data were gathered through an anonymous post-series survey.
   The findings indicate that students generally preferred in-person learning, but also made substantial use of the recorded guest lectures across the series. Many respondents viewed the AI-generated transcripts and summary notes as useful for revisiting lecture content, locating key ideas, and supporting later reflection. At the same time, the results suggest a consistent trade-off associated with remote delivery: students reported lower perceived engagement and a weaker sense of connection with the remotely delivered speaker than with speakers physically present in the lecture theatre. These findings point to both the potential and the limitations of technology-supported guest lecture design in large-class contexts.
   This study suggests that guest lectures in large postgraduate classes may be strengthened when they are designed across three linked phases: access to the event and its resources, structured interaction during delivery, and post-event consolidation through reflection. It also indicates that AI-generated transcripts and summaries may be most valuable when positioned as aids for review, retrieval, and integration rather than as substitutes for active listening or critical engagement. The study offers a practice-based contribution to current discussions on large-class pedagogy, hybrid teaching, and the careful integration of AI-supported learning resources in higher education.
-
-date: "2026-06-29"
+date: '2026-06-29'
+about:
+  id: hero-heading
+  template: jolla
+  image-shape: rounded
 ---
 
-![](img.jpg){fig-align="center" width=4in}
-
+::: {#hero-heading}
+:::

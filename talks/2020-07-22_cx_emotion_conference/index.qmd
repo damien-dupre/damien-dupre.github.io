@@ -1,7 +1,17 @@
 ---
 image: img.png
-title: "Facial and physiological expressions of emotion, with a look at bias"
+title: Facial and physiological expressions of emotion, with a look at bias
 author: Damien Dupré
 description: CX Emotion Conference
-date: "2020-07-22"
+date: '2020-07-22'
+about:
+  id: hero-heading
+  template: jolla
+  image-shape: rounded
 ---
+
+::: {#hero-heading}
+
+CX Emotion Conference
+
+:::

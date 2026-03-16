@@ -1,7 +1,18 @@
 ---
 image: img.jpg
-title: "Are approach-avoidance relevant cues of the Emotional User eXperience? Case studies with innovative products"
+title: Are approach-avoidance relevant cues of the Emotional User eXperience? Case
+  studies with innovative products
 author: Damien Dupré, Pascal Pizelle, Michel Dubois, and Anna Tcherkassof
 description: Consortium of European Research on Emotion (CERE 2016)
-date: "2016-03-26"
+date: '2016-03-26'
+about:
+  id: hero-heading
+  template: jolla
+  image-shape: rounded
 ---
+
+::: {#hero-heading}
+
+Consortium of European Research on Emotion (CERE 2016)
+
+:::

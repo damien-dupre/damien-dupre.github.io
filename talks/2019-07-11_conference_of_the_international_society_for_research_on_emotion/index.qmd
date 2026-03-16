@@ -1,7 +1,18 @@
 ---
 image: img.png
-title: "Accuracy of automatic emotion recognition from voice"
+title: Accuracy of automatic emotion recognition from voice
 author: Damien Dupré & Gary J McKeown
-description: Conference of the International Society for Research on Emotion (ISRE 2019)
-date: "2019-07-11"
+description: Conference of the International Society for Research on Emotion (ISRE
+  2019)
+date: '2019-07-11'
+about:
+  id: hero-heading
+  template: jolla
+  image-shape: rounded
 ---
+
+::: {#hero-heading}
+
+Conference of the International Society for Research on Emotion (ISRE 2019)
+
+:::

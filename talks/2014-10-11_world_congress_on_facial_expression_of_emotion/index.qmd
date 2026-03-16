@@ -1,7 +1,17 @@
 ---
 image: img.png
-title: "Spontaneous and dynamic emotional facial expressions reflect action readiness"
+title: Spontaneous and dynamic emotional facial expressions reflect action readiness
 author: Anna Tcherkassof & Damien Dupré
 description: World Congress on Facial Expression of Emotion (WCFEE 2014)
-date: "2014-10-11"
+date: '2014-10-11'
+about:
+  id: hero-heading
+  template: jolla
+  image-shape: rounded
 ---
+
+::: {#hero-heading}
+
+World Congress on Facial Expression of Emotion (WCFEE 2014)
+
+:::

@@ -1,7 +1,19 @@
 ---
 image: img.png
-title: "Multivariate Body Area Network of Physiological Measures “In the Wild”: A case study with zipline activity"
+title: 'Multivariate Body Area Network of Physiological Measures “In the Wild”: A
+  case study with zipline activity'
 author: Damien Dupré, Nicole Andelic, Daniel Moore, Gawain Morrison, and Gary J McKeown
-description: International Conference on Methods and Techniques in Behavioral Research (Measuring Behavior 2018)
-date: "2018-06-01"
+description: International Conference on Methods and Techniques in Behavioral Research
+  (Measuring Behavior 2018)
+date: '2018-06-01'
+about:
+  id: hero-heading
+  template: jolla
+  image-shape: rounded
 ---
+
+::: {#hero-heading}
+
+International Conference on Methods and Techniques in Behavioral Research (Measuring Behavior 2018)
+
+:::

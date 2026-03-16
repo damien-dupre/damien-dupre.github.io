@@ -1,7 +1,19 @@
 ---
 image: img.jpg
-title: "Etude de l’expérience utilisateur émotionnelle: Quels sont les impacts des émotions suscitées des produits innovants sur les perceptions des utilisateurs?"
+title: 'Etude de l’expérience utilisateur émotionnelle: Quels sont les impacts des
+  émotions suscitées des produits innovants sur les perceptions des utilisateurs?'
 author: Damien Dupré, Anna Tcherkassof, Michel Dubois, and Pascal Pizelle
-description: Association Internationale de Psychologie du Travail de Langue Française (AIPTLF 2016)
-date: "2016-07-01"
+description: Association Internationale de Psychologie du Travail de Langue Française
+  (AIPTLF 2016)
+date: '2016-07-01'
+about:
+  id: hero-heading
+  template: jolla
+  image-shape: rounded
 ---
+
+::: {#hero-heading}
+
+Association Internationale de Psychologie du Travail de Langue Française (AIPTLF 2016)
+
+:::
