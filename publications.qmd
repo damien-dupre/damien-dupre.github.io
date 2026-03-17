@@ -3,6 +3,9 @@ title: "Publications"
 description: |
   Research published in peer-reviewed journals and conferences
 listing:
+    - id: publications_2025
+      contents: publications/publications_2025.yml
+      template: publications/listing.ejs
     - id: publications_2021
       contents: publications/publications_2021.yml
       template: publications/listing.ejs
@@ -40,6 +43,11 @@ toc-title: Year
 
 # https://www.andrewheiss.com/talks/
 ---
+
+## 2025
+
+:::{#publications_2025}
+:::
 
 ## 2021
 

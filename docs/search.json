@@ -1,17 +1,122 @@
 [
   {
-    "objectID": "talks/2025-10-15_open_research_for_global_impact/index.html",
-    "href": "talks/2025-10-15_open_research_for_global_impact/index.html",
-    "title": "Open and Reproducible Research Outputs with Quarto",
+    "objectID": "talks/2025-07-16_consortium_of_european_research_on_emotion/index.html",
+    "href": "talks/2025-07-16_consortium_of_european_research_on_emotion/index.html",
+    "title": "Identifying Correct or Incorrect Emotion Recognition from Facial Expression Time Series using R",
     "section": "",
-    "text": "This communication will showcase how open research practices are embedded in my work, which spans psychology, focusing on AI-driven emotion recognition from physiological and facial cues, and data science support for Business School projects in Economics, Accounting, and Public Policy. A core component of my methodology is the use of Quarto, an open-source scientific publishing system. I will demonstrate how Quarto facilitates the creation of reproducible and high-quality research outputs (articles, presentations, etc.) by integrating text and code (R, Python, Julia). The presentation will advocate for the university-wide adoption of Quarto to enhance research best practices, transparency, and impact, aligning with the goals of promoting open research for global reach.\n  \n\n\n Slides"
+    "text": "Consortium of European Research on Emotion (CERE 2025)"
+  },
+  {
+    "objectID": "talks/2024-06-13_irish_accounting_and_finance_association_conference/index.html",
+    "href": "talks/2024-06-13_irish_accounting_and_finance_association_conference/index.html",
+    "title": "A comparison of key audit matter and audit-committee risk disclosures",
+    "section": "",
+    "text": "Irish Accounting & Finance Association Conference (IAFA 2024)"
+  },
+  {
+    "objectID": "talks/2021-06-25_entrepreneurial_finance_conference/index.html",
+    "href": "talks/2021-06-25_entrepreneurial_finance_conference/index.html",
+    "title": "The determinants of post-acquisition growth in entrepreneurial start-ups: Evidence from India",
+    "section": "",
+    "text": "Entrepreneurial Finance Conference (ENTFIN 2021)"
+  },
+  {
+    "objectID": "talks/2020-12-07_irish_conference_on_artificial_intelligence_and_cognitive_science/index.html",
+    "href": "talks/2020-12-07_irish_conference_on_artificial_intelligence_and_cognitive_science/index.html",
+    "title": "Disenchantment with emotion recognition technologies: A comparison between humans observers and automatic classifiers",
+    "section": "",
+    "text": "Irish Conference on Artificial Intelligence and Cognitive Science (AICS 2020)"
+  },
+  {
+    "objectID": "talks/2020-10-01_international_conference_on_data_science_and_advanced_analytics/index.html",
+    "href": "talks/2020-10-01_international_conference_on_data_science_and_advanced_analytics/index.html",
+    "title": "Urban and socio-economic correlates of property prices in Dublin’s area",
+    "section": "",
+    "text": "International Conference on Data Science and Advanced Analytics (DSAA 2020)"
+  },
+  {
+    "objectID": "talks/2020-07-09_summer_school_on_behavioral_and_neuroscientific_research_for_economics_finance_and_accounting/index.html",
+    "href": "talks/2020-07-09_summer_school_on_behavioral_and_neuroscientific_research_for_economics_finance_and_accounting/index.html",
+    "title": "Data analytics for behavioral research",
+    "section": "",
+    "text": "Summer School on Behavioral and Neuroscientific Research for Economics, Finance and Accounting (ECMCRC 2020)"
+  },
+  {
+    "objectID": "talks/2019-07-02_summer_school_on_behavioral_and_neuroscientific_research_for_economics_finance_and_accounting/index.html",
+    "href": "talks/2019-07-02_summer_school_on_behavioral_and_neuroscientific_research_for_economics_finance_and_accounting/index.html",
+    "title": "Data analytics for behavioral research",
+    "section": "",
+    "text": "Summer School on Behavioral and Neuroscientific Research for Economics, Finance and Accounting (ECMCRC 2019)"
+  },
+  {
+    "objectID": "talks/2018-07-01_international_bcs_human_computer_interaction_conference/index.html",
+    "href": "talks/2018-07-01_international_bcs_human_computer_interaction_conference/index.html",
+    "title": "Dynamic Analysis of Automatic Facial Expressions Recognition ‘in the Wild’ Using Generalized Additive Mixed Models and Significant Zero Crossing of the Derivatives",
+    "section": "",
+    "text": "International BCS Human Computer Interaction Conference (HCI 2018)"
+  },
+  {
+    "objectID": "talks/2018-04-04_consortium_of_european_research_on_emotion/index.html",
+    "href": "talks/2018-04-04_consortium_of_european_research_on_emotion/index.html",
+    "title": "A comparison of three commercial systems for automatic recognition of spontaneous facial expressions",
+    "section": "",
+    "text": "Consortium of European Research on Emotion (CERE 2018)"
+  },
+  {
+    "objectID": "talks/2017-07-26_conference_of_the_international_society_for_research_on_emotion/index.html",
+    "href": "talks/2017-07-26_conference_of_the_international_society_for_research_on_emotion/index.html",
+    "title": "Physiological correlates of emotions ‘in the wild’: A case study with mountain bikers",
+    "section": "",
+    "text": "Conference of the International Society for Research on Emotion (ISRE 2017)"
+  },
+  {
+    "objectID": "talks/2017-04-01_annual_convention_of_the_society_for_the_study_of_artificial_intelligence_and_simulation_for_behaviour_society_with_ai/index.html",
+    "href": "talks/2017-04-01_annual_convention_of_the_society_for_the_study_of_artificial_intelligence_and_simulation_for_behaviour_society_with_ai/index.html",
+    "title": "Dynamic analysis of automatic emotion recognition using generalized additive mixed models",
+    "section": "",
+    "text": "Annual Convention of the Society for the Study of Artificial Intelligence and Simulation for Behaviour (AISB 2017)"
+  },
+  {
+    "objectID": "talks/2016-03-26_consortium_of_european_research_on_emotion/index.html",
+    "href": "talks/2016-03-26_consortium_of_european_research_on_emotion/index.html",
+    "title": "Are approach-avoidance relevant cues of the Emotional User eXperience? Case studies with innovative products",
+    "section": "",
+    "text": "Consortium of European Research on Emotion (CERE 2016)"
+  },
+  {
+    "objectID": "talks/2014-10-22_colloque_technuse/index.html",
+    "href": "talks/2014-10-22_colloque_technuse/index.html",
+    "title": "Introduction à l’expérience utilisateur émotionnelle : Quels sont les impacts des émotions suscitées des produits innovants sur les perceptions et les réactions des utilisateurs ?",
+    "section": "",
+    "text": "Colloque TechnUse - De l’acceptabilité à l’usage des technologies innovantes"
+  },
+  {
+    "objectID": "talks/2013-12-05_les_doctorales_de_l_innovation/index.html",
+    "href": "talks/2013-12-05_les_doctorales_de_l_innovation/index.html",
+    "title": "Mesurer de l’expérience utilisateur émotionnelle de produits innovants: Quels paradigmes et outils?",
+    "section": "",
+    "text": "Les Doctorales de l’Innovation"
+  },
+  {
+    "objectID": "talks/2011-05-01_environnements_informatiques_pour_l_apprentissage_humain/index.html",
+    "href": "talks/2011-05-01_environnements_informatiques_pour_l_apprentissage_humain/index.html",
+    "title": "Pensum, un système d’aide à la compréhension de cours à distance",
+    "section": "",
+    "text": "Environnements Informatiques pour l’Apprentissage Humain (EIAH 2011)"
+  },
+  {
+    "objectID": "talks/2010-05-01_international_workshop_series_on_multimodal_corpora/index.html",
+    "href": "talks/2010-05-01_international_workshop_series_on_multimodal_corpora/index.html",
+    "title": "DynEmo: A Corpus of dynamic and spontaneous emotional facial expressions",
+    "section": "",
+    "text": "International Conference on Language Resources and Evaluation (LREC 2010)"
   },
   {
     "objectID": "talks.html",
     "href": "talks.html",
     "title": "Talks",
     "section": "",
-    "text": "Extending guest lecture learning: Hybrid delivery, ai review supports, and reflection in large classes\n\n\n\n\n\n18th annual International Conference on Education and New Learning Technologies\n\n\n\n\n\nJun 29, 2026\n\n\nJames Byrne, Colum Foley, Damien Dupré, and Paul Liston\n\n\n\n\n\n\n\n\n\n\n\n\nDifferences between key audit matter and audit-committee risk disclosures\n\n\n\n\n\n48th Annual Congress of the European Accounting Association\n\n\n\n\n\nMay 27, 2026\n\n\nKaren-Ann Dwyer, Brid Murphy, and Damien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nThe Long-Term Career Trajectories of IPBS Graduates: A Mixed-Methods Investigation into Transnational Education\n\n\n\n\n\nCABS Learning, Teaching & Student Experience 2026\n\n\n\n\n\nMay 18, 2026\n\n\nDamien Dupré and Breda McNally\n\n\n\n\n\n\n\n\n\n\n\n\nCharacterising Online Private Treaty Negotiations: Field Evidence from Irish Residential Property\n\n\n\n\n\nIrish Economic Association, Behavioural Economics Network\n\n\n\n\n\nMar 26, 2026\n\n\nDamien Dupré and Healy Hynes\n\n\n\n\n\n\n\n\n\n\n\n\nOpen and Reproducible Research Outputs with Quarto\n\n\n\n\n\nDCU Open Research for Global Impact\n\n\n\n\n\nOct 15, 2025\n\n\nDamien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nCloud-Powered Equity: Driving Student Success in Data Analytics\n\n\n\n\n\nDCU TEU Teaching & Learning Week 2025\n\n\n\n\n\nSep 30, 2025\n\n\nDamien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nIdentifying Correct or Incorrect Emotion Recognition from Facial Expression Time Series using R\n\n\n\n\n\nConsortium of European Research on Emotion (CERE 2025)\n\n\n\n\n\nJul 16, 2025\n\n\nDamien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nCan AI Read Your Emotions? The Truth Behind Emotion Recognition Technology\n\n\n\n\n\nDublin Pint of Science Festival 2025\n\n\n\n\n\nMay 19, 2025\n\n\nDamien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nA comparison of key audit matter and audit-committee risk disclosures\n\n\n\n\n\nIrish Accounting & Finance Association Conference (IAFA 2024)\n\n\n\n\n\nJun 13, 2024\n\n\nKaren-Ann Dwyer, Brid Murphy, and Damien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nUrban and socio-economic correlates of property prices in Dublin area\n\n\n\n\n\nGoutAI Seminars at Rennes School of Business\n\n\n\n\n\nNov 19, 2021\n\n\nDamien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nThe determinants of post-acquisition growth in entrepreneurial start-ups: Evidence from India\n\n\n\n\n\nEntrepreneurial Finance Conference (ENTFIN 2021)\n\n\n\n\n\nJun 25, 2021\n\n\nAnish Tiwari, Teresa Hogan, and Damien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nEffect of Facial Expression Categories and Calculation Methods on Automatic Emotion Recognition\n\n\n\n\n\n5th International Workshop on Emotion Awareness for Pervasive Computing (EmotionAware 2021)\n\n\n\n\n\nMar 1, 2021\n\n\nDamien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nDisenchantment with emotion recognition technologies: A comparison between humans observers and automatic classifiers\n\n\n\n\n\nIrish Conference on Artificial Intelligence and Cognitive Science (AICS 2020)\n\n\n\n\n\nDec 7, 2020\n\n\nDamien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nDisenchantment with emotion recognition technologies: Implications and future directions\n\n\n\n\n\nThe Psychological Society of Ireland Annual Conference (PSI 2020)\n\n\n\n\n\nNov 19, 2020\n\n\nDamien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nUrban and socio-economic correlates of property prices in Dublin’s area\n\n\n\n\n\nInternational Conference on Data Science and Advanced Analytics (DSAA 2020)\n\n\n\n\n\nOct 1, 2020\n\n\nDamien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nFacial and physiological expressions of emotion, with a look at bias\n\n\n\n\n\nCX Emotion Conference\n\n\n\n\n\nJul 22, 2020\n\n\nDamien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nData analytics for behavioral research\n\n\n\n\n\nSummer School on Behavioral and Neuroscientific Research for Economics, Finance and Accounting (ECMCRC 2020)\n\n\n\n\n\nJul 9, 2020\n\n\nDamien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nAccuracy of automatic emotion recognition from voice\n\n\n\n\n\nConference of the International Society for Research on Emotion (ISRE 2019)\n\n\n\n\n\nJul 11, 2019\n\n\nDamien Dupré & Gary J McKeown\n\n\n\n\n\n\n\n\n\n\n\n\nData analytics for behavioral research\n\n\n\n\n\nSummer School on Behavioral and Neuroscientific Research for Economics, Finance and Accounting (ECMCRC 2019)\n\n\n\n\n\nJul 2, 2019\n\n\nDamien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nWillingness to share emotion information on social media: Influence of personality and social context\n\n\n\n\n\nInternational Conference on Data Science and Advanced Analytics (DSAA 2018)\n\n\n\n\n\nOct 1, 2018\n\n\nDamien Dupré, Gary J McKeown, Nicole Andelic, and Gawain Morrison\n\n\n\n\n\n\n\n\n\n\n\n\nDynamic Analysis of Automatic Facial Expressions Recognition ‘in the Wild’ Using Generalized Additive Mixed Models and Significant Zero Crossing of the Derivatives\n\n\n\n\n\nInternational BCS Human Computer Interaction Conference (HCI 2018)\n\n\n\n\n\nJul 1, 2018\n\n\nDamien Dupré, Nicole Andelic, Gawain Morrison, and Gary J McKeown\n\n\n\n\n\n\n\n\n\n\n\n\nMultivariate Body Area Network of Physiological Measures “In the Wild”: A case study with zipline activity\n\n\n\n\n\nInternational Conference on Methods and Techniques in Behavioral Research (Measuring Behavior 2018)\n\n\n\n\n\nJun 1, 2018\n\n\nDamien Dupré, Nicole Andelic, Daniel Moore, Gawain Morrison, and Gary J McKeown\n\n\n\n\n\n\n\n\n\n\n\n\nA comparison of three commercial systems for automatic recognition of spontaneous facial expressions\n\n\n\n\n\nConsortium of European Research on Emotion (CERE 2018)\n\n\n\n\n\nApr 4, 2018\n\n\nDamien Dupré & Gary J McKeown\n\n\n\n\n\n\n\n\n\n\n\n\nComparing virtual reality with computer monitors as rating environments for affective dimensions in social interactions\n\n\n\n\n\nInternational Conference on Affective Computing and Intelligent Interaction (ACII 2017)\n\n\n\n\n\nOct 1, 2017\n\n\nGary J McKeown, Christine Spencer, Alex Patterson, Thomas Creaney, and Damien Dupré,\n\n\n\n\n\n\n\n\n\n\n\n\nPhysiological correlates of emotions ‘in the wild’: A case study with mountain bikers\n\n\n\n\n\nConference of the International Society for Research on Emotion (ISRE 2017)\n\n\n\n\n\nJul 26, 2017\n\n\nDamien Dupré, Gawain Morrison, and Gary J McKeown\n\n\n\n\n\n\n\n\n\n\n\n\nDynamic model of athletes’ emotions based on wearable devices\n\n\n\n\n\nInternational Conference on Applied Human Factors in Sports, Injury Prevention and Outdoor Recreation (AHFE 2017)\n\n\n\n\n\nJul 1, 2017\n\n\nDamien Dupré, Ben Bland, Andrew Bolster, Gawain Morrison, and Gary J McKeown\n\n\n\n\n\n\n\n\n\n\n\n\nDynamic analysis of automatic emotion recognition using generalized additive mixed models\n\n\n\n\n\nAnnual Convention of the Society for the Study of Artificial Intelligence and Simulation for Behaviour (AISB 2017)\n\n\n\n\n\nApr 1, 2017\n\n\nDamien Dupré, Adam Booth, Andrew Bolster, Gawain Morrison, and Gary J McKeown\n\n\n\n\n\n\n\n\n\n\n\n\nEtude de l’expérience utilisateur émotionnelle: Quels sont les impacts des émotions suscitées des produits innovants sur les perceptions des utilisateurs?\n\n\n\n\n\nAssociation Internationale de Psychologie du Travail de Langue Française (AIPTLF 2016)\n\n\n\n\n\nJul 1, 2016\n\n\nDamien Dupré, Anna Tcherkassof, Michel Dubois, and Pascal Pizelle\n\n\n\n\n\n\n\n\n\n\n\n\nAre approach-avoidance relevant cues of the Emotional User eXperience? Case studies with innovative products\n\n\n\n\n\nConsortium of European Research on Emotion (CERE 2016)\n\n\n\n\n\nMar 26, 2016\n\n\nDamien Dupré, Pascal Pizelle, Michel Dubois, and Anna Tcherkassof\n\n\n\n\n\n\n\n\n\n\n\n\nEmotions triggered by innovative products: A multi-componential approach of emotions for user experience tools\n\n\n\n\n\n6th International Conference on Affective Computing and Intelligent Interaction (ACII 2015)\n\n\n\n\n\nSep 1, 2015\n\n\nDamien Dupré, Anna Tcherkassof, Michel and Dubois\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction à l’expérience utilisateur émotionnelle : Quels sont les impacts des émotions suscitées des produits innovants sur les perceptions et les réactions des utilisateurs ?\n\n\n\n\n\nColloque TechnUse - De l’acceptabilité à l’usage des technologies innovantes\n\n\n\n\n\nOct 22, 2014\n\n\nDamien Dupré, Anna Tcherkassof, and Michel Dubois\n\n\n\n\n\n\n\n\n\n\n\n\nSpontaneous and dynamic emotional facial expressions reflect action readiness\n\n\n\n\n\nWorld Congress on Facial Expression of Emotion (WCFEE 2014)\n\n\n\n\n\nOct 11, 2014\n\n\nAnna Tcherkassof & Damien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nMesurer de l’expérience utilisateur émotionnelle de produits innovants: Quels paradigmes et outils?\n\n\n\n\n\nLes Doctorales de l’Innovation\n\n\n\n\n\nDec 5, 2013\n\n\nDamien Dupré, Pascal Pizelle, Michel Dubois, and Anna Tcherkassof\n\n\n\n\n\n\n\n\n\n\n\n\nMeasuring emotional states and behavioral responses to innovative design\n\n\n\n\n\n8th International Conference on Design and Emotion\n\n\n\n\n\nSep 1, 2012\n\n\nDamien Dupré, Michel Dubois, Anna Tcherkassof, and Pascal Pizelle\n\n\n\n\n\n\n\n\n\n\n\n\nPensum, un système d’aide à la compréhension de cours à distance\n\n\n\n\n\nEnvironnements Informatiques pour l’Apprentissage Humain (EIAH 2011)\n\n\n\n\n\nMay 1, 2011\n\n\nMathieu Loiseau, Damien Dupré, and Philippe Dessus\n\n\n\n\n\n\n\n\n\n\n\n\nEmotional facial expression interface: Effects of displayed facial designs\n\n\n\n\n\nErgonomie et Informatique Avancées (ErgoIA 2010)\n\n\n\n\n\nOct 1, 2010\n\n\nDamien Dupré, Michel Dubois, Nadine Mandran, and Anna Tcherkassof\n\n\n\n\n\n\n\n\n\n\n\n\nDynEmo: A Corpus of dynamic and spontaneous emotional facial expressions\n\n\n\n\n\nInternational Conference on Language Resources and Evaluation (LREC 2010)\n\n\n\n\n\nMay 1, 2010\n\n\nBrigitte Meillon, Anna Tcherkassof, Nadine Mandran, Jean-Michel Adam, Michel Dubois, Damien Dupré, Anne-Marie Benoit, Anne Guérin-Dugué, and Alice Caplier\n\n\n\n\n\n\n\n\n\n\n\n\nOnline recognition of dynamic and spontaneous facial expression\n\n\n\n\n\nConsortium of European Research on Emotion (CERE 2010)\n\n\n\n\n\nApr 22, 2010\n\n\nDamien Dupré & Anna Tcherkassof\n\n\n\n\n\n\nNo matching items"
+    "text": "Extending guest lecture learning: Hybrid delivery, ai review supports, and reflection in large classes\n\n\n18th annual International Conference on Education and New Learning Technologies\n\n\n\n\n\nJun 29, 2026\n\n\nJames Byrne, Colum Foley, Damien Dupré, and Paul Liston\n\n\n\n\n\n\n\n\n\n\n\n\nDifferences between key audit matter and audit-committee risk disclosures\n\n\n48th Annual Congress of the European Accounting Association\n\n\n\n\n\nMay 27, 2026\n\n\nKaren-Ann Dwyer, Brid Murphy, and Damien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nThe Long-Term Career Trajectories of IPBS Graduates: A Mixed-Methods Investigation into Transnational Education\n\n\nCABS Learning, Teaching & Student Experience 2026\n\n\n\n\n\nMay 18, 2026\n\n\nDamien Dupré and Breda McNally\n\n\n\n\n\n\n\n\n\n\n\n\nCharacterising Online Private Treaty Negotiations: Field Evidence from Irish Residential Property\n\n\nIrish Economic Association, Behavioural Economics Network\n\n\n\n\n\nMar 26, 2026\n\n\nDamien Dupré and Healy Hynes\n\n\n\n\n\n\n\n\n\n\n\n\nOpen and Reproducible Research Outputs with Quarto\n\n\nDCU Open Research for Global Impact\n\n\n\n\n\nOct 15, 2025\n\n\nDamien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nCloud-Powered Equity: Driving Student Success in Data Analytics\n\n\nDCU TEU Teaching & Learning Week 2025\n\n\n\n\n\nSep 30, 2025\n\n\nDamien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nIdentifying Correct or Incorrect Emotion Recognition from Facial Expression Time Series using R\n\n\nConsortium of European Research on Emotion (CERE 2025)\n\n\n\n\n\nJul 16, 2025\n\n\nDamien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nCan AI Read Your Emotions? The Truth Behind Emotion Recognition Technology\n\n\nDublin Pint of Science Festival 2025\n\n\n\n\n\nMay 19, 2025\n\n\nDamien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nA comparison of key audit matter and audit-committee risk disclosures\n\n\nIrish Accounting & Finance Association Conference (IAFA 2024)\n\n\n\n\n\nJun 13, 2024\n\n\nKaren-Ann Dwyer, Brid Murphy, and Damien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nUrban and socio-economic correlates of property prices in Dublin area\n\n\nGoutAI Seminars at Rennes School of Business\n\n\n\n\n\nNov 19, 2021\n\n\nDamien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nThe determinants of post-acquisition growth in entrepreneurial start-ups: Evidence from India\n\n\nEntrepreneurial Finance Conference (ENTFIN 2021)\n\n\n\n\n\nJun 25, 2021\n\n\nAnish Tiwari, Teresa Hogan, and Damien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nEffect of Facial Expression Categories and Calculation Methods on Automatic Emotion Recognition\n\n\n5th International Workshop on Emotion Awareness for Pervasive Computing (EmotionAware 2021)\n\n\n\n\n\nMar 1, 2021\n\n\nDamien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nDisenchantment with emotion recognition technologies: A comparison between humans observers and automatic classifiers\n\n\nIrish Conference on Artificial Intelligence and Cognitive Science (AICS 2020)\n\n\n\n\n\nDec 7, 2020\n\n\nDamien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nDisenchantment with emotion recognition technologies: Implications and future directions\n\n\nThe Psychological Society of Ireland Annual Conference (PSI 2020)\n\n\n\n\n\nNov 19, 2020\n\n\nDamien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nUrban and socio-economic correlates of property prices in Dublin’s area\n\n\nInternational Conference on Data Science and Advanced Analytics (DSAA 2020)\n\n\n\n\n\nOct 1, 2020\n\n\nDamien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nFacial and physiological expressions of emotion, with a look at bias\n\n\nCX Emotion Conference\n\n\n\n\n\nJul 22, 2020\n\n\nDamien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nData analytics for behavioral research\n\n\nSummer School on Behavioral and Neuroscientific Research for Economics, Finance and Accounting (ECMCRC 2020)\n\n\n\n\n\nJul 9, 2020\n\n\nDamien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nAccuracy of automatic emotion recognition from voice\n\n\nConference of the International Society for Research on Emotion (ISRE 2019)\n\n\n\n\n\nJul 11, 2019\n\n\nDamien Dupré & Gary J McKeown\n\n\n\n\n\n\n\n\n\n\n\n\nData analytics for behavioral research\n\n\nSummer School on Behavioral and Neuroscientific Research for Economics, Finance and Accounting (ECMCRC 2019)\n\n\n\n\n\nJul 2, 2019\n\n\nDamien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nWillingness to share emotion information on social media: Influence of personality and social context\n\n\nInternational Conference on Data Science and Advanced Analytics (DSAA 2018)\n\n\n\n\n\nOct 1, 2018\n\n\nDamien Dupré, Gary J McKeown, Nicole Andelic, and Gawain Morrison\n\n\n\n\n\n\n\n\n\n\n\n\nDynamic Analysis of Automatic Facial Expressions Recognition ‘in the Wild’ Using Generalized Additive Mixed Models and Significant Zero Crossing of the Derivatives\n\n\nInternational BCS Human Computer Interaction Conference (HCI 2018)\n\n\n\n\n\nJul 1, 2018\n\n\nDamien Dupré, Nicole Andelic, Gawain Morrison, and Gary J McKeown\n\n\n\n\n\n\n\n\n\n\n\n\nMultivariate Body Area Network of Physiological Measures “In the Wild”: A case study with zipline activity\n\n\nInternational Conference on Methods and Techniques in Behavioral Research (Measuring Behavior 2018)\n\n\n\n\n\nJun 1, 2018\n\n\nDamien Dupré, Nicole Andelic, Daniel Moore, Gawain Morrison, and Gary J McKeown\n\n\n\n\n\n\n\n\n\n\n\n\nA comparison of three commercial systems for automatic recognition of spontaneous facial expressions\n\n\nConsortium of European Research on Emotion (CERE 2018)\n\n\n\n\n\nApr 4, 2018\n\n\nDamien Dupré & Gary J McKeown\n\n\n\n\n\n\n\n\n\n\n\n\nComparing virtual reality with computer monitors as rating environments for affective dimensions in social interactions\n\n\nInternational Conference on Affective Computing and Intelligent Interaction (ACII 2017)\n\n\n\n\n\nOct 1, 2017\n\n\nGary J McKeown, Christine Spencer, Alex Patterson, Thomas Creaney, and Damien Dupré,\n\n\n\n\n\n\n\n\n\n\n\n\nPhysiological correlates of emotions ‘in the wild’: A case study with mountain bikers\n\n\nConference of the International Society for Research on Emotion (ISRE 2017)\n\n\n\n\n\nJul 26, 2017\n\n\nDamien Dupré, Gawain Morrison, and Gary J McKeown\n\n\n\n\n\n\n\n\n\n\n\n\nDynamic model of athletes’ emotions based on wearable devices\n\n\nInternational Conference on Applied Human Factors in Sports, Injury Prevention and Outdoor Recreation (AHFE 2017)\n\n\n\n\n\nJul 1, 2017\n\n\nDamien Dupré, Ben Bland, Andrew Bolster, Gawain Morrison, and Gary J McKeown\n\n\n\n\n\n\n\n\n\n\n\n\nDynamic analysis of automatic emotion recognition using generalized additive mixed models\n\n\nAnnual Convention of the Society for the Study of Artificial Intelligence and Simulation for Behaviour (AISB 2017)\n\n\n\n\n\nApr 1, 2017\n\n\nDamien Dupré, Adam Booth, Andrew Bolster, Gawain Morrison, and Gary J McKeown\n\n\n\n\n\n\n\n\n\n\n\n\nEtude de l’expérience utilisateur émotionnelle: Quels sont les impacts des émotions suscitées des produits innovants sur les perceptions des utilisateurs?\n\n\nAssociation Internationale de Psychologie du Travail de Langue Française (AIPTLF 2016)\n\n\n\n\n\nJul 1, 2016\n\n\nDamien Dupré, Anna Tcherkassof, Michel Dubois, and Pascal Pizelle\n\n\n\n\n\n\n\n\n\n\n\n\nAre approach-avoidance relevant cues of the Emotional User eXperience? Case studies with innovative products\n\n\nConsortium of European Research on Emotion (CERE 2016)\n\n\n\n\n\nMar 26, 2016\n\n\nDamien Dupré, Pascal Pizelle, Michel Dubois, and Anna Tcherkassof\n\n\n\n\n\n\n\n\n\n\n\n\nEmotions triggered by innovative products: A multi-componential approach of emotions for user experience tools\n\n\n6th International Conference on Affective Computing and Intelligent Interaction (ACII 2015)\n\n\n\n\n\nSep 1, 2015\n\n\nDamien Dupré, Anna Tcherkassof, Michel and Dubois\n\n\n\n\n\n\n\n\n\n\n\n\nIntroduction à l’expérience utilisateur émotionnelle : Quels sont les impacts des émotions suscitées des produits innovants sur les perceptions et les réactions des utilisateurs ?\n\n\nColloque TechnUse - De l’acceptabilité à l’usage des technologies innovantes\n\n\n\n\n\nOct 22, 2014\n\n\nDamien Dupré, Anna Tcherkassof, and Michel Dubois\n\n\n\n\n\n\n\n\n\n\n\n\nSpontaneous and dynamic emotional facial expressions reflect action readiness\n\n\nWorld Congress on Facial Expression of Emotion (WCFEE 2014)\n\n\n\n\n\nOct 11, 2014\n\n\nAnna Tcherkassof & Damien Dupré\n\n\n\n\n\n\n\n\n\n\n\n\nMesurer de l’expérience utilisateur émotionnelle de produits innovants: Quels paradigmes et outils?\n\n\nLes Doctorales de l’Innovation\n\n\n\n\n\nDec 5, 2013\n\n\nDamien Dupré, Pascal Pizelle, Michel Dubois, and Anna Tcherkassof\n\n\n\n\n\n\n\n\n\n\n\n\nMeasuring emotional states and behavioral responses to innovative design\n\n\n8th International Conference on Design and Emotion\n\n\n\n\n\nSep 1, 2012\n\n\nDamien Dupré, Michel Dubois, Anna Tcherkassof, and Pascal Pizelle\n\n\n\n\n\n\n\n\n\n\n\n\nPensum, un système d’aide à la compréhension de cours à distance\n\n\nEnvironnements Informatiques pour l’Apprentissage Humain (EIAH 2011)\n\n\n\n\n\nMay 1, 2011\n\n\nMathieu Loiseau, Damien Dupré, and Philippe Dessus\n\n\n\n\n\n\n\n\n\n\n\n\nEmotional facial expression interface: Effects of displayed facial designs\n\n\nErgonomie et Informatique Avancées (ErgoIA 2010)\n\n\n\n\n\nOct 1, 2010\n\n\nDamien Dupré, Michel Dubois, Nadine Mandran, and Anna Tcherkassof\n\n\n\n\n\n\n\n\n\n\n\n\nDynEmo: A Corpus of dynamic and spontaneous emotional facial expressions\n\n\nInternational Conference on Language Resources and Evaluation (LREC 2010)\n\n\n\n\n\nMay 1, 2010\n\n\nBrigitte Meillon, Anna Tcherkassof, Nadine Mandran, Jean-Michel Adam, Michel Dubois, Damien Dupré, Anne-Marie Benoit, Anne Guérin-Dugué, and Alice Caplier\n\n\n\n\n\n\n\n\n\n\n\n\nOnline recognition of dynamic and spontaneous facial expression\n\n\nConsortium of European Research on Emotion (CERE 2010)\n\n\n\n\n\nApr 22, 2010\n\n\nDamien Dupré & Anna Tcherkassof\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/timeseries-clustering-part2.html",
@@ -242,217 +347,84 @@
     "href": "publications.html",
     "title": "Publications",
     "section": "",
-    "text": "Damien Dupré\n      \n      \n        Effect of Facial Expression Categories and Calculation Methods on Automatic Emotion Recognition\n        Proceedings of the International Conference on Pervasive Computing and Communications Workshops\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Damien Dupré and Gary Sinclair\n      \n      \n        Emotional user experience of innovative human-computer interactions: A multi-component approach\n        Journal of Customer Behaviour\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Anna Tcherkassof and Damien Dupré\n      \n      \n        The emotion--facial expression link: evidence from human and automatic expression recognition\n        Psychological Research\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n\nNo matching items"
+    "text": "Raúl Gómez Martínez, Camilo Prado Román, María Luisa Medrano García, Aref Mahdavi Ardekani, and Damien Dupré\n      \n      \n        The Strengthening Link Between Donald Trump’s Online Attention and Wall Street Sentiment\n        American Behavioral Scientist\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n\nNo matching items"
   },
   {
     "objectID": "publications.html#section",
     "href": "publications.html#section",
     "title": "Publications",
     "section": "",
-    "text": "Damien Dupré\n      \n      \n        Effect of Facial Expression Categories and Calculation Methods on Automatic Emotion Recognition\n        Proceedings of the International Conference on Pervasive Computing and Communications Workshops\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Damien Dupré and Gary Sinclair\n      \n      \n        Emotional user experience of innovative human-computer interactions: A multi-component approach\n        Journal of Customer Behaviour\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Anna Tcherkassof and Damien Dupré\n      \n      \n        The emotion--facial expression link: evidence from human and automatic expression recognition\n        Psychological Research\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n\nNo matching items"
+    "text": "Raúl Gómez Martínez, Camilo Prado Román, María Luisa Medrano García, Aref Mahdavi Ardekani, and Damien Dupré\n      \n      \n        The Strengthening Link Between Donald Trump’s Online Attention and Wall Street Sentiment\n        American Behavioral Scientist\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n\nNo matching items"
   },
   {
     "objectID": "publications.html#section-1",
     "href": "publications.html#section-1",
     "title": "Publications",
-    "section": "2020",
-    "text": "2020\n\n\n\n  \n    \n                \n        Damien Dupré, Eva G Krumhuber, Dennis Kuster, and Gary J McKeown\n      \n      \n        A performance comparison of eight commercially available automatic classifiers for facial affect recognition\n        Plos one\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Damien Dupré, Nicole Andelic, Daniel Moore, Gawain Morrison, and Gary J McKeown\n      \n      \n        Analysis of physiological changes related to emotions during a zipline activity\n        Sports Engineering\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Damien Dupré\n      \n      \n        Urban and socio-economic correlates of property prices in Dublin’s area\n        Proceedings of the 7th International Conference on Data Science and Advanced Analytics\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n\nNo matching items"
+    "section": "2021",
+    "text": "2021\n\n\n\n  \n    \n                \n        Damien Dupré\n      \n      \n        Effect of Facial Expression Categories and Calculation Methods on Automatic Emotion Recognition\n        Proceedings of the International Conference on Pervasive Computing and Communications Workshops\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Damien Dupré and Gary Sinclair\n      \n      \n        Emotional user experience of innovative human-computer interactions: A multi-component approach\n        Journal of Customer Behaviour\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Anna Tcherkassof and Damien Dupré\n      \n      \n        The emotion--facial expression link: evidence from human and automatic expression recognition\n        Psychological Research\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n\nNo matching items"
   },
   {
     "objectID": "publications.html#section-2",
     "href": "publications.html#section-2",
     "title": "Publications",
-    "section": "2018",
-    "text": "2018\n\n\n\n  \n    \n                \n        Damien Dupré, Nicole Andelic, Gawain Morrison, and Gary J McKeown\n      \n      \n        Accuracy of three commercial automatic emotion recognition systems across different individuals and their facial expressions\n        Proceedings of the International Conference on Pervasive Computing and Communications Workshops\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Damien Dupré, Nicole Andelic, Gawain Morrison, and Gary J McKeown\n      \n      \n        Dynamic Analysis of Automatic Facial Expressions Recognition in the Wild ‘Using Generalized Additive Mixed Models and Significant Zero Crossing of the Derivatives\n        Proceedings of the 32nd International BCS Human Computer Interaction Conference\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Damien Dupré, Nicole Andelic, Daniel Moore, Gawain Morrison, and Gary J McKeown\n      \n      \n        Multivariate Body Area Network of Physiological Measures “In the Wild”: A case study with zipline activity\n        Proceedings of the 11th International Conference on Methods and Techniques in Behavioral Research\n\n        \n          \n            \n              \n                 URL\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Damien Dupré, Michel Dubois, and Anna Tcherkassof\n      \n      \n        Rôle de l’émotion dans l’acceptabilité d’un produit: évaluation des composantes cognitive, motivationnelle et subjective\n        Psychologie du Travail et des Organisations\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Damien Dupré, Gary J McKeown, Nicole Andelic, and Gawain Morrison\n      \n      \n        Willingness to share emotion information on social media: Influence of personality and social context\n        Proceedings of the 5th International Conference on Data Science and Advanced Analytics\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n\nNo matching items"
+    "section": "2020",
+    "text": "2020\n\n\n\n  \n    \n                \n        Damien Dupré, Eva G Krumhuber, Dennis Kuster, and Gary J McKeown\n      \n      \n        A performance comparison of eight commercially available automatic classifiers for facial affect recognition\n        Plos one\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Damien Dupré, Nicole Andelic, Daniel Moore, Gawain Morrison, and Gary J McKeown\n      \n      \n        Analysis of physiological changes related to emotions during a zipline activity\n        Sports Engineering\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Damien Dupré\n      \n      \n        Urban and socio-economic correlates of property prices in Dublin’s area\n        Proceedings of the 7th International Conference on Data Science and Advanced Analytics\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n\nNo matching items"
   },
   {
     "objectID": "publications.html#section-3",
     "href": "publications.html#section-3",
     "title": "Publications",
-    "section": "2017",
-    "text": "2017\n\n\n\n  \n    \n                \n        Gary J McKeown, Christine Spencer, Alex Patterson, Thomas Creaney, and Damien Dupré\n      \n      \n        Comparing virtual reality with computer monitors as rating environments for affective dimensions in social interactions\n        Proceedings of the 7th International Conference on Affective Computing and Intelligent Interaction\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Damien Dupré, Adam Booth, Andrew Bolster, Gawain Morrison, and Gary J McKeown\n      \n      \n        Dynamic analysis of automatic emotion recognition using generalized additive mixed models\n        Proceedings of the Annual Convention of the Society for the Study of Artificial Intelligence and Simulation for Behaviour\n\n        \n          \n            \n              \n                 URL\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Damien Dupré, Ben Bland, Andrew Bolster, Gawain Morrison, and Gary J McKeown\n      \n      \n        Dynamic model of athletes’ emotions based on wearable devices\n        Proceedings of the International Conference on Applied Human Factors in Sports, Injury Prevention and Outdoor Recreation\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n\nNo matching items"
+    "section": "2018",
+    "text": "2018\n\n\n\n  \n    \n                \n        Damien Dupré, Nicole Andelic, Gawain Morrison, and Gary J McKeown\n      \n      \n        Accuracy of three commercial automatic emotion recognition systems across different individuals and their facial expressions\n        Proceedings of the International Conference on Pervasive Computing and Communications Workshops\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Damien Dupré, Nicole Andelic, Gawain Morrison, and Gary J McKeown\n      \n      \n        Dynamic Analysis of Automatic Facial Expressions Recognition in the Wild ‘Using Generalized Additive Mixed Models and Significant Zero Crossing of the Derivatives\n        Proceedings of the 32nd International BCS Human Computer Interaction Conference\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Damien Dupré, Nicole Andelic, Daniel Moore, Gawain Morrison, and Gary J McKeown\n      \n      \n        Multivariate Body Area Network of Physiological Measures “In the Wild”: A case study with zipline activity\n        Proceedings of the 11th International Conference on Methods and Techniques in Behavioral Research\n\n        \n          \n            \n              \n                 URL\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Damien Dupré, Michel Dubois, and Anna Tcherkassof\n      \n      \n        Rôle de l’émotion dans l’acceptabilité d’un produit: évaluation des composantes cognitive, motivationnelle et subjective\n        Psychologie du Travail et des Organisations\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Damien Dupré, Gary J McKeown, Nicole Andelic, and Gawain Morrison\n      \n      \n        Willingness to share emotion information on social media: Influence of personality and social context\n        Proceedings of the 5th International Conference on Data Science and Advanced Analytics\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n\nNo matching items"
   },
   {
     "objectID": "publications.html#section-4",
     "href": "publications.html#section-4",
     "title": "Publications",
-    "section": "2016",
-    "text": "2016\n\n\n\n  \n    \n                \n        Damien Dupré, Anna Tcherkassof, Michel Dubois, and Pascal Pizelle\n      \n      \n        Etude de l’expérience utilisateur émotionnelle: Quels sont les impacts des émotions suscitées des produits innovants sur les perceptions des utilisateurs?\n        Proceedings of the Association Internationale de Psychologie du Travail de Langue Française Conference\n\n        \n          \n            \n              \n                 URL\n              \n            \n          \n        \n      \n    \n  \n\nNo matching items"
+    "section": "2017",
+    "text": "2017\n\n\n\n  \n    \n                \n        Gary J McKeown, Christine Spencer, Alex Patterson, Thomas Creaney, and Damien Dupré\n      \n      \n        Comparing virtual reality with computer monitors as rating environments for affective dimensions in social interactions\n        Proceedings of the 7th International Conference on Affective Computing and Intelligent Interaction\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Damien Dupré, Adam Booth, Andrew Bolster, Gawain Morrison, and Gary J McKeown\n      \n      \n        Dynamic analysis of automatic emotion recognition using generalized additive mixed models\n        Proceedings of the Annual Convention of the Society for the Study of Artificial Intelligence and Simulation for Behaviour\n\n        \n          \n            \n              \n                 URL\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Damien Dupré, Ben Bland, Andrew Bolster, Gawain Morrison, and Gary J McKeown\n      \n      \n        Dynamic model of athletes’ emotions based on wearable devices\n        Proceedings of the International Conference on Applied Human Factors in Sports, Injury Prevention and Outdoor Recreation\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n\nNo matching items"
   },
   {
     "objectID": "publications.html#section-5",
     "href": "publications.html#section-5",
     "title": "Publications",
-    "section": "2015",
-    "text": "2015\n\n\n\n  \n    \n                \n        Damien Dupré, Anna Tcherkassof, and Michel Dubois\n      \n      \n        Emotions triggered by innovative products: A multi-componential approach of emotions for user experience tools\n        Proceedings of the 6th International Conference on Affective Computing and Intelligent Interaction\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Damien Dupré, Daniel Akpan, Elena Elias, Jean-Michel Adam, Brigitte Meillon, Nicolas Bonnefond, Michel Dubois, and Anna Tcherkassof\n      \n      \n        Oudjat: A configurable and usable annotation tool for the study of facial expressions of emotion\n        International Journal of Human-Computer Studies\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n\nNo matching items"
+    "section": "2016",
+    "text": "2016\n\n\n\n  \n    \n                \n        Damien Dupré, Anna Tcherkassof, Michel Dubois, and Pascal Pizelle\n      \n      \n        Etude de l’expérience utilisateur émotionnelle: Quels sont les impacts des émotions suscitées des produits innovants sur les perceptions des utilisateurs?\n        Proceedings of the Association Internationale de Psychologie du Travail de Langue Française Conference\n\n        \n          \n            \n              \n                 URL\n              \n            \n          \n        \n      \n    \n  \n\nNo matching items"
   },
   {
     "objectID": "publications.html#section-6",
     "href": "publications.html#section-6",
     "title": "Publications",
-    "section": "2013",
-    "text": "2013\n\n\n\n  \n    \n                \n        Anna Tcherkassof, Damien Dupré, Brigitte Meillon, Nadine Mandran, Michel Dubois, and Jean-Michel Adam\n      \n      \n        DynEmo: A video database of natural facial expressions of emotions\n        The International Journal of Multimedia & its Applications\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Michel Dubois, Damien Dupré, Jean-Michel Adam, Anna Tcherkassof, Nadine Mandran, and Brigitte Meillon\n      \n      \n        The influence of facial interface design on dynamic emotional recognition\n        Journal on Multimodal User Interfaces\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n\nNo matching items"
+    "section": "2015",
+    "text": "2015\n\n\n\n  \n    \n                \n        Damien Dupré, Anna Tcherkassof, and Michel Dubois\n      \n      \n        Emotions triggered by innovative products: A multi-componential approach of emotions for user experience tools\n        Proceedings of the 6th International Conference on Affective Computing and Intelligent Interaction\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Damien Dupré, Daniel Akpan, Elena Elias, Jean-Michel Adam, Brigitte Meillon, Nicolas Bonnefond, Michel Dubois, and Anna Tcherkassof\n      \n      \n        Oudjat: A configurable and usable annotation tool for the study of facial expressions of emotion\n        International Journal of Human-Computer Studies\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n\nNo matching items"
   },
   {
     "objectID": "publications.html#section-7",
     "href": "publications.html#section-7",
     "title": "Publications",
-    "section": "2012",
-    "text": "2012\n\n\n\n  \n    \n                \n        Damien Dupré, Michel Dubois, Anna Tcherkassof, and Pascal Pizelle\n      \n      \n        Measuring emotional states and behavioral responses to innovative design\n        Proceedings of the 8th International Conference on Design and Emotion\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Damien Dupré, Hussein T A Salem, Mathieu Loiseau, Philippe Dessus, and Stéphane Simonian\n      \n      \n        Quelques critères d’utilisation d’un système d’évaluation automatique de synthèses de cours à distance\n        Recherches & Educations\n\n        \n          \n            \n              \n                 URL\n              \n            \n          \n        \n      \n    \n  \n\nNo matching items"
+    "section": "2013",
+    "text": "2013\n\n\n\n  \n    \n                \n        Anna Tcherkassof, Damien Dupré, Brigitte Meillon, Nadine Mandran, Michel Dubois, and Jean-Michel Adam\n      \n      \n        DynEmo: A video database of natural facial expressions of emotions\n        The International Journal of Multimedia & its Applications\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Michel Dubois, Damien Dupré, Jean-Michel Adam, Anna Tcherkassof, Nadine Mandran, and Brigitte Meillon\n      \n      \n        The influence of facial interface design on dynamic emotional recognition\n        Journal on Multimodal User Interfaces\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n\nNo matching items"
   },
   {
     "objectID": "publications.html#section-8",
     "href": "publications.html#section-8",
     "title": "Publications",
-    "section": "2011",
-    "text": "2011\n\n\n\n  \n    \n                \n        Mathieu Loiseau, Damien Dupré, and Philippe Dessus\n      \n      \n        Pensum, un système d'aide à la compréhension de cours à distance\n        Proceedings of the Environnements Informatiques pour l’Apprentissage Humain Conference\n\n        \n          \n            \n              \n                 URL\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Philipe Dessus, Stefan Trausan-Matu, Fridolin Wild, Damien Dupré, Mathieu Loiseau, Traian Rebedea, and Virginie Zampa\n      \n      \n        Un environnement personnel d'apprentissage évaluant des distances épistémiques et dialogiques\n        Distances et Savoirs\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n\nNo matching items"
+    "section": "2012",
+    "text": "2012\n\n\n\n  \n    \n                \n        Damien Dupré, Michel Dubois, Anna Tcherkassof, and Pascal Pizelle\n      \n      \n        Measuring emotional states and behavioral responses to innovative design\n        Proceedings of the 8th International Conference on Design and Emotion\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Damien Dupré, Hussein T A Salem, Mathieu Loiseau, Philippe Dessus, and Stéphane Simonian\n      \n      \n        Quelques critères d’utilisation d’un système d’évaluation automatique de synthèses de cours à distance\n        Recherches & Educations\n\n        \n          \n            \n              \n                 URL\n              \n            \n          \n        \n      \n    \n  \n\nNo matching items"
   },
   {
     "objectID": "publications.html#section-9",
     "href": "publications.html#section-9",
     "title": "Publications",
+    "section": "2011",
+    "text": "2011\n\n\n\n  \n    \n                \n        Mathieu Loiseau, Damien Dupré, and Philippe Dessus\n      \n      \n        Pensum, un système d'aide à la compréhension de cours à distance\n        Proceedings of the Environnements Informatiques pour l’Apprentissage Humain Conference\n\n        \n          \n            \n              \n                 URL\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Philipe Dessus, Stefan Trausan-Matu, Fridolin Wild, Damien Dupré, Mathieu Loiseau, Traian Rebedea, and Virginie Zampa\n      \n      \n        Un environnement personnel d'apprentissage évaluant des distances épistémiques et dialogiques\n        Distances et Savoirs\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n\nNo matching items"
+  },
+  {
+    "objectID": "publications.html#section-10",
+    "href": "publications.html#section-10",
+    "title": "Publications",
     "section": "2010",
     "text": "2010\n\n\n\n  \n    \n                \n        Brigitte Meillon, Anna Tcherkassof, Nadine Mandran, Jean-Michel Adam, Michel Dubois, Damien Dupré, Anne-Marie Benoit, Anne Guérin-Dugué, and Alice Caplier\n      \n      \n        DynEmo: A Corpus of dynamic and spontaneous emotional facial expressions\n        Proceedings of International Workshop Series on Multimodal Corpora, Tools and Resources\n\n        \n          \n            \n              \n                 URL\n              \n            \n          \n        \n      \n    \n  \n    \n                \n        Damien Dupré, Michel Dubois, Nadine Mandran, and Anna Tcherkassof\n      \n      \n        Emotional facial expression interface: Effects of displayed facial designs\n        Proceedings of the Ergonomie et Informatique Avancee Conference\n\n        \n          \n            \n              \n                 DOI\n              \n            \n          \n        \n      \n    \n  \n\nNo matching items"
-  },
-  {
-    "objectID": "talks/2025-09-30_teaching_and_learning_week/index.html",
-    "href": "talks/2025-09-30_teaching_and_learning_week/index.html",
-    "title": "Cloud-Powered Equity: Driving Student Success in Data Analytics",
-    "section": "",
-    "text": "This presentation details how accessible cloud tools foster equity and inclusion in data analytics education. We demonstrate using Tableau Public for data visualisation, alongside Google Colab and GitHub for Python programming. These platforms eliminate cost and software barriers, providing all students opportunities to develop vital data skills. This approach creates an inclusive learning environment, empowering diverse students. Notably, since 2021, DCU students taught with these methods have consistently featured in the Top 10 of the European Student Data Visualisation Challenge, underscoring the strategy’s success in equipping learners.\n  \n\n\n\nSlides: https://damien-dupre.github.io/cloud_powered_equity.\nCode: https://github.com/damien-dupre/cloud_powered_equity."
-  },
-  {
-    "objectID": "talks/2025-05-19_pint_of_science/index.html",
-    "href": "talks/2025-05-19_pint_of_science/index.html",
-    "title": "Can AI Read Your Emotions? The Truth Behind Emotion Recognition Technology",
-    "section": "",
-    "text": "AI promises to read emotions from faces, but does it really work? Studies reveal surprising flaws, questioning the very foundations of emotion recognition technology."
-  },
-  {
-    "objectID": "talks/2026-06-29_annual_international_conference_education_new_learning_technologies/index.html",
-    "href": "talks/2026-06-29_annual_international_conference_education_new_learning_technologies/index.html",
-    "title": "Extending guest lecture learning: Hybrid delivery, ai review supports, and reflection in large classes",
-    "section": "",
-    "text": "Guest lectures are widely used in higher education to connect taught material with current professional practice. In large classes, however, their educational value can be uneven. Although guest speakers may enhance authenticity and relevance, student access, interaction, and post-session consolidation can be difficult to sustain at scale. These challenges are particularly visible in postgraduate settings, where cohorts are diverse and students may differ in attendance patterns, professional experience, and competing commitments. This study examines a teaching design intended to extend guest lectures beyond the live event through hybrid delivery, AI-supported review resources, and reflective integration. The study is based on a large postgraduate project management module in a business school, enrolling 284 students across four MSc programmes. Over a 12-week semester, four guest lectures were delivered by senior practitioners from different sectors. One session was delivered remotely and three took place in person on campus; all were supported through Zoom livestreaming and recording. Following each lecture, students were given access through the virtual learning environment to the recording, an AI-generated transcript, and AI-generated summary notes. These materials were lightly edited to improve clarity and correct obvious errors. Students were also encouraged to draw on guest lecture insights within a low-stakes reflective task at the end of the module. Evaluation data were gathered through an anonymous post-series survey. The findings indicate that students generally preferred in-person learning, but also made substantial use of the recorded guest lectures across the series. Many respondents viewed the AI-generated transcripts and summary notes as useful for revisiting lecture content, locating key ideas, and supporting later reflection. At the same time, the results suggest a consistent trade-off associated with remote delivery: students reported lower perceived engagement and a weaker sense of connection with the remotely delivered speaker than with speakers physically present in the lecture theatre. These findings point to both the potential and the limitations of technology-supported guest lecture design in large-class contexts. This study suggests that guest lectures in large postgraduate classes may be strengthened when they are designed across three linked phases: access to the event and its resources, structured interaction during delivery, and post-event consolidation through reflection. It also indicates that AI-generated transcripts and summaries may be most valuable when positioned as aids for review, retrieval, and integration rather than as substitutes for active listening or critical engagement. The study offers a practice-based contribution to current discussions on large-class pedagogy, hybrid teaching, and the careful integration of AI-supported learning resources in higher education."
-  },
-  {
-    "objectID": "talks/2026-05-18_learning_teaching_student_experience/index.html",
-    "href": "talks/2026-05-18_learning_teaching_student_experience/index.html",
-    "title": "The Long-Term Career Trajectories of IPBS Graduates: A Mixed-Methods Investigation into Transnational Education",
-    "section": "",
-    "text": "The International Partnership of Business Schools (IPBS) is a consortium of 11 leading business schools across Europe, North America, Latin America, and Asia. Established 50 years ago to promote cross-cultural management education, the network is distinct from standard exchange partnerships due to its highly integrated Double Degree model. As the systematisation of joint international programmes becomes a critical priority for Higher Education Institutions (Nizamov et al., 2021), such structures have been identified as key accelerators for internationalisation (Steagall et al., 2021). However, as the transnational education space shifts toward new forms of mobility (Cheng, 2018), little is known about the specific impact of these double degree programmes on the student’s future career. This research investigates the causal impact of international double-degree programmes on the long-term career trajectories of business graduates. While the value of dual degrees is currently being explored across various professional disciplines (Dang et al., 2024; Shaw et al., 2017) the evidence base within business education remains inconsistent (Culver et al., 2012) and often biased toward short-term salary premiums. This project leverages the unique IPBS alumni network to conduct a mixed-methods study, comparing the objective (salary, seniority) and subjective (job satisfaction, perceived marketability) career outcomes of graduates who engaged in deep cultural immersion. The primary focus is to move beyond the assumption that travel equals competence, addressing the complex challenges of provider mobility policies (Hanada et al., 2022). Situated within the context of a globalised labour market that increasingly demands cross-cultural agility, the purpose of this research is to identify which specific components of international education (e.g., duration, internship intensity, academic rigour) actually drive career success."
-  },
-  {
-    "objectID": "talks/2025-07-16_consortium_of_european_research_on_emotion/index.html",
-    "href": "talks/2025-07-16_consortium_of_european_research_on_emotion/index.html",
-    "title": "Identifying Correct or Incorrect Emotion Recognition from Facial Expression Time Series using R",
-    "section": "",
-    "text": "Consortium of European Research on Emotion (CERE 2025)"
-  },
-  {
-    "objectID": "talks/2024-06-13_irish_accounting_and_finance_association_conference/index.html",
-    "href": "talks/2024-06-13_irish_accounting_and_finance_association_conference/index.html",
-    "title": "A comparison of key audit matter and audit-committee risk disclosures",
-    "section": "",
-    "text": "Irish Accounting & Finance Association Conference (IAFA 2024)"
-  },
-  {
-    "objectID": "talks/2021-06-25_entrepreneurial_finance_conference/index.html",
-    "href": "talks/2021-06-25_entrepreneurial_finance_conference/index.html",
-    "title": "The determinants of post-acquisition growth in entrepreneurial start-ups: Evidence from India",
-    "section": "",
-    "text": "Entrepreneurial Finance Conference (ENTFIN 2021)"
-  },
-  {
-    "objectID": "talks/2020-12-07_irish_conference_on_artificial_intelligence_and_cognitive_science/index.html",
-    "href": "talks/2020-12-07_irish_conference_on_artificial_intelligence_and_cognitive_science/index.html",
-    "title": "Disenchantment with emotion recognition technologies: A comparison between humans observers and automatic classifiers",
-    "section": "",
-    "text": "Irish Conference on Artificial Intelligence and Cognitive Science (AICS 2020)"
-  },
-  {
-    "objectID": "talks/2020-10-01_international_conference_on_data_science_and_advanced_analytics/index.html",
-    "href": "talks/2020-10-01_international_conference_on_data_science_and_advanced_analytics/index.html",
-    "title": "Urban and socio-economic correlates of property prices in Dublin’s area",
-    "section": "",
-    "text": "International Conference on Data Science and Advanced Analytics (DSAA 2020)"
-  },
-  {
-    "objectID": "talks/2020-07-09_summer_school_on_behavioral_and_neuroscientific_research_for_economics_finance_and_accounting/index.html",
-    "href": "talks/2020-07-09_summer_school_on_behavioral_and_neuroscientific_research_for_economics_finance_and_accounting/index.html",
-    "title": "Data analytics for behavioral research",
-    "section": "",
-    "text": "Summer School on Behavioral and Neuroscientific Research for Economics, Finance and Accounting (ECMCRC 2020)"
-  },
-  {
-    "objectID": "talks/2019-07-02_summer_school_on_behavioral_and_neuroscientific_research_for_economics_finance_and_accounting/index.html",
-    "href": "talks/2019-07-02_summer_school_on_behavioral_and_neuroscientific_research_for_economics_finance_and_accounting/index.html",
-    "title": "Data analytics for behavioral research",
-    "section": "",
-    "text": "Summer School on Behavioral and Neuroscientific Research for Economics, Finance and Accounting (ECMCRC 2019)"
-  },
-  {
-    "objectID": "talks/2018-07-01_international_bcs_human_computer_interaction_conference/index.html",
-    "href": "talks/2018-07-01_international_bcs_human_computer_interaction_conference/index.html",
-    "title": "Dynamic Analysis of Automatic Facial Expressions Recognition ‘in the Wild’ Using Generalized Additive Mixed Models and Significant Zero Crossing of the Derivatives",
-    "section": "",
-    "text": "International BCS Human Computer Interaction Conference (HCI 2018)"
-  },
-  {
-    "objectID": "talks/2018-04-04_consortium_of_european_research_on_emotion/index.html",
-    "href": "talks/2018-04-04_consortium_of_european_research_on_emotion/index.html",
-    "title": "A comparison of three commercial systems for automatic recognition of spontaneous facial expressions",
-    "section": "",
-    "text": "Consortium of European Research on Emotion (CERE 2018)"
-  },
-  {
-    "objectID": "talks/2017-07-26_conference_of_the_international_society_for_research_on_emotion/index.html",
-    "href": "talks/2017-07-26_conference_of_the_international_society_for_research_on_emotion/index.html",
-    "title": "Physiological correlates of emotions ‘in the wild’: A case study with mountain bikers",
-    "section": "",
-    "text": "Conference of the International Society for Research on Emotion (ISRE 2017)"
-  },
-  {
-    "objectID": "talks/2017-04-01_annual_convention_of_the_society_for_the_study_of_artificial_intelligence_and_simulation_for_behaviour_society_with_ai/index.html",
-    "href": "talks/2017-04-01_annual_convention_of_the_society_for_the_study_of_artificial_intelligence_and_simulation_for_behaviour_society_with_ai/index.html",
-    "title": "Dynamic analysis of automatic emotion recognition using generalized additive mixed models",
-    "section": "",
-    "text": "Annual Convention of the Society for the Study of Artificial Intelligence and Simulation for Behaviour (AISB 2017)"
-  },
-  {
-    "objectID": "talks/2016-03-26_consortium_of_european_research_on_emotion/index.html",
-    "href": "talks/2016-03-26_consortium_of_european_research_on_emotion/index.html",
-    "title": "Are approach-avoidance relevant cues of the Emotional User eXperience? Case studies with innovative products",
-    "section": "",
-    "text": "Consortium of European Research on Emotion (CERE 2016)"
-  },
-  {
-    "objectID": "talks/2014-10-22_colloque_technuse/index.html",
-    "href": "talks/2014-10-22_colloque_technuse/index.html",
-    "title": "Introduction à l’expérience utilisateur émotionnelle : Quels sont les impacts des émotions suscitées des produits innovants sur les perceptions et les réactions des utilisateurs ?",
-    "section": "",
-    "text": "Colloque TechnUse - De l’acceptabilité à l’usage des technologies innovantes"
-  },
-  {
-    "objectID": "talks/2013-12-05_les_doctorales_de_l_innovation/index.html",
-    "href": "talks/2013-12-05_les_doctorales_de_l_innovation/index.html",
-    "title": "Mesurer de l’expérience utilisateur émotionnelle de produits innovants: Quels paradigmes et outils?",
-    "section": "",
-    "text": "Les Doctorales de l’Innovation"
-  },
-  {
-    "objectID": "talks/2011-05-01_environnements_informatiques_pour_l_apprentissage_humain/index.html",
-    "href": "talks/2011-05-01_environnements_informatiques_pour_l_apprentissage_humain/index.html",
-    "title": "Pensum, un système d’aide à la compréhension de cours à distance",
-    "section": "",
-    "text": "Environnements Informatiques pour l’Apprentissage Humain (EIAH 2011)"
-  },
-  {
-    "objectID": "talks/2010-05-01_international_workshop_series_on_multimodal_corpora/index.html",
-    "href": "talks/2010-05-01_international_workshop_series_on_multimodal_corpora/index.html",
-    "title": "DynEmo: A Corpus of dynamic and spontaneous emotional facial expressions",
-    "section": "",
-    "text": "International Conference on Language Resources and Evaluation (LREC 2010)"
   },
   {
     "objectID": "talks/2010-04-22_consortium_of_european_research_on_emotion/index.html",
@@ -558,19 +530,5 @@
     "title": "Urban and socio-economic correlates of property prices in Dublin area",
     "section": "",
     "text": "GoutAI Seminars at Rennes School of Business"
-  },
-  {
-    "objectID": "talks/2026-03-26_behavioural_economics_workshop/index.html",
-    "href": "talks/2026-03-26_behavioural_economics_workshop/index.html",
-    "title": "Characterising Online Private Treaty Negotiations: Field Evidence from Irish Residential Property",
-    "section": "",
-    "text": "The mechanisms governing residential property transactions in Ireland have undergone a fundamental transformation in recent years. Historically, the market was characterised by opaque, agent-mediated negotiations in which offers were submitted by telephone, email or in person. In this traditional system, prospective buyers often lacked certainty regarding the existence or magnitude of competing offers, creating significant information asymmetry and a deficit of trust in the process (Lunn et al., 2025). The contemporary market, however, is witnessing a decisive shift towards digital platforms that allow verified participants to observe competing interest in real time, thereby democratising access to market information. These online offer management platforms are widely perceived as fairer and more transparent than the traditional estate-agent-mediated process. Recent survey evidence from the ESRI confirms this perception: when asked to design a fair system for transacting property, a majority of a nationally representative Irish sample selected online visible platforms as their preferred bidding mechanism (Robertson et al., 2026). However, the same study provides experimental evidence that challenges the assumption that transparency benefits buyers. In a simulated auction experiment, online platforms and more generally open bidding systems led participants to bid significantly higher than in sealed-bid conditions, often exceeding their self-stated ideal budgets. This suggests that the competitive visibility inherent in transparent platforms may activate behavioural mechanisms such as auction fever and loss aversion that push prices upward (Kahneman & Tversky, 1979; McGee, 2013). These experimental findings raise an important question: do similar dynamics manifest in real-world property transactions conducted on online platforms? To date, this question has remained largely unanswered due to the difficulty of obtaining detailed transactional data from live negotiations. This paper addresses this gap by presenting the first descriptive field evidence on the structure and dynamics of online private treaty negotiations in Ireland."
-  },
-  {
-    "objectID": "talks/2026-05-27_annual_congress_european_accounting_association/index.html",
-    "href": "talks/2026-05-27_annual_congress_european_accounting_association/index.html",
-    "title": "Differences between key audit matter and audit-committee risk disclosures",
-    "section": "",
-    "text": "Purpose: The objective of this study is to examine differences between key audit matter (KAM) and audit-committee (AC) risk disclosures. Design/methodology/approach: The study examines differences between KAM and AC risk disclosures for (i) total risks; (ii) total ELR risks; (iii) total ALR risks; and (iv) eight types of risks. First, the study uses manual content analysis to understand and assess the extent of differences between KAM and AC risk disclosures for 283 FTSE-350 companies with 2021 year-ends. Second, the study investigates whether the differences are associated with auditor and client characteristics. Findings: The results reveal that the extent of differences varies considerably depending on the risk type. The study reveals that the dominant drivers of disclosure differences between KAM and AC risk disclosures are: audit fees; number of KAMs, audit firm, number of audit committee meetings and industry. Value: The study reveals important implications. On the one hand, different KAM and AC risk disclosures may indicate that enhanced information is provided to readers of the annual report. On the other hand, companies with substantial disclosure differences may suggest ineffective communication between auditors and audit committees. Companies with no disclosures may indicate duplication of disclosures and in turn the disclosures may be less useful for readers of annual reports. The authors recommend that standard setters and regulators consider the extent of differences between KAM and AC risk disclosures and their drivers to improve usefulness of annual reports."
   }
 ]

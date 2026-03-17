@@ -76,6 +76,34 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-publications_2025 .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-published','listing-links',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-published","listing-links"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-publications_2025'] = new List('listing-publications_2025', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
     const listingTargetEl = window.document.querySelector('#listing-publications_2021 .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
@@ -473,16 +501,17 @@ window.Quarto = {
     <h2 id="toc-title">Year</h2>
    
   <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">2021</a></li>
-  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2020</a></li>
-  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2018</a></li>
-  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">2017</a></li>
-  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4">2016</a></li>
-  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5">2015</a></li>
-  <li><a href="#section-6" id="toc-section-6" class="nav-link" data-scroll-target="#section-6">2013</a></li>
-  <li><a href="#section-7" id="toc-section-7" class="nav-link" data-scroll-target="#section-7">2012</a></li>
-  <li><a href="#section-8" id="toc-section-8" class="nav-link" data-scroll-target="#section-8">2011</a></li>
-  <li><a href="#section-9" id="toc-section-9" class="nav-link" data-scroll-target="#section-9">2010</a></li>
+  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section">2025</a></li>
+  <li><a href="#section-1" id="toc-section-1" class="nav-link" data-scroll-target="#section-1">2021</a></li>
+  <li><a href="#section-2" id="toc-section-2" class="nav-link" data-scroll-target="#section-2">2020</a></li>
+  <li><a href="#section-3" id="toc-section-3" class="nav-link" data-scroll-target="#section-3">2018</a></li>
+  <li><a href="#section-4" id="toc-section-4" class="nav-link" data-scroll-target="#section-4">2017</a></li>
+  <li><a href="#section-5" id="toc-section-5" class="nav-link" data-scroll-target="#section-5">2016</a></li>
+  <li><a href="#section-6" id="toc-section-6" class="nav-link" data-scroll-target="#section-6">2015</a></li>
+  <li><a href="#section-7" id="toc-section-7" class="nav-link" data-scroll-target="#section-7">2013</a></li>
+  <li><a href="#section-8" id="toc-section-8" class="nav-link" data-scroll-target="#section-8">2012</a></li>
+  <li><a href="#section-9" id="toc-section-9" class="nav-link" data-scroll-target="#section-9">2011</a></li>
+  <li><a href="#section-10" id="toc-section-10" class="nav-link" data-scroll-target="#section-10">2010</a></li>
   </ul>
 </nav>
     </div>
@@ -514,7 +543,37 @@ window.Quarto = {
 
 
 <section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section">2021</h2>
+<h2 class="anchored" data-anchor-id="section">2025</h2>
+<div id="listing-publications_2025" class="quarto-listing quarto-listing-container-custom">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<div class="publications">
+  
+    <div class="publication-entry">
+      <div class="metadata">          
+        <p class="author">Raúl Gómez Martínez, Camilo Prado Román, María Luisa Medrano García, Aref Mahdavi Ardekani, and Damien Dupré</p>
+      </div>
+      <div class="body">
+        <p class="title">The Strengthening Link Between Donald Trump’s Online Attention and Wall Street Sentiment</p>
+        <p class="published">American Behavioral Scientist</p>
+
+        <ul class="publication-links">
+          
+            <li class="publication-link">
+              <a href="https://doi.org/10.1177/00027642251405623">
+                <i class="fa-solid fa-globe"></i> DOI
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="section-1" class="level2">
+<h2 class="anchored" data-anchor-id="section-1">2021</h2>
 <div id="listing-publications_2021" class="quarto-listing quarto-listing-container-custom">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <div class="publications">
@@ -583,8 +642,8 @@ window.Quarto = {
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
-<section id="section-1" class="level2">
-<h2 class="anchored" data-anchor-id="section-1">2020</h2>
+<section id="section-2" class="level2">
+<h2 class="anchored" data-anchor-id="section-2">2020</h2>
 <div id="listing-publications_2020" class="quarto-listing quarto-listing-container-custom">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <div class="publications">
@@ -653,8 +712,8 @@ window.Quarto = {
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
-<section id="section-2" class="level2">
-<h2 class="anchored" data-anchor-id="section-2">2018</h2>
+<section id="section-3" class="level2">
+<h2 class="anchored" data-anchor-id="section-3">2018</h2>
 <div id="listing-publications_2018" class="quarto-listing quarto-listing-container-custom">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <div class="publications">
@@ -763,8 +822,8 @@ window.Quarto = {
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
-<section id="section-3" class="level2">
-<h2 class="anchored" data-anchor-id="section-3">2017</h2>
+<section id="section-4" class="level2">
+<h2 class="anchored" data-anchor-id="section-4">2017</h2>
 <div id="listing-publications_2017" class="quarto-listing quarto-listing-container-custom">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <div class="publications">
@@ -833,8 +892,8 @@ window.Quarto = {
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
-<section id="section-4" class="level2">
-<h2 class="anchored" data-anchor-id="section-4">2016</h2>
+<section id="section-5" class="level2">
+<h2 class="anchored" data-anchor-id="section-5">2016</h2>
 <div id="listing-publications_2016" class="quarto-listing quarto-listing-container-custom">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <div class="publications">
@@ -863,8 +922,8 @@ window.Quarto = {
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
-<section id="section-5" class="level2">
-<h2 class="anchored" data-anchor-id="section-5">2015</h2>
+<section id="section-6" class="level2">
+<h2 class="anchored" data-anchor-id="section-6">2015</h2>
 <div id="listing-publications_2015" class="quarto-listing quarto-listing-container-custom">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <div class="publications">
@@ -913,8 +972,8 @@ window.Quarto = {
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
-<section id="section-6" class="level2">
-<h2 class="anchored" data-anchor-id="section-6">2013</h2>
+<section id="section-7" class="level2">
+<h2 class="anchored" data-anchor-id="section-7">2013</h2>
 <div id="listing-publications_2013" class="quarto-listing quarto-listing-container-custom">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <div class="publications">
@@ -963,8 +1022,8 @@ window.Quarto = {
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
-<section id="section-7" class="level2">
-<h2 class="anchored" data-anchor-id="section-7">2012</h2>
+<section id="section-8" class="level2">
+<h2 class="anchored" data-anchor-id="section-8">2012</h2>
 <div id="listing-publications_2012" class="quarto-listing quarto-listing-container-custom">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <div class="publications">
@@ -1013,8 +1072,8 @@ window.Quarto = {
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
-<section id="section-8" class="level2">
-<h2 class="anchored" data-anchor-id="section-8">2011</h2>
+<section id="section-9" class="level2">
+<h2 class="anchored" data-anchor-id="section-9">2011</h2>
 <div id="listing-publications_2011" class="quarto-listing quarto-listing-container-custom">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <div class="publications">
@@ -1063,8 +1122,8 @@ window.Quarto = {
 <div class="listing-no-matching d-none">No matching items</div>
 </div>
 </section>
-<section id="section-9" class="level2">
-<h2 class="anchored" data-anchor-id="section-9">2010</h2>
+<section id="section-10" class="level2">
+<h2 class="anchored" data-anchor-id="section-10">2010</h2>
 <div id="listing-publications_2010" class="quarto-listing quarto-listing-container-custom">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <div class="publications">
