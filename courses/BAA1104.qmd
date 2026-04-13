@@ -28,5 +28,5 @@ Core areas including regulation, information risk, security, ethics and sustaina
 - [7. HTML Theming in a Quarto Website](https://damien-dupre.github.io/BAA1104/lectures/lecture_7)
 - [8. Displaying Projects in a Quarto Website](https://damien-dupre.github.io/BAA1104/lectures/lecture_8)
 - [9. Python in your Project Pages](https://damien-dupre.github.io/BAA1104/lectures/lecture_9)
-- [10. Quarto Dashboards](https://damien-dupre.github.io/BAA1104/lectures/lecture_10)
-- [11. Python Apps without Server](https://damien-dupre.github.io/BAA1104/lectures/lecture_11)
+<!-- - [10. Quarto Dashboards](https://damien-dupre.github.io/BAA1104/lectures/lecture_10) -->
+<!-- - [11. Python Apps without Server](https://damien-dupre.github.io/BAA1104/lectures/lecture_11) -->

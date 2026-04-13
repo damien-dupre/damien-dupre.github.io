@@ -31,7 +31,7 @@ Data and visual analytics is an emerging field concerned with analysing, modelli
 
 ---
 
-## Student Feedback Survey — Spring 2025
+## Student Feedback Survey (Spring 2025)
 
 ```{r}
 #| echo: false
