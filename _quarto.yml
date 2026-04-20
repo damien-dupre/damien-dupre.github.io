@@ -6,6 +6,7 @@ project:
     - "!internal/"
   resources:
   - "my-first-web-page.html"
+  - "assets/participant_information_sheet.pdf"
   
 # Metadata stuff
 pagetitle: "{{< meta title >}} | Damien Dupré"
