@@ -13,10 +13,5 @@ listing:
   image-height: 150px
 
 page-layout: full
-# https://mickael.canouil.fr/talks
-# https://emilhvitfeldt.com/talks
-# https://meghan.rbind.io/talks/
-# https://ivelasq.rbind.io/talk
-# https://samanthacsik.github.io/talks_workshops.html
 ---
 
