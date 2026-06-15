@@ -1,10 +1,24 @@
 [
   {
+    "objectID": "talks/2026-05-18_learning_teaching_student_experience/index.html",
+    "href": "talks/2026-05-18_learning_teaching_student_experience/index.html",
+    "title": "The Long-Term Career Trajectories of IPBS Graduates: A Mixed-Methods Investigation into Transnational Education",
+    "section": "",
+    "text": "Slides"
+  },
+  {
+    "objectID": "talks/2025-10-15_open_research_for_global_impact/index.html",
+    "href": "talks/2025-10-15_open_research_for_global_impact/index.html",
+    "title": "Open and Reproducible Research Outputs with Quarto",
+    "section": "",
+    "text": "Slides"
+  },
+  {
     "objectID": "talks/2025-07-16_consortium_of_european_research_on_emotion/index.html",
     "href": "talks/2025-07-16_consortium_of_european_research_on_emotion/index.html",
     "title": "Identifying Correct or Incorrect Emotion Recognition from Facial Expression Time Series using R",
     "section": "",
-    "text": "Consortium of European Research on Emotion (CERE 2025)"
+    "text": "Consortium of European Research on Emotion (CERE 2025)\n \n  \n   \n  \n    \n     Slides"
   },
   {
     "objectID": "talks/2024-06-13_irish_accounting_and_finance_association_conference/index.html",
@@ -25,21 +39,21 @@
     "href": "talks/2020-12-07_irish_conference_on_artificial_intelligence_and_cognitive_science/index.html",
     "title": "Disenchantment with emotion recognition technologies: A comparison between humans observers and automatic classifiers",
     "section": "",
-    "text": "Irish Conference on Artificial Intelligence and Cognitive Science (AICS 2020)"
+    "text": "Irish Conference on Artificial Intelligence and Cognitive Science (AICS 2020)\n \n  \n   \n  \n    \n     Slides"
   },
   {
     "objectID": "talks/2020-10-01_international_conference_on_data_science_and_advanced_analytics/index.html",
     "href": "talks/2020-10-01_international_conference_on_data_science_and_advanced_analytics/index.html",
     "title": "Urban and socio-economic correlates of property prices in Dublin’s area",
     "section": "",
-    "text": "International Conference on Data Science and Advanced Analytics (DSAA 2020)"
+    "text": "International Conference on Data Science and Advanced Analytics (DSAA 2020)\n \n  \n   \n  \n    \n     Slides"
   },
   {
     "objectID": "talks/2020-07-09_summer_school_on_behavioral_and_neuroscientific_research_for_economics_finance_and_accounting/index.html",
     "href": "talks/2020-07-09_summer_school_on_behavioral_and_neuroscientific_research_for_economics_finance_and_accounting/index.html",
     "title": "Data analytics for behavioral research",
     "section": "",
-    "text": "Summer School on Behavioral and Neuroscientific Research for Economics, Finance and Accounting (ECMCRC 2020)"
+    "text": "Summer School on Behavioral and Neuroscientific Research for Economics, Finance and Accounting (ECMCRC 2020)\n \n  \n   \n  \n    \n     Slides"
   },
   {
     "objectID": "talks/2019-07-02_summer_school_on_behavioral_and_neuroscientific_research_for_economics_finance_and_accounting/index.html",
@@ -508,27 +522,48 @@
     "href": "talks/2020-07-22_cx_emotion_conference/index.html",
     "title": "Facial and physiological expressions of emotion, with a look at bias",
     "section": "",
-    "text": "CX Emotion Conference"
+    "text": "CX Emotion Conference\n \n  \n   \n  \n    \n     Slides"
   },
   {
     "objectID": "talks/2020-11-19_psychological_society_of_ireland_annual_conference/index.html",
     "href": "talks/2020-11-19_psychological_society_of_ireland_annual_conference/index.html",
     "title": "Disenchantment with emotion recognition technologies: Implications and future directions",
     "section": "",
-    "text": "The Psychological Society of Ireland Annual Conference (PSI 2020)"
+    "text": "The Psychological Society of Ireland Annual Conference (PSI 2020)\n \n  \n   \n  \n    \n     Slides"
   },
   {
     "objectID": "talks/2021-03-01_international_conference_on_pervasive_computing_and_communications_workshops/index.html",
     "href": "talks/2021-03-01_international_conference_on_pervasive_computing_and_communications_workshops/index.html",
     "title": "Effect of Facial Expression Categories and Calculation Methods on Automatic Emotion Recognition",
     "section": "",
-    "text": "5th International Workshop on Emotion Awareness for Pervasive Computing (EmotionAware 2021)"
+    "text": "5th International Workshop on Emotion Awareness for Pervasive Computing (EmotionAware 2021)\n \n  \n   \n  \n    \n     Slides"
   },
   {
     "objectID": "talks/2021-11-19_goutai_seminars_at_rennes_school_of_business/index.html",
     "href": "talks/2021-11-19_goutai_seminars_at_rennes_school_of_business/index.html",
     "title": "Urban and socio-economic correlates of property prices in Dublin area",
     "section": "",
-    "text": "GoutAI Seminars at Rennes School of Business"
+    "text": "GoutAI Seminars at Rennes School of Business\n \n  \n   \n  \n    \n     Slides"
+  },
+  {
+    "objectID": "talks/2025-05-19_pint_of_science/index.html",
+    "href": "talks/2025-05-19_pint_of_science/index.html",
+    "title": "Can AI Read Your Emotions? The Truth Behind Emotion Recognition Technology",
+    "section": "",
+    "text": "Slides"
+  },
+  {
+    "objectID": "talks/2025-09-30_teaching_and_learning_week/index.html",
+    "href": "talks/2025-09-30_teaching_and_learning_week/index.html",
+    "title": "Cloud-Powered Equity: Driving Student Success in Data Analytics",
+    "section": "",
+    "text": "Slides"
+  },
+  {
+    "objectID": "talks/2026-03-26_behavioural_economics_workshop/index.html",
+    "href": "talks/2026-03-26_behavioural_economics_workshop/index.html",
+    "title": "Characterising Online Private Treaty Negotiations: Field Evidence from Irish Residential Property",
+    "section": "",
+    "text": "Slides"
   }
 ]

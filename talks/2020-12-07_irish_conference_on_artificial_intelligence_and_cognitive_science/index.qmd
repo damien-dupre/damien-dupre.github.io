@@ -10,6 +10,10 @@ about:
   id: hero-heading
   template: jolla
   image-shape: rounded
+  links:
+    - icon: easel2
+      text: Slides
+      href: https://damien-dupre.github.io/talks_slides/aics_2020.html
 ---
 
 ::: {#hero-heading}
