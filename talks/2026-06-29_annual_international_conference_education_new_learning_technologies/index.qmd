@@ -1,7 +1,6 @@
 ---
 image: img.jpg
-title: 'Extending guest lecture learning: Hybrid delivery, ai review supports, and
-  reflection in large classes'
+title: 'Extending guest lecture learning: Hybrid delivery, AI review supports, and reflection in large classes'
 author: James Byrne, Colum Foley, Damien Dupré, and Paul Liston
 description: 18th annual International Conference on Education and New Learning Technologies
 abstract: |

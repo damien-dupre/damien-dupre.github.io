@@ -1,0 +1,16 @@
+---
+image: img.png
+title: 'From Event to Artefact: In-Class and Live-Streamed Guest Lectures with AI-supported Review'
+author: James Byrne, Colum Foley, Brian Cleere, Damien Dupré, and Paul Liston
+description: 7th Pedagogy for Higher Education Large Classes International Symposium
+abstract: |
+  Large classes make guest lectures simultaneously attractive and fragile: they can add authenticity and professional visibility, yet access, interaction, and post-lecture consolidation are difficult to sustain at scale. This paper reports a guest lecture design embedded in a 12-week postgraduate project management module enrolling 284 business school students. Four practitioner sessions (2 hours, including moderated Q&amp;A) were delivered as Zoom-enabled events: one speaker joined remotely; three were delivered on campus while live-streamed and recorded. Recordings were posted to the virtual learning environment with AI-generated transcripts and summary notes, lightly edited to correct obvious errors, and students completed a low- stakes end-of-module reflection where guest-lecture insights could be integrated. A post-series survey indicates strong uptake of recordings and substantial perceived value of AI artefacts for review and reflection, alongside a consistent social presence trade-off for remote delivery. Design implications are offered for inclusive, sustainable guest-lecture pedagogy in large classes.
+date: '2026-06-12'
+about:
+  id: hero-heading
+  template: jolla
+  image-shape: rounded
+---
+
+::: {#hero-heading}
+:::

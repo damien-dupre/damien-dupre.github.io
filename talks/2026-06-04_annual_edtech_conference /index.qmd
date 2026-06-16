@@ -1,0 +1,25 @@
+---
+image: img.webp
+title: 'From server to browser: Evolving technologies for accessible interactive coding tutorials'
+author: Damien Dupré
+description: 25th Annual EdTech Conference of the Irish Learning Technology Association
+abstract: |
+  Teaching coding to students who are not computer scientists presents a persistent challenge: before learners can write their first line of code, they must navigate software installation, environment configuration, and dependency management. These technical barriers disproportionately exclude students with limited computing resources or technical confidence, raising a question central to EdTech 2026: who are we designing coding education for, and who is being left behind? Recent advances in open-source technologies offer transformative opportunities to address this gap.
+  This paper reviews the evolving landscape of technologies for delivering interactive coding tutorials, drawing on several years of experience teaching R and Python to social science students at Dublin City University. We trace a trajectory from server-dependent to fully serverless solutions, evaluating each approach in terms of accessibility, scalability, maintenance burden, and pedagogical effectiveness.
+  We begin with cloud-hosted environments that provide full IDE experiences without local installation, such as Google Colab, Posit Cloud, and GitHub Codespaces. While powerful, these solutions depend on institutional licences, user authentication, or cloud compute resources that may be constrained or unavailable.
+  We then examine container-based approaches, particularly MyBinder, which packages a GitHub repository into a live, reproducible computing environment accessible via a single URL. This approach, used in the DCU R Tutorials and DCU Python Tutorials projects, eliminates installation barriers entirely but relies on shared server infrastructure with limited scalability and cold-start delays.
+  The primary focus of this paper is the emerging generation of fully serverless solutions powered by WebAssembly. Using the Quarto Live framework, educators can embed interactive, editable code cells for both R (via webR) and Python (via Pyodide) directly into static HTML documents. These tutorials require no server, no authentication, and no installation: they run entirely in the learner's browser and can be freely hosted on platforms such as GitHub Pages. We discuss the pedagogical affordances of Quarto Live, including built-in exercise scaffolding, grading algorithms, and reactive outputs, and reflect on practical trade-offs such as package availability and initial load times.
+  We conclude by arguing that serverless interactive tutorials represent a significant step toward more equitable and inclusive coding education, lowering barriers not only for learners but also for the educators who create and share these resources.
+date: '2026-06-04'
+about:
+  id: hero-heading
+  template: jolla
+  image-shape: rounded
+  links:
+    - icon: easel2
+      text: Slides
+      href: https://damien-dupre.github.io/talks_slides/edtech_2026.html
+---
+
+::: {#hero-heading}
+:::

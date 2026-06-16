@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Damien Dupré">
-<meta name="dcterms.date" content="2026-06-29">
-<meta name="description" content="18th annual International Conference on Education and New Learning Technologies">
+<meta name="dcterms.date" content="2026-06-04">
+<meta name="description" content="25th Annual EdTech Conference of the Irish Learning Technology Association">
 
-<title>Extending guest lecture learning: Hybrid delivery, AI review supports, and reflection in large classes | Damien Dupré – Damien Dupré</title>
+<title>From server to browser: Evolving technologies for accessible interactive coding tutorials | Damien Dupré – Damien Dupré</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -74,9 +74,9 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
-<meta name="twitter:title" content="Extending guest lecture learning: Hybrid delivery, AI review supports, and reflection in large classes | Damien Dupré">
-<meta name="twitter:description" content="18th annual International Conference on Education and New Learning Technologies">
-<meta name="twitter:image" content="https://damien-dupre.github.io/talks/2026-06-29_annual_international_conference_education_new_learning_technologies/img.jpg">
+<meta name="twitter:title" content="From server to browser: Evolving technologies for accessible interactive coding tutorials | Damien Dupré">
+<meta name="twitter:description" content="25th Annual EdTech Conference of the Irish Learning Technology Association">
+<meta name="twitter:image" content="https://damien-dupre.github.io/talks/2026-06-04_annual_edtech_conference /img.webp">
 <meta name="twitter:creator" content="@damien_dupre">
 <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -165,39 +165,46 @@ ul.task-list li input[type="checkbox"] {
 
 
 <div class="quarto-about-jolla">
-  <img src="img.jpg" class="about-image
+  <img src="img.webp" class="about-image
   rounded " style="width: 15em;">
  <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Extending guest lecture learning: Hybrid delivery, AI review supports, and reflection in large classes</h1>
+<h1 class="title">From server to browser: Evolving technologies for accessible interactive coding tutorials</h1>
 </div>
 <div>
   <div class="description">
-    18th annual International Conference on Education and New Learning Technologies
+    25th Annual EdTech Conference of the Irish Learning Technology Association
   </div>
 </div>
 <div class="quarto-title-meta">
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>James Byrne, Colum Foley, Damien Dupré, and Paul Liston </p>
+             <p>Damien Dupré </p>
           </div>
   </div>
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">June 29, 2026</p>
+      <p class="date">June 4, 2026</p>
     </div>
   </div>
   </div>
 <div>
   <div class="abstract">
     <div class="block-title">Abstract</div>
-    <p>Guest lectures are widely used in higher education to connect taught material with current professional practice. In large classes, however, their educational value can be uneven. Although guest speakers may enhance authenticity and relevance, student access, interaction, and post-session consolidation can be difficult to sustain at scale. These challenges are particularly visible in postgraduate settings, where cohorts are diverse and students may differ in attendance patterns, professional experience, and competing commitments. This study examines a teaching design intended to extend guest lectures beyond the live event through hybrid delivery, AI-supported review resources, and reflective integration. The study is based on a large postgraduate project management module in a business school, enrolling 284 students across four MSc programmes. Over a 12-week semester, four guest lectures were delivered by senior practitioners from different sectors. One session was delivered remotely and three took place in person on campus; all were supported through Zoom livestreaming and recording. Following each lecture, students were given access through the virtual learning environment to the recording, an AI-generated transcript, and AI-generated summary notes. These materials were lightly edited to improve clarity and correct obvious errors. Students were also encouraged to draw on guest lecture insights within a low-stakes reflective task at the end of the module. Evaluation data were gathered through an anonymous post-series survey. The findings indicate that students generally preferred in-person learning, but also made substantial use of the recorded guest lectures across the series. Many respondents viewed the AI-generated transcripts and summary notes as useful for revisiting lecture content, locating key ideas, and supporting later reflection. At the same time, the results suggest a consistent trade-off associated with remote delivery: students reported lower perceived engagement and a weaker sense of connection with the remotely delivered speaker than with speakers physically present in the lecture theatre. These findings point to both the potential and the limitations of technology-supported guest lecture design in large-class contexts. This study suggests that guest lectures in large postgraduate classes may be strengthened when they are designed across three linked phases: access to the event and its resources, structured interaction during delivery, and post-event consolidation through reflection. It also indicates that AI-generated transcripts and summaries may be most valuable when positioned as aids for review, retrieval, and integration rather than as substitutes for active listening or critical engagement. The study offers a practice-based contribution to current discussions on large-class pedagogy, hybrid teaching, and the careful integration of AI-supported learning resources in higher education.</p>
+    <p>Teaching coding to students who are not computer scientists presents a persistent challenge: before learners can write their first line of code, they must navigate software installation, environment configuration, and dependency management. These technical barriers disproportionately exclude students with limited computing resources or technical confidence, raising a question central to EdTech 2026: who are we designing coding education for, and who is being left behind? Recent advances in open-source technologies offer transformative opportunities to address this gap. This paper reviews the evolving landscape of technologies for delivering interactive coding tutorials, drawing on several years of experience teaching R and Python to social science students at Dublin City University. We trace a trajectory from server-dependent to fully serverless solutions, evaluating each approach in terms of accessibility, scalability, maintenance burden, and pedagogical effectiveness. We begin with cloud-hosted environments that provide full IDE experiences without local installation, such as Google Colab, Posit Cloud, and GitHub Codespaces. While powerful, these solutions depend on institutional licences, user authentication, or cloud compute resources that may be constrained or unavailable. We then examine container-based approaches, particularly MyBinder, which packages a GitHub repository into a live, reproducible computing environment accessible via a single URL. This approach, used in the DCU R Tutorials and DCU Python Tutorials projects, eliminates installation barriers entirely but relies on shared server infrastructure with limited scalability and cold-start delays. The primary focus of this paper is the emerging generation of fully serverless solutions powered by WebAssembly. Using the Quarto Live framework, educators can embed interactive, editable code cells for both R (via webR) and Python (via Pyodide) directly into static HTML documents. These tutorials require no server, no authentication, and no installation: they run entirely in the learner’s browser and can be freely hosted on platforms such as GitHub Pages. We discuss the pedagogical affordances of Quarto Live, including built-in exercise scaffolding, grading algorithms, and reactive outputs, and reflect on practical trade-offs such as package availability and initial load times. We conclude by arguing that serverless interactive tutorials represent a significant step toward more equitable and inclusive coding education, lowering barriers not only for learners but also for the educators who create and share these resources.</p>
   </div>
 </div>
 </header><div id="hero-heading">
-</div>  
+</div> 
+  <hr class="about-sep">
+   <div class="about-links">
+  <a href="https://damien-dupre.github.io/talks_slides/edtech_2026.html" class="about-link" rel="" target="">
+    <i class="bi bi-easel2"></i>
+     <span class="about-link-text">Slides</span>
+  </a>
+</div>
 </div>
 
 
