@@ -1,0 +1,24 @@
+---
+title: "STA1000 - Data Analytics & Metrics"
+title-block-banner: true
+image: STA1000.jpg
+about:
+  id: hero-heading
+  template: trestles
+  image-shape: rounded
+---
+
+::: {#hero-heading}
+
+The purpose of this module is to help develop the student’s capacity to make better data-driven decisions through leveraging insights gained from data analysis and to motivate students’ appreciation of current needs for marketing metrics and to develop a comprehensive understanding of strategy-based performance measurement frameworks. 
+
+The module aims to equip students with a variety of data visualisation techniques and the knowledge of a variety of tools and statistical techniques to make sense of the emergence and exponential growth of big data. The content of this module is delivered mainly through lecturers, case studies and in class demonstrations.
+
+:::
+
+---
+
+### Link to the lecture slides:
+
+- [1. Introduction to Analytics and AI](https://damien-dupre.github.io/STA1000/lectures/lecture_01)
+
