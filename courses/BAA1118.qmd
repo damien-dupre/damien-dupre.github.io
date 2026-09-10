@@ -1,0 +1,27 @@
+---
+title: "BAA1118 - Foundations of Programming for Analytics & AI"
+title-block-banner: true
+image: BAA1118.jpg
+about:
+  id: hero-heading
+  template: trestles
+  image-shape: rounded
+---
+
+::: {#hero-heading}
+
+This module takes students with no programming experience and brings them to the point of writing, running and defending a complete data analysis in Python.
+
+The first half builds the language itself: values and types, collections, conditional logic, iteration and functions, worked entirely in the browser so that nobody is blocked by software installation. Students then set up a professional working environment on their own machine, with an isolated dependency environment and a documented project structure.
+
+The second half applies that foundation to data. Students import files in the formats they will actually be given, diagnose and repair the errors those files contain, transform and summarise the results to answer a defined business question, present the answer visually, and finally estimate a linear regression model, generate predictions from it, and evaluate how wrong those predictions are.
+
+The module closes on the concepts every machine learning and AI system rests upon: generalisation, held-out evaluation, and the honest limits of a prediction.
+
+:::
+
+---
+
+### Link to the lecture slides:
+
+- [1: Introduction](https://damien-dupre.github.io/BAA1118/lectures/lecture_1)
