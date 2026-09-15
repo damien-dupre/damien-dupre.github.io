@@ -1,7 +1,35 @@
 [
   {
+    "listing": "/publications.html",
+    "items": []
+  },
+  {
+    "listing": "/courses.html",
+    "items": [
+      "/courses/BAA1028.html",
+      "/courses/BAA1030.html",
+      "/courses/BAA1083.html",
+      "/courses/BAA1104.html",
+      "/courses/BAA1118.html",
+      "/courses/STA1000.html",
+      "/courses/STA1005.html"
+    ]
+  },
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/generate-pdf-documents.html",
+      "/posts/generating-multiple-pdf.html",
+      "/posts/how-to-organise.html",
+      "/posts/organising-research-conferences.html",
+      "/posts/timeseries-clustering-part1.html",
+      "/posts/timeseries-clustering-part2.html"
+    ]
+  },
+  {
     "listing": "/talks.html",
     "items": [
+      "/talks/2026-09-04_irish_society_women_economics/index.html",
       "/talks/2026-06-29_annual_international_conference_education_new_learning_technologies/index.html",
       "/talks/2026-06-12_pedagogy_higher_education_large_classes/index.html",
       "/talks/2026-06-04_annual_edtech_conference /index.html",
@@ -43,32 +71,5 @@
       "/talks/2010-05-01_international_workshop_series_on_multimodal_corpora/index.html",
       "/talks/2010-04-22_consortium_of_european_research_on_emotion/index.html"
     ]
-  },
-  {
-    "listing": "/posts.html",
-    "items": [
-      "/posts/generate-pdf-documents.html",
-      "/posts/generating-multiple-pdf.html",
-      "/posts/how-to-organise.html",
-      "/posts/organising-research-conferences.html",
-      "/posts/timeseries-clustering-part1.html",
-      "/posts/timeseries-clustering-part2.html"
-    ]
-  },
-  {
-    "listing": "/courses.html",
-    "items": [
-      "/courses/BAA1028.html",
-      "/courses/BAA1030.html",
-      "/courses/BAA1083.html",
-      "/courses/BAA1104.html",
-      "/courses/BAA1118.html",
-      "/courses/STA1000.html",
-      "/courses/STA1005.html"
-    ]
-  },
-  {
-    "listing": "/publications.html",
-    "items": []
   }
 ]
