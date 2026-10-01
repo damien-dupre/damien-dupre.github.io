@@ -26,3 +26,4 @@ The module closes on the concepts every machine learning and AI system rests upo
 
 - [Lecture 1: Getting Started with Python](https://damien-dupre.github.io/BAA1118/lectures/lecture_1)
 - [Lecture 2: Variables, Types and Operators](https://damien-dupre.github.io/BAA1118/lectures/lecture_2)
+- [Lecture 3: Collections](https://damien-dupre.github.io/BAA1118/lectures/lecture_3)
