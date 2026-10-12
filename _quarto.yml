@@ -29,9 +29,6 @@ website:
       - icon: book-half
         href: publications.qmd
         text: "PUBLICATIONS"
-      - icon: file-post
-        href: posts.qmd
-        text: "POSTS"
       - icon: journal-bookmark-fill
         href: courses.qmd
         text: "COURSES"
