@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://damien-dupre.github.io/talks/2026-11-05_annual_education_research_summit/index.html</loc>
+    <lastmod>2026-11-05T18:03:53.266Z</lastmod>
+  </url>
+  <url>
     <loc>https://damien-dupre.github.io/talks/2026-09-04_irish_society_women_economics/index.html</loc>
     <lastmod>2026-09-10T11:15:51.273Z</lastmod>
   </url>
@@ -243,9 +247,5 @@
   <url>
     <loc>https://damien-dupre.github.io/talks/2026-09-30_teaching_and_learning_week/index.html</loc>
     <lastmod>2026-10-13T14:21:57.807Z</lastmod>
-  </url>
-  <url>
-    <loc>https://damien-dupre.github.io/talks/2026-11-05_annual_education_research_summit/index.html</loc>
-    <lastmod>2026-11-05T18:03:53.266Z</lastmod>
   </url>
 </urlset>

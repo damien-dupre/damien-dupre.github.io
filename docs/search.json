@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "talks/2026-11-05_annual_education_research_summit/index.html",
+    "href": "talks/2026-11-05_annual_education_research_summit/index.html",
+    "title": "Patronage, Preference, and the Limits of School Choice in Irish Primary Education",
+    "section": "",
+    "text": "Slides\n  \n\n\n\nReferences\n\nSamuelson, W., & Zeckhauser, R. (1988). Status quo bias in decision making. Journal of Risk and Uncertainty, 1(1), 7-59.\nEducation Reform (Northern Ireland) Order 1989, SI 1989/2406 (N.I. 20).\nDepartment of Education and Youth (2025). The Primary School Survey.\nDepartment of Education and Youth (2026). Primary School Survey Results Summary Report."
+  },
+  {
     "objectID": "talks/2026-09-04_irish_society_women_economics/index.html",
     "href": "talks/2026-09-04_irish_society_women_economics/index.html",
     "title": "From mandated disclosure to public dataset: paygap.ie and three years of Irish gender pay gap reporting",
@@ -607,12 +614,5 @@
     "title": "Authentic Dataviz and Authentic E-Portfolios",
     "section": "The E-Portfolio as Authentic Assessment: Building Professional Identity with GitHub and Quarto",
     "text": "The E-Portfolio as Authentic Assessment: Building Professional Identity with GitHub and Quarto\nContext. E-Portfolios are introduced at DCU Business School in the Undergraduate Data Analytics Specialism and in the Postgraduate Business Analytics Programme. The module addresses a skills gap. Analytics students are expected to show version control, reproducible publishing, and an online presence, yet business curricula rarely teach or assess these competencies. Most assessed work also has one reader and a short life. My goal was an assessment that is a live professional artefact rather than a submission to be graded and forgotten.\nAction. The curriculum extends beyond analytics techniques into the infrastructure of professional data work. Students learn version control with Git and GitHub (the standard platform for collaborative data science), reproducible document and website publishing with Quarto, the fundamentals of HTML and CSS, and data management, with Python as the language for applied exercises. The assessment draws these threads together. Each student designs, builds, and publishes a personal portfolio website through GitHub Pages, presenting their analytical projects. To make this workable for novices, I scaffold the technical setup in the opening weeks and provide open-source interactive tutorials that students work through at their own pace. The rubric rewards clarity of communication and coherence of the portfolio narrative alongside technical execution.\nResult. Every student leaves with a publicly hosted website they can cite in a CV and continue to develop after graduation. Because the portfolio is public, students write for recruiters and peers rather than solely for an examiner, and in my experience they curate and polish their work differently as a result. Published student projects have led to professional outcomes, including an internship offer that followed a publicly showcased project.\nReflection. Two difficulties recur. Git generates friction in the first weeks, which the early scaffolding now absorbs, and some students prioritise visual decoration over content, which the communication-focused rubric counteracts. What surprised me is how quickly a real audience changes behaviour. Knowing a recruiter might read the page raises the standard students set for themselves more effectively than any marking scheme I could write. If I redesigned the module, I would add peer review of draft portfolios before publication, so students experience being an audience as well as an author. To colleagues in any discipline, I would recommend the underlying move of replacing the essay submitted to one reader with a published artefact addressed to a real audience. Quarto supports many output formats and GitHub Pages hosts sites free of charge, so the approach carries no software or infrastructure cost."
-  },
-  {
-    "objectID": "talks/2026-11-05_annual_education_research_summit/index.html",
-    "href": "talks/2026-11-05_annual_education_research_summit/index.html",
-    "title": "Patronage, Preference, and the Limits of School Choice in Irish Primary Education",
-    "section": "",
-    "text": "Slides\n  \n\n\n\nReferences\n\nSamuelson, W., & Zeckhauser, R. (1988). Status quo bias in decision making. Journal of Risk and Uncertainty, 1(1), 7-59.\nEducation Reform (Northern Ireland) Order 1989, SI 1989/2406 (N.I. 20).\nDepartment of Education and Youth (2025). The Primary School Survey.\nDepartment of Education and Youth (2026). Primary School Survey Results Summary Report."
   }
 ]
