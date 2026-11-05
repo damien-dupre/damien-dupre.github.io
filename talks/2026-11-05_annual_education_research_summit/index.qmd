@@ -1,0 +1,35 @@
+---
+image: img.png
+title: 'Patronage, Preference, and the Limits of School Choice in Irish Primary Education'
+author: Damien Dupré, Maedbh King, and Simon Lewis
+description: 'Department of Education and Youth, Annual Education Research Summit 2026'
+abstract: |
+  Ireland's state-funded primary schools are organised around a patronage system. 88% operate under Catholic patronage and fewer than 6% are multi- or inter-denominational. Reconfiguring patronage is decided school by school, while the public debate about demand for change runs on national percentages.
+
+  In late 2025, the Department of Education and Youth surveyed parents of enrolled and not-yet-enrolled primary pupils (200,381 valid responses) and, separately, school staff and boards of management (32,901 responses), asking each their preferred ethos. The two groups disagree by roughly ten points nationally: 45% of parents prefer multi-denominational schooling against 35% of staff/BOM, and this gap also persists at denominational schools (40% vs 32%). Staff/BOM results aren't published school by school, for privacy reasons, so this gap can't be tested locally, but it likely shapes decisions. For example, where a parent preference falls short of 50%, which is common, staff and boards of management are positioned to read that shortfall as confirmation of the status quo, before any statistical threshold is applied. In Northern Ireland, by contrast, a simple majority of cast parental votes legally triggers the formal transformation process under the Education Reform (Northern Ireland) Order 1989. Why the gap exists is unclear, and school-level evidence of staff/BOM sentiment should be a research priority.
+
+  We test this against published results for 2,886 of Ireland's 3,077 primary schools, under thresholds from 50% to two-thirds and standards ranging from face-value shares to treating every non-respondent as opposed to change. Even the most permissive reading finds a raw majority for multi-denominational ethos in only 485 of the currently denominational schools; requiring that majority clear its margin of error cuts this to 111, and conservative readings reduce it to single digits. Reconfiguration will remain rare under any methodologically-defensible standard, and this range may itself be conservative. Status-quo bias (Samuelson and Zeckhauser, 1988) predicts systematic favouring of the status quo once invested in it, meaning the 40%+ of enrolled parents already preferring multi-denominational ethos likely understates true demand.
+
+  The largest related finding concerns not-yet-enrolled parents. Among them, 90.7% intend to enrol their child in a denominational school, plausibly because fewer than 6% of schools offer any alternative, and of these, 42% would prefer that school to be multi-denominational, against 87% confirmed preference among the smaller group intending multi-denominational. If reconfiguration will only ever touch a handful of schools, this 42% describes a likely-growing cohort of children attending, and remaining in, denominational schools while opted out of faith formation rather than waiting for patronage change, a group we have no data on, in size or trajectory.
+
+  Future research should quantify this opted-out cohort, as well as the gap between parent and staff/board of management preferences. These questions will shape most families' actual experience of primary education more than the small set of schools eligible for reconfiguration.
+date: '2026-11-05'
+about:
+  id: hero-heading
+  template: jolla
+  image-shape: rounded
+  links:
+    - icon: easel2
+      text: Slides
+      href: https://damien-dupre.github.io/talks_slides/ers_2026.html
+---
+
+::: {#hero-heading}
+:::
+
+**References**
+
+- Samuelson, W., & Zeckhauser, R. (1988). [Status quo bias in decision making](https://doi.org/10.1007/BF00055564). Journal of Risk and Uncertainty, 1(1), 7-59.
+- [Education Reform (Northern Ireland) Order 1989](https://www.legislation.gov.uk/nisi/1989/2406/contents), SI 1989/2406 (N.I. 20).
+- Department of Education and Youth (2025). [The Primary School Survey](https://www.gov.ie/en/department-of-education/campaigns/primary-school-survey/).
+- Department of Education and Youth (2026). [Primary School Survey Results Summary Report](https://assets.gov.ie/static/documents/1e08f77c/Primary_School_Survey_Results_Summary_Report_final...pdf).
