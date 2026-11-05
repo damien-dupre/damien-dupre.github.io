@@ -29,3 +29,4 @@ The module closes on the concepts every machine learning and AI system rests upo
 - [Lecture 3: Collections](https://damien-dupre.github.io/BAA1118/lectures/lecture_3)
 - [Lecture 4: Control Flow](https://damien-dupre.github.io/BAA1118/lectures/lecture_4)
 - [Lecture 5: Functions, Modules and Packages](https://damien-dupre.github.io/BAA1118/lectures/lecture_5)
+- [Lecture 6: Data Wrangling with pandas](https://damien-dupre.github.io/BAA1118/lectures/lecture_6)
