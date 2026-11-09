@@ -1,5 +1,5 @@
 ---
-image: img.png
+image: img.jpg
 title: 'Patronage, Preference, and the Limits of School Choice in Irish Primary Education'
 author: Damien Dupré, Maedbh King, and Simon Lewis
 description: 'Department of Education and Youth, Annual Education Research Summit 2026'

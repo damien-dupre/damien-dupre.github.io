@@ -1,5 +1,5 @@
 ---
-image: img.png
+image: img.jpg
 title: 'Authentic Dataviz and Authentic E-Portfolios'
 author: Damien Dupré
 description: 'DCU TEU Teaching & Learning Week 2026: Making Authentic Assessment Work'

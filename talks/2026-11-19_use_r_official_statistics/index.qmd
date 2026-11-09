@@ -1,0 +1,23 @@
+---
+image: img.jpg
+title: 'Automated Public Science Communication: Building a Bluesky Bot for Real-Time Official Statistics Visualisation with R'
+author: Damien Dupré
+description: '14th International Conference on the Use of R in Official Statistics (uRos 2026)'
+abstract: |
+  In an era of rapid digital communication, public institutions and researchers must find efficient ways to disseminate data insights directly to citizens. While traditional statistical reports often remain confined to static databases, social media platforms offer a direct channel for broader scientific engagement. This presentation introduces an automated workflow that connects official statistical data with the decentralized social media ecosystem using R. We present `csoie_bot`, an open source automated bot designed to fetch, process, and visualize official data from the Central Statistics Office (CSO) of Ireland, and dynamically publish these visual updates to Bluesky via the AT Protocol (<https://github.com/damien-dupre/csoie_bot> and <https://bsky.app/profile/csoiebot.bsky.social>). Built entirely within the R environment, the bot leverages modern data manipulation and visualization libraries to create clear, accessible graphics that translate complex public metrics into easily digestible visual content. The automated pipeline utilizes GitHub Actions to execute scheduled scripts, ensuring a continuous stream of public updates without requiring manual intervention or continuous local server hosting. This regular presentation will detail the technical architecture of the bot, focusing on how R interacts with modern web APIs and social media protocols. We will discuss the specific challenges of automated data visualization, such as maintaining design consistency across varying data formats, managing API authentication securely in public repositories, and configuring robust error handling for scheduled cloud execution. By sharing the development process and open source repository of `csoie_bot`, this talk aims to provide a reproducible template for data scientists, statisticians, and researchers looking to automate their public science communication and maximize the real-world impact of their data insights.
+date: '2026-11-19'
+about:
+  id: hero-heading
+  template: jolla
+  image-shape: rounded
+  links:
+    - icon: easel2
+      text: Slides
+      href: https://damien-dupre.github.io/talks_slides/uros_2026.html
+    - icon: github
+      text: Code
+      href: https://github.com/damien-dupre/csoie_bot
+---
+
+::: {#hero-heading}
+:::
