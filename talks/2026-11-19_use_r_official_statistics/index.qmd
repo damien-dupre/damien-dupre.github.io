@@ -1,5 +1,5 @@
 ---
-image: img.jpg
+image: img.png
 title: 'Automated Public Science Communication: Building a Bluesky Bot for Real-Time Official Statistics Visualisation with R'
 author: Damien Dupré
 description: '14th International Conference on the Use of R in Official Statistics (uRos 2026)'
