@@ -36,9 +36,9 @@ website:
         text: "TUTORIALS"
         menu:
           - text: DCU R Tutorials
-            href:  https://damien-dupre.github.io/dcu-r-tutorials/
+            href:  https://damien-dupre.github.io/dcu-r-tutorials-live/
           - text: DCU Python Tutorials
-            href:  https://damien-dupre.github.io/dcu-python-tutorials/
+            href:  https://damien-dupre.github.io/dcu-python-tutorials-live/
       - icon: person-lines-fill
         href: about.qmd
         text: "ABOUT ME"

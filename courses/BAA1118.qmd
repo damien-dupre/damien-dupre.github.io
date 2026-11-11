@@ -30,3 +30,6 @@ The module closes on the concepts every machine learning and AI system rests upo
 - [Lecture 4: Control Flow](https://damien-dupre.github.io/BAA1118/lectures/lecture_4)
 - [Lecture 5: Functions, Modules and Packages](https://damien-dupre.github.io/BAA1118/lectures/lecture_5)
 - [Lecture 6: Data Wrangling with pandas](https://damien-dupre.github.io/BAA1118/lectures/lecture_6)
+- [Lecture 7: Data Visualisation with matplotlib](https://damien-dupre.github.io/BAA1118/lectures/lecture_7)
+- [Lecture 8: Statistics, Regression and Prediction](https://damien-dupre.github.io/BAA1118/lectures/lecture_8)
+- [Lecture 9: From a File to a Finding](https://damien-dupre.github.io/BAA1118/lectures/lecture_9)
