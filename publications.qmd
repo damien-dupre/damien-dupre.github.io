@@ -5,6 +5,7 @@ description: |
 listing:
     - id: publications_2026
       contents: publications/publications_2026.yml
+      template: publications/listing.ejs
     - id: publications_2025
       contents: publications/publications_2025.yml
       template: publications/listing.ejs
